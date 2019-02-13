@@ -562,10 +562,11 @@ header {
   h1 {
     width: auto;
     margin: 0 0;
-    font-size: calc(1.44vw + 1.44em);
+    font-size: calc(1.66vw + 1.22em);
     text-transform: uppercase;
     letter-spacing: 0.108em;
     line-height: 1.1;
+    white-space: nowrap !important;
     span {
       letter-spacing: 0.012em;
       font-size: 0.91em;
@@ -702,7 +703,7 @@ footer {
         li {
           list-style-type: none;
           display: inline-block;
-          margin: 0 2px;
+          margin: 0 8px;
           a {
             display: inline-block;
             height: 100%;
@@ -817,8 +818,10 @@ footer {
 
 @media screen and (max-width: 992px) {
   footer {
+    height: auto;
     .container.flx {
-      padding: 148px 22px 100px 22px;
+      padding: 100px 22px 100px 22px;
+      .fl-logo { margin-bottom: 66px;}
     }
   }
 }

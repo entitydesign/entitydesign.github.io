@@ -548,10 +548,11 @@ header {
   header h1 {
     width: auto;
     margin: 0 0;
-    font-size: calc(1.44vw + 1.44em);
+    font-size: calc(1.66vw + 1.22em);
     text-transform: uppercase;
     letter-spacing: 0.108em;
-    line-height: 1.1; }
+    line-height: 1.1;
+    white-space: nowrap !important; }
     header h1 span {
       letter-spacing: 0.012em;
       font-size: 0.91em;
@@ -668,7 +669,7 @@ footer {
         footer .container.flx .fl-contact ul li {
           list-style-type: none;
           display: inline-block;
-          margin: 0 2px; }
+          margin: 0 8px; }
           footer .container.flx .fl-contact ul li a {
             display: inline-block;
             height: 100%;
@@ -792,8 +793,12 @@ footer {
       animation-fill-mode: forwards; }
 
 @media screen and (max-width: 992px) {
-  footer .container.flx {
-    padding: 148px 22px 100px 22px; } }
+  footer {
+    height: auto; }
+    footer .container.flx {
+      padding: 100px 22px 100px 22px; }
+      footer .container.flx .fl-logo {
+        margin-bottom: 66px; } }
 
 h2 {
   font-size: 2.92em;
