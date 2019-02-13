@@ -626,7 +626,7 @@ section {
   section.home-fw h2, section.home-fw p {
     color: #19191a; }
 
-.cyberox-home img {
+.cyberox-home img, .tiger-home img {
   display: block;
   float: right;
   width: 100%; }
@@ -1353,7 +1353,7 @@ p {
       .fl-text.right h1, .fl-text.right h2, .fl-text.right p, .fl-text.right .button-holder {
         float: none !important;
         clear: both !important; }
-  .cyberox-home img {
+  .cyberox-home img, .tiger-home img {
     max-width: calc(24vw + 140px) !important; }
   .case-header {
     padding: calc(44px + 4vh + 4vw) 0; }

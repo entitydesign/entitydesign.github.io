@@ -660,7 +660,7 @@ section {
     h2, p {color: #19191a;}
   }
 }
-.cyberox-home {
+.cyberox-home, .tiger-home {
   img {
     display: block;
     float: right;
@@ -1323,7 +1323,7 @@ p {
     }
   }
 
-  .cyberox-home {
+  .cyberox-home, .tiger-home {
     img {
       max-width: calc(24vw + 140px) !important;
     }
@@ -1349,7 +1349,7 @@ p {
     }
   }
 
-  
+
   .main-menu {
     position: fixed;
     top: 0;
