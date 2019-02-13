@@ -117,6 +117,13 @@ body .cursor__ball--big circle {
   -ms-transform-origin: 38% 36%;
   transform-origin: 38% 36%; }
 
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1; }
+
 .scene {
   position: relative; }
   .scene .scene_element {
@@ -627,6 +634,166 @@ section {
   height: auto;
   min-height: auto;
   padding: 88px 0; }
+
+footer {
+  position: relative;
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 44px 0px 66px 0px;
+  background: #19191a url("../img/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-origin: content-box; }
+  footer .container.flx {
+    padding: 148px 38px 100px 38px;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    footer .container.flx .fl-contact {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: right;
+      max-width: calc(100% - 266px);
+      max-width: 600px; }
+      footer .container.flx .fl-contact ul {
+        position: relative;
+        display: block;
+        list-style: none;
+        list-style-type: none; }
+        footer .container.flx .fl-contact ul li {
+          list-style-type: none;
+          display: inline-block;
+          margin: 0 2px; }
+          footer .container.flx .fl-contact ul li a {
+            display: inline-block;
+            height: 100%;
+            padding: 8px 2px; }
+            footer .container.flx .fl-contact ul li a .nav-icon {
+              display: inline-block;
+              width: 48px;
+              height: 48px;
+              border-radius: 48px;
+              line-height: 56px;
+              text-align: center;
+              margin: 0 2px;
+              opacity: 0;
+              -webkit-transform: translateY(50px) scale(1);
+              -ms-transform: translateY(50px) scale(1);
+              transform: translateY(50px) scale(1);
+              -webkit-transform-origin: center center;
+              -ms-transform-origin: center center;
+              transform-origin: center center;
+              -webkit-transition: opacity 860ms ease-out, -webkit-transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1);
+              transition: opacity 860ms ease-out, -webkit-transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1);
+              -o-transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1);
+              transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1);
+              transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1), -webkit-transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1);
+              -webkit-transition: opacity 860ms ease-out, -webkit-transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              transition: opacity 860ms ease-out, -webkit-transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              -o-transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 1240ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+              -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+              box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16); }
+              footer .container.flx .fl-contact ul li a .nav-icon i {
+                font-size: 1.48em;
+                color: #FFFFFF; }
+              footer .container.flx .fl-contact ul li a .nav-icon.fb {
+                background: #3b5998; }
+              footer .container.flx .fl-contact ul li a .nav-icon.ig {
+                background: #cd486b; }
+              footer .container.flx .fl-contact ul li a .nav-icon.li {
+                background: #0077b5; }
+              footer .container.flx .fl-contact ul li a .nav-icon.em {
+                background: #d69600; }
+            footer .container.flx .fl-contact ul li a:hover .nav-icon {
+              -webkit-transform: translateY(0px) scale(1.22);
+              -ms-transform: translateY(0px) scale(1.22);
+              transform: translateY(0px) scale(1.22); }
+    footer .container.flx .fl-logo {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      padding-top: 2px;
+      max-width: 266px; }
+      footer .container.flx .fl-logo a.logo-holder {
+        display: block; }
+        footer .container.flx .fl-logo a.logo-holder .footer-logo {
+          width: 100%;
+          max-width: 100%; }
+          footer .container.flx .fl-logo a.logo-holder .footer-logo polygon, footer .container.flx .fl-logo a.logo-holder .footer-logo rect {
+            fill: rgba(255, 255, 255, 0);
+            stroke: #FFFFFF;
+            stroke-width: 2.5;
+            stroke-dasharray: 580;
+            stroke-dashoffset: 580;
+            -webkit-animation-duration: 180ms;
+            animation-duration: 180ms; }
+      footer .container.flx .fl-logo a.mail-link {
+        display: inline-block;
+        margin-top: 33px; }
+        footer .container.flx .fl-logo a.mail-link span {
+          letter-spacing: 0.014em;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.75);
+          display: block;
+          font-size: 1.04em;
+          -webkit-transform: translateY(12px);
+          -ms-transform: translateY(12px);
+          transform: translateY(12px);
+          opacity: 0;
+          -webkit-transition: opacity 860ms ease-out, -webkit-transform 1240ms ease-out;
+          transition: opacity 860ms ease-out, -webkit-transform 1240ms ease-out;
+          -o-transition: opacity 860ms ease-out, transform 1240ms ease-out;
+          transition: opacity 860ms ease-out, transform 1240ms ease-out;
+          transition: opacity 860ms ease-out, transform 1240ms ease-out, -webkit-transform 1240ms ease-out; }
+    footer .container.flx.anim .fl-logo a.mail-link span {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition-delay: 900ms;
+      -o-transition-delay: 900ms;
+      transition-delay: 900ms; }
+    footer .container.flx.anim .fl-contact ul li a .nav-icon {
+      -webkit-transform: translateY(0px) scale(1);
+      -ms-transform: translateY(0px) scale(1);
+      transform: translateY(0px) scale(1);
+      opacity: 1; }
+      footer .container.flx.anim .fl-contact ul li a .nav-icon.fb {
+        -webkit-transition-delay: 400ms;
+        -o-transition-delay: 400ms;
+        transition-delay: 400ms; }
+      footer .container.flx.anim .fl-contact ul li a .nav-icon.ig {
+        -webkit-transition-delay: 450ms;
+        -o-transition-delay: 450ms;
+        transition-delay: 450ms; }
+      footer .container.flx.anim .fl-contact ul li a .nav-icon.li {
+        -webkit-transition-delay: 500ms;
+        -o-transition-delay: 500ms;
+        transition-delay: 500ms; }
+      footer .container.flx.anim .fl-contact ul li a .nav-icon.em {
+        -webkit-transition-delay: 550ms;
+        -o-transition-delay: 550ms;
+        transition-delay: 550ms; }
+    footer .container.flx.anim .fl-logo a.logo-holder .footer-logo polygon, footer .container.flx.anim .fl-logo a.logo-holder .footer-logo rect {
+      -webkit-animation-name: loading;
+      animation-name: loading;
+      -webkit-animation-duration: 1920ms;
+      animation-duration: 1920ms;
+      -webkit-animation-timing-function: cubic-bezier(0.355, 0.02, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.355, 0.02, 0.355, 1);
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+
+@media screen and (max-width: 992px) {
+  footer .container.flx {
+    padding: 148px 22px 100px 22px; } }
 
 h2 {
   font-size: 2.92em;

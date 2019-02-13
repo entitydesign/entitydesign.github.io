@@ -138,7 +138,7 @@ inView('.el').on('enter', function(el){
     function onScroll(event){
 
       var anchorList = $(".anchor-list");
-      if($(window).scrollTop() > 660) {
+      if($(window).scrollTop() > 360) {
         TweenMax.to(anchorList, 0.24, {autoAlpha: 1, ease:Power2.easeOut});
       } else {
         TweenMax.to(anchorList, 0.24, {autoAlpha: 0, ease:Power2.easeOut});
@@ -342,6 +342,7 @@ var loader = $(".loader");
   //  });
 
 loader.removeClass("exit");
+
 $("body").removeClass("menu-open");
 
 
