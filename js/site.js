@@ -342,7 +342,7 @@ var loader = $(".loader");
   //  });
 
 loader.removeClass("exit");
-
+$("body").removeClass("menu-open");
 
 
 };
