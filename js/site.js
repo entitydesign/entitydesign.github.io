@@ -8,7 +8,7 @@ $(function(){
         debug: false,
         prefetch: true,
         repeatDelay: 1600,
-        cacheLength: 2,
+        cacheLength: 3,
         onStart: {
           duration: 1700,
           render: function ($container) {
