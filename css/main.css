@@ -669,7 +669,7 @@ footer {
         footer .container.flx .fl-contact ul li {
           list-style-type: none;
           display: inline-block;
-          margin: 0 8px; }
+          margin: 0 2px; }
           footer .container.flx .fl-contact ul li a {
             display: inline-block;
             height: 100%;
@@ -794,11 +794,13 @@ footer {
 
 @media screen and (max-width: 992px) {
   footer {
-    height: auto; }
+    height: 540px; }
     footer .container.flx {
-      padding: 100px 22px 100px 22px; }
+      padding: 112px 22px 100px 22px; }
       footer .container.flx .fl-logo {
-        margin-bottom: 66px; } }
+        margin-bottom: 66px; }
+      footer .container.flx .fl-contact ul li {
+        margin: 0 8px; } }
 
 h2 {
   font-size: 2.92em;

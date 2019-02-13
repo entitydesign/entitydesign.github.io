@@ -140,7 +140,12 @@ inView('.el').on('enter', function(el){
       var anchorList = $(".anchor-list");
       if($(window).scrollTop() > 360) {
         TweenMax.to(anchorList, 0.24, {autoAlpha: 1, ease:Power2.easeOut});
-      } else {
+      }
+      else {
+        TweenMax.to(anchorList, 0.24, {autoAlpha: 0, ease:Power2.easeOut});
+      }
+
+      if ($(window).scrollTop() >= $(document).height() - $(window).height() - 560) {
         TweenMax.to(anchorList, 0.24, {autoAlpha: 0, ease:Power2.easeOut});
       }
 

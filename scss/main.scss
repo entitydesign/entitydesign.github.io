@@ -703,7 +703,7 @@ footer {
         li {
           list-style-type: none;
           display: inline-block;
-          margin: 0 8px;
+          margin: 0 2px;
           a {
             display: inline-block;
             height: 100%;
@@ -818,10 +818,17 @@ footer {
 
 @media screen and (max-width: 992px) {
   footer {
-    height: auto;
+    height: 540px;
     .container.flx {
-      padding: 100px 22px 100px 22px;
+      padding: 112px 22px 100px 22px;
       .fl-logo { margin-bottom: 66px;}
+      .fl-contact {
+        ul {
+          li {
+            margin: 0 8px;
+          }
+        }
+      }
     }
   }
 }
