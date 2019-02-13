@@ -1118,8 +1118,8 @@ p {
   }
   header {
     .container.flx {
-      padding-top: 88px;
-      padding-bottom: 66px;
+      padding: 88px 22px 66px 22px !important;
+      .fl-text {padding-left: 0 !important;}
     }
     h1 {
       width: auto;
