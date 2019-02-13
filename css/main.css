@@ -721,6 +721,7 @@ footer {
       -ms-flex: 1;
       flex: 1;
       padding-top: 2px;
+      width: 100%;
       max-width: 266px; }
       footer .container.flx .fl-logo a.logo-holder {
         display: block; }
@@ -791,16 +792,6 @@ footer {
       animation-timing-function: cubic-bezier(0.355, 0.02, 0.355, 1);
       -webkit-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
-
-@media screen and (max-width: 992px) {
-  footer {
-    height: 540px; }
-    footer .container.flx {
-      padding: 112px 22px 100px 22px; }
-      footer .container.flx .fl-logo {
-        margin-bottom: 66px; }
-      footer .container.flx .fl-contact ul li {
-        margin: 0 8px; } }
 
 h2 {
   font-size: 2.92em;
@@ -1366,6 +1357,14 @@ p {
     max-width: calc(24vw + 140px) !important; }
   .case-header {
     padding: calc(44px + 4vh + 4vw) 0; }
+  footer {
+    height: 540px; }
+    footer .container.flx {
+      padding: 112px 22px 100px 22px; }
+      footer .container.flx .fl-logo {
+        margin-bottom: 66px; }
+      footer .container.flx .fl-contact ul li {
+        margin: 0 8px; }
   .main-menu {
     position: fixed;
     top: 0;

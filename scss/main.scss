@@ -743,6 +743,7 @@ footer {
     .fl-logo {
       flex: 1;
       padding-top: 2px;
+      width: 100%;
       max-width: 266px;
       a.logo-holder {
         display: block;
@@ -809,23 +810,6 @@ footer {
               animation-timing-function: cubic-bezier(0.355, 0.020, 0.355, 1.000);
               animation-fill-mode: forwards;
             }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 992px) {
-  footer {
-    height: 540px;
-    .container.flx {
-      padding: 112px 22px 100px 22px;
-      .fl-logo { margin-bottom: 66px;}
-      .fl-contact {
-        ul {
-          li {
-            margin: 0 8px;
           }
         }
       }
@@ -1350,7 +1334,22 @@ p {
   }
 
 
+  footer {
+    height: 540px;
+    .container.flx {
+      padding: 112px 22px 100px 22px;
+      .fl-logo { margin-bottom: 66px;}
+      .fl-contact {
+        ul {
+          li {
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+  }
 
+  
   .main-menu {
     position: fixed;
     top: 0;
