@@ -276,7 +276,7 @@ body .cursor__ball--big circle {
 nav {
   position: fixed;
   // top: 100%;
-  top: 88px;
+  top: calc(22px + 4vw);
   padding-top: calc(3vw + 3vh);
   padding-bottom: 133px;
   left: 50%;
@@ -294,7 +294,7 @@ nav {
       list-style-type: none;
       color: #FFFFFF;
       display: block;
-      margin: calc(12px + 1vh + 1vw) auto;
+      margin: calc(12px + 1.6vh + 1.6vw) auto;
       &:first-child {margin-top: 0;}
       &:last-child {margin-bottom: 0;}
       visibility: hidden;
@@ -306,11 +306,19 @@ nav {
       a {
         display: inline-block;
         height: 100%;
-        padding: 8px 12px;
+        padding: 2px 12px;
         &:hover {
           span.style-nav {
-            letter-spacing: 0.088em;
-            span {letter-spacing: -0.058em;}
+            // letter-spacing: 0.088em;
+            // span {letter-spacing: -0.058em;}
+            &:after {
+              transform: translate(-50%, 0%) scaleX(1);
+            }
+          }
+        }
+        &:active {
+          span.style-nav {
+            opacity: 0.5;
           }
         }
         span {
@@ -319,16 +327,31 @@ nav {
           letter-spacing: -0.012em;
           color: #FFFFFF;
           &.style-nav {
-            text-transform: uppercase;
-            font-size: 1.62em;
-            font-weight: 800;
-            letter-spacing: 0.118em;
+            position: relative;
+            // text-transform: uppercase;
+            // letter-spacing: 0.118em;
+            letter-spacing: -0.008em;
+            font-size: calc(0.2vw + 1.38em);
+            font-weight: 600;
+            padding-bottom: 8px;
             transition: letter-spacing 140ms ease-out;
-            span {
-              font-family: 'LuloCleanOutline-Bold', sans-serif;
-              font-size: 0.9em;
-              letter-spacing: -0.028em;
-              transition: letter-spacing 140ms ease-out;
+            // span {
+            //   font-family: 'LuloCleanOutline-Bold', sans-serif;
+            //   font-size: 0.9em;
+            //   letter-spacing: -0.028em;
+            //   transition: letter-spacing 140ms ease-out;
+            // }
+            &:after{
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              height: 3px;
+              background: #FFFFFF;
+              transform: translate(-50%, 0%) scaleX(0);
+              width: 100%;
+              backface-visibility: hidden;
+              transition: transform 280ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
             }
           }
         }
@@ -352,7 +375,7 @@ nav {
         }
         &.nav-contact {
           display: block;
-          margin: 68px auto 0 auto;
+          margin: calc(33px + 0.6vw) auto 0 auto;
           height: 64px;
           line-height: 64px;
           padding: 0 28px;
@@ -556,7 +579,7 @@ header {
   width: 100%;
   max-width: 100%;
   height: 100vh;
-  min-height: 880px;
+  min-height: 680px;
   display: block;
   background: #FFFFFF;
   h1 {
@@ -1338,11 +1361,11 @@ p {
     height: 540px;
     .container.flx {
       padding: 112px 22px 100px 22px;
-      .fl-logo { margin-bottom: 66px;}
+      .fl-logo { margin-bottom: 66px; text-align: center;}
       .fl-contact {
         ul {
           li {
-            margin: 0 8px;
+            margin: 0 7px;
           }
         }
       }

@@ -255,7 +255,7 @@ body .cursor__ball--big circle {
 
 nav {
   position: fixed;
-  top: 88px;
+  top: calc(22px + 4vw);
   padding-top: calc(3vw + 3vh);
   padding-bottom: 133px;
   left: 50%;
@@ -275,7 +275,7 @@ nav {
       list-style-type: none;
       color: #FFFFFF;
       display: block;
-      margin: calc(12px + 1vh + 1vw) auto;
+      margin: calc(12px + 1.6vh + 1.6vw) auto;
       visibility: hidden;
       -webkit-transform: translateY(50%);
       -ms-transform: translateY(50%);
@@ -290,31 +290,45 @@ nav {
       nav ul li a {
         display: inline-block;
         height: 100%;
-        padding: 8px 12px; }
-        nav ul li a:hover span.style-nav {
-          letter-spacing: 0.088em; }
-          nav ul li a:hover span.style-nav span {
-            letter-spacing: -0.058em; }
+        padding: 2px 12px; }
+        nav ul li a:hover span.style-nav:after {
+          -webkit-transform: translate(-50%, 0%) scaleX(1);
+          -ms-transform: translate(-50%, 0%) scaleX(1);
+          transform: translate(-50%, 0%) scaleX(1); }
+        nav ul li a:active span.style-nav {
+          opacity: 0.5; }
         nav ul li a span {
           font-size: 1.52em;
           font-weight: 600;
           letter-spacing: -0.012em;
           color: #FFFFFF; }
           nav ul li a span.style-nav {
-            text-transform: uppercase;
-            font-size: 1.62em;
-            font-weight: 800;
-            letter-spacing: 0.118em;
+            position: relative;
+            letter-spacing: -0.008em;
+            font-size: calc(0.2vw + 1.38em);
+            font-weight: 600;
+            padding-bottom: 8px;
             -webkit-transition: letter-spacing 140ms ease-out;
             -o-transition: letter-spacing 140ms ease-out;
             transition: letter-spacing 140ms ease-out; }
-            nav ul li a span.style-nav span {
-              font-family: 'LuloCleanOutline-Bold', sans-serif;
-              font-size: 0.9em;
-              letter-spacing: -0.028em;
-              -webkit-transition: letter-spacing 140ms ease-out;
-              -o-transition: letter-spacing 140ms ease-out;
-              transition: letter-spacing 140ms ease-out; }
+            nav ul li a span.style-nav:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              height: 3px;
+              background: #FFFFFF;
+              -webkit-transform: translate(-50%, 0%) scaleX(0);
+              -ms-transform: translate(-50%, 0%) scaleX(0);
+              transform: translate(-50%, 0%) scaleX(0);
+              width: 100%;
+              -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+              -webkit-transition: -webkit-transform 280ms cubic-bezier(0.215, 0.61, 0.355, 1);
+              transition: -webkit-transform 280ms cubic-bezier(0.215, 0.61, 0.355, 1);
+              -o-transition: transform 280ms cubic-bezier(0.215, 0.61, 0.355, 1);
+              transition: transform 280ms cubic-bezier(0.215, 0.61, 0.355, 1);
+              transition: transform 280ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 280ms cubic-bezier(0.215, 0.61, 0.355, 1); }
         nav ul li a .nav-icon {
           display: inline-block;
           width: 48px;
@@ -338,7 +352,7 @@ nav {
             background: #d69600; }
         nav ul li a.nav-contact {
           display: block;
-          margin: 68px auto 0 auto;
+          margin: calc(33px + 0.6vw) auto 0 auto;
           height: 64px;
           line-height: 64px;
           padding: 0 28px;
@@ -542,7 +556,7 @@ header {
   width: 100%;
   max-width: 100%;
   height: 100vh;
-  min-height: 880px;
+  min-height: 680px;
   display: block;
   background: #FFFFFF; }
   header h1 {
@@ -1362,9 +1376,10 @@ p {
     footer .container.flx {
       padding: 112px 22px 100px 22px; }
       footer .container.flx .fl-logo {
-        margin-bottom: 66px; }
+        margin-bottom: 66px;
+        text-align: center; }
       footer .container.flx .fl-contact ul li {
-        margin: 0 8px; }
+        margin: 0 7px; }
   .main-menu {
     position: fixed;
     top: 0;

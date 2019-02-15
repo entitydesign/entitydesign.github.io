@@ -49,6 +49,65 @@ $(function(){
     });
 
 
+
+    function cursorInit() {
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+       var body = $("body");
+       body.addClass("no-cursor");
+      }
+      else {
+        var body = $("body");
+        body.removeClass("no-cursor");
+        var $bigBall = document.querySelector('.cursor__ball--big');
+        var $smallBall = document.querySelector('.cursor__ball--small');
+        var $bigBallCircle = $('.bigBallCircle');
+        TweenMax.set($bigBall, {transformOrigin:'38% 36%'});
+        function onMouseMove( e ) {
+           var follower = this.querySelector('.cursor__ball--small')
+            TweenMax.to(follower, 0.1, {
+                x: e.clientX - 3,
+                y: e.clientY - 2
+            })
+              TweenMax.to($bigBall, 0.6, {
+                x: e.clientX - 12.5,
+                y: e.clientY - 12,
+                ease:Power3.easeOut });
+        }
+        function init() {
+            document.addEventListener('mousemove', onMouseMove)
+        };
+        init();
+        var globalLink = $(".hoverable");
+        globalLink.mouseenter(function() {
+          TweenMax.to($bigBall, 1.1, {
+            scale: 2.8, ease: Elastic.easeOut.config(1, 0.5) });
+            TweenMax.to($bigBallCircle, 0.4, {
+              fill:"rgba(255,255,255,1)", ease:Power2.easeOut });
+        });
+        globalLink.mouseleave(function() {
+          TweenMax.to($bigBall, 1.2, {
+            fill: "rgba(255,255,255,0)", scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
+            TweenMax.to($bigBallCircle, 0.4, {
+            fill:"rgba(255,255,255,0)", ease:Power2.easeOut });
+        });
+        $("#main").mousedown(function(){
+          TweenMax.to($bigBall, 0.2, {
+            scale: 0.6, ease: Power2.easeOut });
+        });
+        $("#main").mouseup(function(){
+          TweenMax.to($bigBall, 0.2, {
+            scale: 1, ease: Power2.easeOut });
+        });
+      }
+    }
+
+    cursorInit();
+
+
+
+
+
+
     $(function(){
       if($("div").hasClass("rellax")) {
         var rellax = new Rellax('.rellax');
@@ -164,25 +223,6 @@ $(".sticky-al").stick_in_parent({
   offset_top: 0,
 });
 
-$('.js-tilt').tilt({
-    maxTilt: 2,
-    perspective: 1000,
-    speed: 800,
-    transition: true,
-    easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
-});
-$('.js-tilt-two').tilt({
-    maxTilt: 5,
-    perspective: 1000,
-    speed: 1200,
-    transition: true,
-});
-$('.js-tilt-three').tilt({
-    maxTilt: 8,
-    perspective: 1500,
-    speed: 1200,
-    transition: true,
-});
 
 
   // $(function(){
@@ -230,59 +270,6 @@ $('.js-tilt-three').tilt({
 //     var rellax = new Rellax('.rellax');
 //   }
 // });
-
-function cursorInit() {
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-   var body = $("body");
-   body.addClass("no-cursor");
-  }
-  else {
-    var body = $("body");
-    body.removeClass("no-cursor");
-    var $bigBall = document.querySelector('.cursor__ball--big');
-    var $smallBall = document.querySelector('.cursor__ball--small');
-    var $bigBallCircle = $('.bigBallCircle');
-    TweenMax.set($bigBall, {transformOrigin:'38% 36%'});
-    function onMouseMove( e ) {
-       var follower = this.querySelector('.cursor__ball--small')
-        TweenMax.to(follower, 0.1, {
-            x: e.clientX - 3,
-            y: e.clientY - 2
-        })
-          TweenMax.to($bigBall, 0.6, {
-            x: e.clientX - 12.5,
-            y: e.clientY - 12,
-            ease:Power3.easeOut });
-    }
-    function init() {
-        document.addEventListener('mousemove', onMouseMove)
-    };
-    init();
-    var globalLink = $(".hoverable");
-    globalLink.mouseenter(function() {
-      TweenMax.to($bigBall, 1.1, {
-        scale: 2.8, ease: Elastic.easeOut.config(1, 0.5) });
-        TweenMax.to($bigBallCircle, 0.4, {
-          fill:"rgba(255,255,255,1)", ease:Power2.easeOut });
-    });
-    globalLink.mouseleave(function() {
-      TweenMax.to($bigBall, 1.2, {
-        fill: "rgba(255,255,255,0)", scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
-        TweenMax.to($bigBallCircle, 0.4, {
-        fill:"rgba(255,255,255,0)", ease:Power2.easeOut });
-    });
-    $("#main").mousedown(function(){
-      TweenMax.to($bigBall, 0.2, {
-        scale: 0.6, ease: Power2.easeOut });
-    });
-    $("#main").mouseup(function(){
-      TweenMax.to($bigBall, 0.2, {
-        scale: 1, ease: Power2.easeOut });
-    });
-  }
-}
-
-cursorInit();
 
 
 
@@ -332,6 +319,25 @@ $(".menu-toggle").click(function(){
 });
 
 
+$('.js-tilt').tilt({
+    maxTilt: 2,
+    perspective: 1000,
+    speed: 800,
+    transition: true,
+    easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+});
+$('.js-tilt-two').tilt({
+    maxTilt: 5,
+    perspective: 1000,
+    speed: 1200,
+    transition: true,
+});
+$('.js-tilt-three').tilt({
+    maxTilt: 8,
+    perspective: 1500,
+    speed: 1200,
+    transition: true,
+});
 
 
 
