@@ -54,25 +54,7 @@ $(function(){
         var rellax = new Rellax('.rellax');
       }
     });
-    $('.js-tilt').tilt({
-        maxTilt: 2,
-        perspective: 1000,
-        speed: 800,
-        transition: true,
-        easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
-    });
-    $('.js-tilt-two').tilt({
-        maxTilt: 5,
-        perspective: 1000,
-        speed: 1200,
-        transition: true,
-    });
-    $('.js-tilt-three').tilt({
-        maxTilt: 8,
-        perspective: 1500,
-        speed: 1200,
-        transition: true,
-    });
+
 
 
 inView.threshold(0.4);
@@ -180,6 +162,26 @@ $(".sticky").stick_in_parent({
 $(".sticky-al").stick_in_parent({
   parent: '.push-right',
   offset_top: 0,
+});
+
+$('.js-tilt').tilt({
+    maxTilt: 2,
+    perspective: 1000,
+    speed: 800,
+    transition: true,
+    easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+});
+$('.js-tilt-two').tilt({
+    maxTilt: 5,
+    perspective: 1000,
+    speed: 1200,
+    transition: true,
+});
+$('.js-tilt-three').tilt({
+    maxTilt: 8,
+    perspective: 1500,
+    speed: 1200,
+    transition: true,
 });
 
 
