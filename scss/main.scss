@@ -542,9 +542,10 @@ main {
     padding-right: 12px;
     img {
       display: block;
-      width: 100%;
       margin: 0 0;
-      max-width: 420px;
+      width: 100%;
+      max-width: calc(0.6vw + 362px);
+
     }
   }
   .fl-text {
@@ -579,7 +580,7 @@ header {
   width: 100%;
   max-width: 100%;
   height: 100vh;
-  min-height: 680px;
+  min-height: 740px;
   display: block;
   background: #FFFFFF;
   h1 {
@@ -598,7 +599,7 @@ header {
     }
   }
   .fl-img {
-    padding-top: 1.8vw;
+    padding-top: 0.88vw;
   }
   &.white {
     h1, p {
@@ -1335,6 +1336,7 @@ p {
     padding-right: 0px;
     padding-bottom: 44px;
     img {
+      width: 100%;
       max-width: calc(32vw + 140px) !important;
     }
   }
@@ -1444,6 +1446,9 @@ p {
     h2 {margin-top: 0;}
   }
   .case-study {
+      .container {
+        padding-left: 22px;
+      }
     p {padding-right: 22px; margin-top: 12px;}
   }
   .cs-img {
