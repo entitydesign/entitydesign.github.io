@@ -319,24 +319,55 @@ $(".menu-toggle").click(function(){
 });
 
 
-$('.js-tilt').tilt({
-    maxTilt: 2,
-    perspective: 1000,
-    speed: 800,
-    transition: true,
-    easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+// $('.js-tilt').tilt({
+//     maxTilt: 5,
+//     perspective: 5000,
+//     speed: 900,
+//     transition: true,
+//     // easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+// });
+// $('.js-tilt-two').tilt({
+//     maxTilt: 7,
+//     perspective: 1000,
+//     speed: 1700,
+//     transition: true,
+// });
+// $('.js-tilt-three').tilt({
+//     maxTilt: 12,
+//     perspective: 1500,
+//     speed: 1200,
+//     transition: true,
+// });
+
+
+
+$('.js-tilt').each(function(){
+  $(this).tilt({
+      maxTilt: 5,
+      perspective: 5000,
+      speed: 800,
+      transition: true,
+      // easing: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+  });
 });
-$('.js-tilt-two').tilt({
-    maxTilt: 5,
-    perspective: 1000,
-    speed: 1200,
-    transition: true,
+
+$('.js-tilt-two').each(function(){
+  $(this).tilt({
+      maxTilt: 6,
+      perspective: 1000,
+      speed: 1700,
+      transition: true,
+  });
 });
-$('.js-tilt-three').tilt({
-    maxTilt: 8,
-    perspective: 1500,
-    speed: 1200,
-    transition: true,
+
+$('.js-tilt-three').each(function(){
+  $(this).tilt({
+      maxTilt: 12,
+      perspective: 1500,
+      speed: 1200,
+      transition: true,
+
+  });
 });
 
 

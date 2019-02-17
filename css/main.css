@@ -684,6 +684,10 @@ footer {
           list-style-type: none;
           display: inline-block;
           margin: 0 2px; }
+          footer .container.flx .fl-contact ul li:first-child {
+            margin-left: 0px; }
+          footer .container.flx .fl-contact ul li:last-child {
+            margin-right: 0px; }
           footer .container.flx .fl-contact ul li a {
             display: inline-block;
             height: 100%;
@@ -697,9 +701,9 @@ footer {
               text-align: center;
               margin: 0 2px;
               opacity: 0;
-              -webkit-transform: translateY(50px) scale(1);
-              -ms-transform: translateY(50px) scale(1);
-              transform: translateY(50px) scale(1);
+              -webkit-transform: translateY(50px);
+              -ms-transform: translateY(50px);
+              transform: translateY(50px);
               -webkit-transform-origin: center center;
               -ms-transform-origin: center center;
               transform-origin: center center;
@@ -727,9 +731,29 @@ footer {
               footer .container.flx .fl-contact ul li a .nav-icon.em {
                 background: #d69600; }
             footer .container.flx .fl-contact ul li a:hover .nav-icon {
-              -webkit-transform: translateY(0px) scale(1.22);
-              -ms-transform: translateY(0px) scale(1.22);
-              transform: translateY(0px) scale(1.22); }
+              -webkit-transform: translateY(0px);
+              -ms-transform: translateY(0px);
+              transform: translateY(0px); }
+        footer .container.flx .fl-contact ul.footer-nav {
+          margin: 18px 0;
+          opacity: 0;
+          -webkit-transition: opacity 860ms ease-out;
+          -o-transition: opacity 860ms ease-out;
+          transition: opacity 860ms ease-out; }
+          footer .container.flx .fl-contact ul.footer-nav li {
+            margin: 0 12px; }
+            footer .container.flx .fl-contact ul.footer-nav li:first-child {
+              margin-left: 0px; }
+            footer .container.flx .fl-contact ul.footer-nav li:last-child {
+              margin-right: 0px; }
+            footer .container.flx .fl-contact ul.footer-nav li a {
+              padding: 0 0; }
+              footer .container.flx .fl-contact ul.footer-nav li a span {
+                font-weight: 600;
+                letter-spacing: 0.228em;
+                font-size: 0.78em;
+                text-transform: uppercase;
+                color: #FFFFFF; }
     footer .container.flx .fl-logo {
       -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -777,9 +801,9 @@ footer {
       -o-transition-delay: 900ms;
       transition-delay: 900ms; }
     footer .container.flx.anim .fl-contact ul li a .nav-icon {
-      -webkit-transform: translateY(0px) scale(1);
-      -ms-transform: translateY(0px) scale(1);
-      transform: translateY(0px) scale(1);
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
       opacity: 1; }
       footer .container.flx.anim .fl-contact ul li a .nav-icon.fb {
         -webkit-transition-delay: 400ms;
@@ -797,6 +821,11 @@ footer {
         -webkit-transition-delay: 550ms;
         -o-transition-delay: 550ms;
         transition-delay: 550ms; }
+    footer .container.flx.anim .fl-contact ul.footer-nav {
+      opacity: 1;
+      -webkit-transition-delay: 440ms;
+      -o-transition-delay: 440ms;
+      transition-delay: 440ms; }
     footer .container.flx.anim .fl-logo a.logo-holder .footer-logo polygon, footer .container.flx.anim .fl-logo a.logo-holder .footer-logo rect {
       -webkit-animation-name: loading;
       animation-name: loading;
@@ -1073,7 +1102,7 @@ p {
     color: #19191a; }
   .case-study h2 {
     color: #19191a;
-    font-size: calc(3.78vw + 2.22em);
+    font-size: calc(3.48vw + 2.22em);
     line-height: 0.85;
     position: relative;
     display: block;
@@ -1242,15 +1271,6 @@ p {
   transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1) !important;
   transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1) !important; }
 
-.js-tilt-two {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  height: 100%; }
-
-.js-tilt-three {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
 @-webkit-keyframes loading {
   0% {
     stroke-dashoffset: 580; }
@@ -1284,6 +1304,8 @@ p {
     opacity: 1; } }
 
 @media screen and (max-width: 992px) {
+  ul.footer-nav {
+    display: none !important; }
   .container {
     padding: 0 22px; }
   .col {
@@ -1305,7 +1327,7 @@ p {
       font-size: 89%; }
   p {
     margin: 24px 0 0 0;
-    font-size: 1em;
+    font-size: 0.91em;
     font-weight: 400;
     letter-spacing: 0.008em;
     line-height: 1.4;
@@ -1321,7 +1343,7 @@ p {
   header h1 {
     width: auto;
     margin: 0 0;
-    font-size: calc(0.88vw + 1.62em);
+    font-size: calc(0.88vw + 1.55em);
     text-transform: uppercase;
     letter-spacing: 0.108em;
     line-height: 1.2; }
@@ -1371,7 +1393,7 @@ p {
   .cyberox-home img, .tiger-home img {
     max-width: calc(24vw + 140px) !important; }
   .case-header {
-    padding: calc(44px + 4vh + 4vw) 0; }
+    padding: 88px 0; }
   footer {
     height: 540px; }
     footer .container.flx {
