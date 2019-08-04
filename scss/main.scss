@@ -1947,7 +1947,7 @@ span.numeral {
   .case-header {
     padding: 88px 0;
     .container.flx {
-      align-items: flex-end !important;
+      align-items: flex-start !important;
       .fl-text {
         height: 300px;
         min-height: 300px;
@@ -1957,6 +1957,18 @@ span.numeral {
     }
     &.case-header--cyberox {
       background-position: 75% center;
+    }
+    &.case-header--cxption {
+      background-position: 91% 288px;
+      h1 {
+        margin-top: -16vh;
+      }
+    }
+    &.case-header--arktos {
+      background-position: 75% center !important;
+      h1 {
+        margin-top: -15vh;
+      }
     }
   }
   .work-logo--home {

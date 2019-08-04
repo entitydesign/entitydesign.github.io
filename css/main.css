@@ -1868,9 +1868,9 @@ span.numeral {
   .case-header {
     padding: 88px 0; }
     .case-header .container.flx {
-      -webkit-box-align: end !important;
-      -ms-flex-align: end !important;
-      align-items: flex-end !important; }
+      -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+      align-items: flex-start !important; }
       .case-header .container.flx .fl-text {
         height: 300px;
         min-height: 300px;
@@ -1878,6 +1878,14 @@ span.numeral {
         padding: 0 0; }
     .case-header.case-header--cyberox {
       background-position: 75% center; }
+    .case-header.case-header--cxption {
+      background-position: 91% 288px; }
+      .case-header.case-header--cxption h1 {
+        margin-top: -16vh; }
+    .case-header.case-header--arktos {
+      background-position: 75% center !important; }
+      .case-header.case-header--arktos h1 {
+        margin-top: -15vh; }
   .work-logo--home img {
     max-width: 220px !important; }
   footer {
