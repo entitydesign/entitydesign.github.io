@@ -103,6 +103,9 @@ $(function(){
             TweenMax.to($bigBallCircle, 0.4, {
             fill:"rgba(255,255,255,0)", ease:Power2.easeOut });
             TweenMax.to($cursorArrows, 0.4, {scale: 1, ease:Power3.easeOut});
+            if($(".scene").hasClass("is-exiting")) {
+              TweenMax.to($cursorArrows, 0, {autoAlpha: 0, scale: 0.44, ease: Power4.easeOut});
+            }
         });
 
         $("#main").mousedown(function(){
@@ -115,6 +118,10 @@ $(function(){
         });
       }
     }
+
+
+
+
 
     cursorInit();
 
