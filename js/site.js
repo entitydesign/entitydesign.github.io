@@ -120,6 +120,11 @@ $(function(){
     }
 
 
+    function iconWipe() {
+      var $rect = $(".rect");
+      TweenMax.set($rect, {transformOrigin: "0% 50%", scaleX: 0});
+    }
+    iconWipe();
 
 
 
@@ -165,6 +170,10 @@ $(function(){
 inView.threshold(0.4);
 inView('.el').on('enter', function(el){
   el.classList.add("anim");
+  if ($(el).hasClass("services-skills__list")) {
+    var $rect = $(".rect");
+    TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.6}, 0.44);
+  }
 });
 // inView('.el').on('exit', function(el){
 //   el.classList.remove("anim");
@@ -337,8 +346,14 @@ var button = $(".button"),
      		proximity: 25,
      		magnetism: 2,
      	}
-     );
-
+);
+$.attractHover(
+    '.js-attract-hover--alt',
+    {
+      proximity: 100,
+      magnetism: 2,
+    }
+);
 
   var loader = $(".loader");
   loader.removeClass("exit");
