@@ -575,7 +575,7 @@ header {
   header h1 {
     width: auto;
     margin: 0 0;
-    font-size: 4.68em;
+    font-size: 4.32em;
     text-transform: uppercase;
     letter-spacing: 0.108em;
     line-height: 1.16; }
@@ -617,7 +617,7 @@ header {
   min-height: 740px;
   max-height: 1080px; }
   .case-header h1 {
-    font-size: 4.68em;
+    font-size: 4.32em;
     line-height: 1; }
     @media screen and (max-width: 992px), screen and (max-height: 580px) {
       .case-header h1 {
@@ -653,6 +653,9 @@ header {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat; }
+
+header.home-header h1 {
+  margin-top: calc(54px + 3vh); }
 
 section {
   position: relative;

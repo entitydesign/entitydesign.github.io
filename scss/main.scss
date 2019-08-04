@@ -5,7 +5,7 @@
 $dark: #100e1b;
 
 @mixin bigheader {
-  font-size: 4.68em;
+  font-size: 4.32em;
   @media screen and (max-width: 992px), screen and (max-height: 580px) {
     font-size: 3.18em;
   }
@@ -785,7 +785,11 @@ header {
     background-repeat: no-repeat;
   }
 }
-
+header.home-header {
+  h1 {
+    margin-top: calc(54px + 3vh);
+  }
+}
 
 
 section {
