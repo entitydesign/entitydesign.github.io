@@ -1835,6 +1835,8 @@ span.numeral {
     padding-top: 0px; }
     h2 span {
       font-size: 89%; }
+  section.home-work {
+    padding: 48px 0; }
   p {
     margin: 24px 0 0 0;
     font-size: 0.91em;
@@ -1924,7 +1926,7 @@ span.numeral {
         float: none !important;
         clear: both !important; }
   section.project-next-prev {
-    padding: 24px 0; }
+    padding: 12px 0; }
     section.project-next-prev h2 {
       text-align: center; }
     section.project-next-prev ul.work-items {
@@ -1932,7 +1934,7 @@ span.numeral {
       max-width: 100%;
       list-style: none;
       list-style-type: none;
-      margin: 54px auto 0 auto;
+      margin: 54px auto -12px auto !important;
       display: block; }
       section.project-next-prev ul.work-items li {
         display: block;
@@ -1945,9 +1947,9 @@ span.numeral {
         min-height: auto;
         height: auto;
         text-align: center;
-        margin: 18% auto !important; }
+        margin: 12% auto !important; }
         section.project-next-prev ul.work-items li .button-holder {
-          margin-top: 16px;
+          margin-top: 12px;
           margin-bottom: 0; }
         section.project-next-prev ul.work-items li .attract-hover-easing {
           padding: 0 0; }
@@ -1958,7 +1960,7 @@ span.numeral {
             display: none; }
         section.project-next-prev ul.work-items li:last-child {
           margin-right: 0px;
-          margin-bottom: 0px; }
+          margin-bottom: 0px !important; }
         section.project-next-prev ul.work-items li .work-item__wrap {
           position: relative;
           -webkit-box-flex: 1.4;
@@ -1969,25 +1971,26 @@ span.numeral {
           -webkit-box-flex: 1;
           -ms-flex: 1;
           flex: 1;
-          margin-bottom: 24px; }
+          margin-bottom: 8px; }
           section.project-next-prev ul.work-items li .work-item__wrap--img img {
-            margin: 0 auto; }
+            margin: 0 auto;
+            max-width: 124px; }
   .container.pre-swiper {
-    padding-bottom: 82px;
-    margin-bottom: 0 !important; }
+    padding-bottom: 62px;
+    margin-bottom: 18px !important; }
   .swiper-button-prev,
   .swiper-button-next {
     bottom: 0;
     top: auto;
-    width: 44px;
+    width: 38px;
     height: 44px;
-    background-size: 24px 24px !important;
+    background-size: 22px 22px !important;
     -webkit-transform: translate(0%, 0%) !important;
     -ms-transform: translate(0%, 0%) !important;
     transform: translate(0%, 0%) !important; }
   .swiper-button-prev {
     left: auto;
-    right: 52px; }
+    right: 60px; }
   .swiper-button-next {
     left: auto;
     right: 22px; }
@@ -2027,13 +2030,13 @@ span.numeral {
     .case-header.case-header--cxption {
       background-position: 91% 288px; }
       .case-header.case-header--cxption h1 {
-        margin-top: -16vh; }
+        margin-top: -12vh; }
     .case-header.case-header--arktos {
       background-position: 75% center !important; }
       .case-header.case-header--arktos h1 {
         margin-top: -15vh; }
     .case-header.case-header--studiosurf {
-      background-position: center bottom !important; }
+      background-position: 56% center !important; }
   .work-logo--home img {
     width: 100%;
     max-width: 152px !important;
@@ -2113,13 +2116,28 @@ span.numeral {
     padding: 66px 0 66px 0; }
     .case-about h2 {
       margin-top: 0; }
-  .case-study .container {
-    padding-left: 22px; }
-  .case-study p {
-    padding-right: 22px;
-    margin-top: 12px; }
-  .cs-img {
-    margin: 6vmin 0; } }
+  .case-study {
+    padding: 66px 0 30px 0; }
+    .case-study h3 {
+      margin-top: 48px; }
+      .case-study h3.no-margin {
+        margin-top: 0; }
+    .case-study .container {
+      padding-left: 22px; }
+    .case-study p {
+      padding-right: 22px;
+      margin-top: 12px;
+      margin-bottom: 0px; }
+    .case-study .grid, .case-study .col {
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    .case-study .c-2 {
+      display: none; }
+    .case-study .cs-img img, .case-study .cs-img .img-holder {
+      margin: 0 0; }
+    .case-study .cs-img {
+      margin-top: 36px;
+      margin-bottom: 36px; } }
 
 ::-webkit-scrollbar {
   width: 6px;
