@@ -660,7 +660,7 @@ header {
     font-size: 4.32em;
     text-transform: uppercase;
     letter-spacing: 0.108em;
-    line-height: 1.16; }
+    line-height: 1.12; }
     @media screen and (max-width: 992px), screen and (max-height: 580px) {
       header h1 {
         font-size: 3.18em; } }

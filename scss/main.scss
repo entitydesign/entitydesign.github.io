@@ -757,7 +757,7 @@ header {
     @include bigheader;
     text-transform: uppercase;
     letter-spacing: 0.108em;
-    line-height: 1.16;
+    line-height: 1.12;
     // white-space: nowrap !important;
     span {
       letter-spacing: 0.012em;
@@ -1673,7 +1673,7 @@ p {
 .swiper-button-next {
   top: calc(50% - 18px);
   width: 56px;
-  height: 66px;  
+  height: 66px;
   background-repeat: no-repeat;
   background-size: 30px 30px !important;
   pointer-events: all;
