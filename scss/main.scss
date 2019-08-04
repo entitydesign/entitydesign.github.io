@@ -2081,6 +2081,9 @@ span.numeral {
 
   .case-header {
     padding: 88px 0;
+    p {
+      max-width: 480px !important;
+    }
     .container.flx {
       align-items: flex-start !important;
       .fl-text {

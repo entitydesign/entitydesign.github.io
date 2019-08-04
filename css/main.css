@@ -2020,6 +2020,8 @@ span.numeral {
     transform: translateX(0%) !important; }
   .case-header {
     padding: 88px 0; }
+    .case-header p {
+      max-width: 480px !important; }
     .case-header .container.flx {
       -webkit-box-align: start !important;
       -ms-flex-align: start !important;
