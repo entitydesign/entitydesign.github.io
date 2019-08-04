@@ -20,19 +20,15 @@
   <link rel="manifest" href="favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#19191a">
+  <meta name="theme-color" content="#100e1b">
   <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>ENTITY Design - Designed with the soul in mind.</title>
 </head>
 
   <body class="home">
-
-
-
-
-
 
       <main class="content" id="main">
 
@@ -68,7 +64,7 @@
 
           <div class="scene_element">
 
-            <div class="main-menu f-b">
+            <div class="main-menu">
               <div class="container">
                 <div class="logo">
                   <a href="/index.html" class="menu-link hoverable">
@@ -99,7 +95,6 @@
                     <li class="menu-item icon-item"><a href="mailto:hello@hello.com" class="hoverable"><span class="nav-icon em"><i class="fa fa-envelope-o"></i></span></a></li>
                   </ul>
                 </nav>
-
                 <div class="menu-toggle hoverable">
                   <svg class="hb" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 94.79 94.79" style="enable-background:new 0 0 94.79 94.79;" xml:space="preserve">
                     <path class="st top" d="M47.4,21.52V47.4h-3.35H21.52c-3.68,0-6.7-3.01-6.7-6.7v0c0-3.68,3.01-6.7,6.7-6.7h51.76"/>
@@ -111,20 +106,19 @@
             </div>
 
             <svg preserveAspectRatio="none" class="gloop" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
-              <path class="gloop-path" style="fill: #19191a" d="M1920,198.6V0H0v168.8c0,0,25.4-85.6,188.6-85.6s99.5,179.2,236.9,179.2c157.3,0,108-113.5,264.8-113.5c173.2,0,123.4,223,294.6,223c137.4,0,141.4-318.9,244.9-318.9c137.4,0,141.3,275.3,254.8,275.3c151.3,0,131.4-227.2,262.8-227.2C1841,101.1,1920,198.6,1920,198.6z"/>
+              <path class="gloop-path" style="fill: #100e1b" d="M1920,198.6V0H0v168.8c0,0,25.4-85.6,188.6-85.6s99.5,179.2,236.9,179.2c157.3,0,108-113.5,264.8-113.5c173.2,0,123.4,223,294.6,223c137.4,0,141.4-318.9,244.9-318.9c137.4,0,141.3,275.3,254.8,275.3c151.3,0,131.4-227.2,262.8-227.2C1841,101.1,1920,198.6,1920,198.6z"/>
             </svg>
 
 
             <header class="home-header">
-              <div class="container flx js-tilt-two">
-                <div class="fl-img">
-                  <img src="img/gorilla.jpg" alt="">
-                </div>
-                <div class="fl-text right">
-                  <h1>Designed with the<br /><span>Soul in mind</span></h1>
-                  <p><strong>Charlie Abbas</strong>, a Graphic Designer &amp; Illustrator living in Bristol, UK. Through listening and <strong>understanding</strong> your story and ethos, I provide designs that can spark the flame and kick-start <strong>your journey</strong> in the business realm.</p>
+              <div class="header__bg--home">&nbsp;</div>
+              <div class="main-menu--gradient">&nbsp;</div>
+              <div class="container flx flx--home">
+                <div class="fl-text n-p left">
+                  <h1 class="white">Designed with the<br /><span>Soul in mind</span></h1>
+                  <p class="white"><strong>Charlie Abbas</strong>, a Graphic Designer &amp; Illustrator living in Bristol, UK. Through listening and <strong>understanding</strong> your story and ethos, I provide designs that can spark the flame and kick-start <strong>your journey</strong> in the business realm.</p>
                   <div class="button-holder">
-                    <a href="#brand-id" class="hoverable button">
+                    <a href="#my-work" class="hoverable button white">
                       <span>Discover</span>
                     </a>
                   </div>
@@ -133,56 +127,130 @@
             </header>
 
 
-            <section class="home-bi" id="brand-id">
-              <div class="container el left flx rtl js-tilt-two">
-                <div class="fl-text">
-                  <h2>Brand Id<span>entity</span></h2>
-                  <p>It's not what your customers look at, but what they <strong>see</strong>.</p>
-                  <div class="button-holder">
-                    <a href="brand-identity.html" class="hoverable button white link">
-                      <span>Explore</span>
-                    </a>
+            <section class="home-work" id="my-work">
+              <!-- <div class="container">
+                <h2>My <span>Work</span></h2>
+                <p>Brand Identity Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates maiores ad facere, aliquam facilis velit modi.</p>
+              </div> -->
+
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide--cyberox">
+                      <div class="container el flx ltr">
+                        <div class="fl-img">
+                          <div class="work-logo--home" data-swiper-parallax="38%">
+                            <img src="img/cyberox-home.png" alt="">
+                          </div>
+                        </div>
+                        <div class="fl-text" data-swiper-parallax="-38%">
+                          <h2><span>Cyber</span>Ox</h2>
+                          <p>It's not what your customers look at, but what they <strong>see</strong>.</p>
+                          <div class="button-holder">
+                            <a href="cyberox.html" class="hoverable button white link">
+                              <span>Explore</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide--studiosurf">
+                      <div class="container el flx rtl">
+                        <div class="fl-text" data-swiper-parallax="-38%">
+                          <h2>Studio<span>Surf</span></h2>
+                          <p>It's not what your customers look at, but what they <strong>see</strong>.</p>
+                          <div class="button-holder">
+                            <a href="studiosurf.html" class="hoverable button white link">
+                              <span>Explore</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="fl-img">
+                          <div class="work-logo--home" data-swiper-parallax="38%">
+                            <img src="img/studiosurf-home.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide--cxption">
+                      <div class="container el flx ltr">
+                        <div class="fl-img">
+                          <div class="work-logo--home" data-swiper-parallax="38%">
+                            <img src="img/cxption-home.png" alt="">
+                          </div>
+                        </div>
+                        <div class="fl-text" data-swiper-parallax="-38%">
+                          <h2>C<span>x</span>ption</h2>
+                          <p>It's not what your customers look at, but what they <strong>see</strong>.</p>
+                          <div class="button-holder">
+                            <a href="cxption.html" class="hoverable button white link">
+                              <span>Explore</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide--arktos">
+                      <div class="container el flx rtl">
+                        <div class="fl-text" data-swiper-parallax="-38%">
+                          <h2>Arktos<span> Design</span></h2>
+                          <p>It's not what your customers look at, but what they <strong>see</strong>.</p>
+                          <div class="button-holder">
+                            <a href="arktos-design.html" class="hoverable button white link">
+                              <span>Explore</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="fl-img">
+                          <div class="work-logo--home" data-swiper-parallax="38%">
+                            <img src="img/arktos-home.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide slide--jansu">
+                      <div class="container el flx ltr">
+                        <div class="fl-img">
+                          <div class="work-logo--home" data-swiper-parallax="38%">
+                            <img src="img/jansu-home.png" alt="">
+                          </div>
+                        </div>
+                        <div class="fl-text" data-swiper-parallax="-38%">
+                          <h2>Jan<span>su</span></h2>
+                          <p>It's not what your customers look at, but what they <strong>see</strong>.</p>
+                          <div class="button-holder">
+                            <a href="brand-identity.html" class="hoverable button white link">
+                              <span>Explore</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
+
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev swiper-button-white"></div>
+                  <div class="swiper-button-next swiper-button-white"></div>
                 </div>
-                <div class="fl-img cyberox-home">
-                  <img src="img/cyberox-home.png" alt="">
-                </div>
-              </div>
+
             </section>
 
-            <section class="home-pd">
-              <div class="container el flx rtr">
-                <div class="fl-text js-tilt-two">
-                  <h2><a href="test.html" class="link">Product <span>Design</span></a></h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo libero provident, fugiat expedita. Vitae non reiciendis ex nemo ratione. consequuntur nam voluptatibus illum hic modi dolore inventore. Impedit, ut, at.</p>
-                  <div class="button-holder">
-                    <a href="product-design.html" class="button white link hoverable">
-                      <span>Find Out More</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="home-fw">
-              <div class="container el left flx rtl js-tilt-two">
-                <div class="fl-text">
-                  <h2>Freelance <span>Work</span></h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo libero provident, fugiat expedita. Vitae non reiciendis ex nemo ratione, consequuntur nam voluptatibus illum hic modi dolore inventore. Impedit, ut, at.</p>
-                  <div class="button-holder">
-                    <a href="#" class="button link">
-                      <span>View</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="fl-img tiger-home">
-                  <img src="img/tiger.png" alt="">
-                </div>
+            <section class="services bg--dark">
+              <div class="container">
+                <h2>Let's<span> Chat</span></h2>
+                <p>Need to kick start your brand with a fresh design? Contact me</p>
+                <h3>Services</h3>
+                <h3>Contact</h3>
               </div>
             </section>
 
             <footer>
-              <div class="container flx el js-tilt-two">
+              <div class="container flx el">
                   <div class="fl-logo">
                     <a href="/" title="ENTITY Design" class="logo-holder hoverable">
                       <svg class="footer-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 466.1 104.3" style="enable-background:new 0 0 466.1 104.3;" xml:space="preserve">
@@ -198,11 +266,11 @@
                     <a href="mailto:" class="mail-link hoverable"><span>hello@soulinmind.design</span></a>
                   </div>
                   <div class="fl-contact">
-                    <ul class="footer-nav">
+                    <!-- <ul class="footer-nav">
                       <li><a href="brand-identity.html" class="hoverable"><span>Brand Identity</span></a></li>
                       <li><a href="product-design.html" class="hoverable"><span>Product Design</span></a></li>
                       <li><a href="freelance.html" class="hoverable"><span>Freelance</span></a></li>
-                    </ul>
+                    </ul> -->
                     <ul class="footer-contact">
                       <li><a href="#" class="hoverable"><span class="nav-icon fb"><i class="fa fa-facebook"></i></span></a></li>
                       <li><a href="#" class="hoverable"><span class="nav-icon ig"><i class="fa fa-instagram"></i></span></a></li>
@@ -222,20 +290,11 @@
 
 
 
-
-
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="js/jquery.smoothState.min.js"></script>
-      <script src="js/in-view.min.js"></script>
-      <script src="js/headroom.min.js"></script>
-      <script src="js/tilt.jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-      <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/81395/CustomEase.min.js"></script>
-      <script src="js/sticky.min.js"></script>
-      <script src="js/lazyload.min.js"></script>
-      <script src="js/rellax.min.js"></script>
+      <script src="js/vendor-dist.js"></script>
+      <script src="js/lazysizes.min.js" async=""></script>
       <script src="js/site-dist.js"></script>
 
 </body>
 </html>
+
+<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/81395/CustomEase.min.js"></script> -->
