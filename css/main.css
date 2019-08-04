@@ -698,6 +698,9 @@ header {
   height: 100vh;
   min-height: 740px;
   max-height: 1080px; }
+  .case-header .container {
+    padding-left: 22px;
+    padding-right: 22px; }
   .case-header h1 {
     font-size: 4.32em;
     line-height: 1; }

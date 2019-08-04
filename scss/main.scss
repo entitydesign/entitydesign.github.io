@@ -796,6 +796,10 @@ header {
   height: 100vh;
   min-height: 740px;
   max-height: 1080px;
+  .container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
   h1 {
     @include bigheader;
     line-height: 1;
