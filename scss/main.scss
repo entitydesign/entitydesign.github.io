@@ -26,6 +26,15 @@ $dark: #100e1b;
   }
 }
 @mixin navText {
+  font-size: 2.68em;
+  @media screen and (max-width: 992px) {
+    font-size: 1.98em;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1.42em;
+  }
+}
+@mixin projectText {
   font-size: 1.88em;
   @media screen and (max-width: 992px) {
     font-size: 1.42em;
@@ -335,7 +344,7 @@ nav {
   // top: 100%;
   // top: calc(22px + 4vw);
   top: 98px;
-  padding-top: calc(3vw + 3vh);
+  padding-top: calc(1.2vw + 1.2vh);
   padding-bottom: 133px;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -368,7 +377,7 @@ nav {
       a {
         display: inline-block;
         height: 100%;
-        padding: 2px 12px;
+        padding: 2px 6px;
         &:hover {
           span.style-nav {
             // letter-spacing: 0.088em;
@@ -878,7 +887,7 @@ section.project-next-prev {
       h4 {
         text-transform: uppercase;
         color: $dark;
-        @include navText;
+        @include projectText;
         position: relative;
         display: block;
         line-height: 1.1;

@@ -247,7 +247,7 @@ body .cursor__ball--big circle {
 nav {
   position: fixed;
   top: 98px;
-  padding-top: calc(3vw + 3vh);
+  padding-top: calc(1.2vw + 1.2vh);
   padding-bottom: 133px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
@@ -287,7 +287,7 @@ nav {
       nav ul li a {
         display: inline-block;
         height: 100%;
-        padding: 2px 12px; }
+        padding: 2px 6px; }
         nav ul li a:hover span.style-nav:after {
           -webkit-transform: translate(-50%, 0%) scaleX(1);
           -ms-transform: translate(-50%, 0%) scaleX(1);
@@ -297,7 +297,7 @@ nav {
         nav ul li a.active span.style-nav:after {
           display: none; }
         nav ul li a span.style-nav {
-          font-size: 1.88em;
+          font-size: 2.68em;
           text-transform: uppercase;
           font-weight: 800;
           word-spacing: 0.14em;
@@ -307,10 +307,10 @@ nav {
           padding-bottom: 8px; }
           @media screen and (max-width: 992px) {
             nav ul li a span.style-nav {
-              font-size: 1.42em; } }
+              font-size: 1.98em; } }
           @media screen and (max-width: 480px) {
             nav ul li a span.style-nav {
-              font-size: 1.02em; } }
+              font-size: 1.42em; } }
           nav ul li a span.style-nav span {
             font-size: 0.88em;
             font-weight: 600;
