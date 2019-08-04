@@ -1963,7 +1963,10 @@ span.numeral {
   }
   .work-logo--home {
     img {
-      max-width: 220px !important;
+      width: 100%;
+      max-width: 178px !important;
+      min-width: auto;
+      min-height: auto;
     }
   }
 

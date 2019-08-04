@@ -1875,7 +1875,10 @@ span.numeral {
     .case-header.case-header--studiosurf {
       background-position: center bottom !important; }
   .work-logo--home img {
-    max-width: 220px !important; }
+    width: 100%;
+    max-width: 178px !important;
+    min-width: auto;
+    min-height: auto; }
   footer {
     height: 540px; }
     footer .container.flx {
