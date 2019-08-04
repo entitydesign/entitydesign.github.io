@@ -81,25 +81,30 @@ $(function(){
         };
         init();
         var globalLink = $(".hoverable");
+        var swiperSlide = $(".swiper-slide");
+
+        swiperSlide.mouseenter(function(){
+          TweenMax.to($cursorArrows, 1.4, {autoAlpha: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3)});
+        });
+        swiperSlide.mouseleave(function(){
+          TweenMax.to($cursorArrows, 0.8, {autoAlpha: 0, scale: 0.44, ease: Power4.easeOut});
+        });
+
         globalLink.mouseenter(function() {
           TweenMax.to($bigBall, 1.1, {
             scale: 2.8, ease: Elastic.easeOut.config(1, 0.5) });
-            TweenMax.to($bigBallCircle, 0.4, {
+          TweenMax.to($bigBallCircle, 0.4, {
               fill:"rgba(255,255,255,1)", ease:Power2.easeOut });
+          TweenMax.to($cursorArrows, 0.4, {scale: 0, ease:Power3.easeOut});
         });
         globalLink.mouseleave(function() {
           TweenMax.to($bigBall, 1.2, {
             fill: "rgba(255,255,255,0)", scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
             TweenMax.to($bigBallCircle, 0.4, {
             fill:"rgba(255,255,255,0)", ease:Power2.easeOut });
+            TweenMax.to($cursorArrows, 0.4, {scale: 1, ease:Power3.easeOut});
         });
-        var swiperSlide = $(".swiper-slide");
-        swiperSlide.mouseenter(function(){
-          TweenMax.to($cursorArrows, 0.3, {autoAlpha: 1, scale: 1, ease:Power3.easeOut});
-        });
-        swiperSlide.mouseleave(function(){
-          TweenMax.to($cursorArrows, 0.3, {autoAlpha: 0, scale: 0.66, ease:Power3.easeOut});
-        });
+
         $("#main").mousedown(function(){
           TweenMax.to($bigBall, 0.2, {
             scale: 0.6, ease: Power2.easeOut });
