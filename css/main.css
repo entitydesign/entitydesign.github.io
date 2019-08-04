@@ -579,12 +579,15 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.108em;
     line-height: 1.16; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 992px), screen and (max-height: 580px) {
       header h1 {
-        font-size: 3.48em; } }
-    @media screen and (max-width: 480px) {
+        font-size: 3.18em; } }
+    @media screen and (max-width: 720px) {
       header h1 {
-        font-size: 2.78em; } }
+        font-size: 2.68em; } }
+    @media screen and (max-width: 580px) {
+      header h1 {
+        font-size: 1.92em; } }
     header h1 span {
       letter-spacing: 0.012em;
       font-size: 0.86em;
@@ -616,12 +619,15 @@ header {
   .case-header h1 {
     font-size: 4.68em;
     line-height: 1; }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 992px), screen and (max-height: 580px) {
       .case-header h1 {
-        font-size: 3.48em; } }
-    @media screen and (max-width: 480px) {
+        font-size: 3.18em; } }
+    @media screen and (max-width: 720px) {
       .case-header h1 {
-        font-size: 2.78em; } }
+        font-size: 2.68em; } }
+    @media screen and (max-width: 580px) {
+      .case-header h1 {
+        font-size: 1.92em; } }
   .case-header.case-header--cyberox {
     background: #100e1b url("../img/cyberox-bg.jpg");
     background-size: cover;
@@ -1613,7 +1619,7 @@ p {
         font-size: 1.88em; } }
   .swiper-slide .container {
     max-width: 1280px;
-    padding: 0 22px !important; }
+    padding: 0 34px !important; }
 
 .swiper-pagination {
   position: absolute;
@@ -1713,38 +1719,40 @@ span.numeral {
   header, section {
     min-height: auto;
     height: 100vh; }
-  header .container.flx {
-    height: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    header .container.flx .fl-text {
-      padding-left: 0 !important; }
-  header h1 {
-    width: auto;
-    margin: 0 0;
-    text-transform: uppercase;
-    letter-spacing: 0.108em;
-    line-height: 1.2; }
-    header h1 span {
-      letter-spacing: 0.012em;
-      font-size: 0.91em;
-      font-weight: 600;
-      font-family: 'LuloCleanOutline-Bold', sans-serif; }
-  header p {
-    font-weight: 300;
-    display: block;
-    font-size: 1.12em;
-    margin: 26px 0 0 0; } }
-  @media screen and (max-width: 992px) and (max-width: 992px) {
+  header {
+    min-height: 740px; }
+    header .container.flx {
+      height: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      header .container.flx .fl-text {
+        padding-left: 0 !important; }
+    header h1 {
+      width: auto;
+      margin: 0 0;
+      text-transform: uppercase;
+      letter-spacing: 0.108em;
+      line-height: 1.2; }
+      header h1 span {
+        letter-spacing: 0.012em;
+        font-size: 0.91em;
+        font-weight: 600;
+        font-family: 'LuloCleanOutline-Bold', sans-serif; }
     header p {
-      font-size: 0.98em; } }
-  @media screen and (max-width: 992px) and (max-width: 480px) {
-    header p {
-      font-size: 0.8em; } }
+      font-weight: 300;
+      display: block;
+      font-size: 1.12em;
+      margin: 26px 0 0 0; } }
+    @media screen and (max-width: 992px) and (max-width: 992px) {
+      header p {
+        font-size: 0.98em; } }
+    @media screen and (max-width: 992px) and (max-width: 480px) {
+      header p {
+        font-size: 0.8em; } }
 
 @media screen and (max-width: 992px) {
   section .container.flx {
@@ -1828,6 +1836,11 @@ span.numeral {
           margin-bottom: 24px; }
           section.project-next-prev ul.work-items li .work-item__wrap--img img {
             margin: 0 auto; }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    background-size: 24px 24px !important; }
   .swiper-container {
     min-height: auto; }
   .swiper-slide {

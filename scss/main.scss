@@ -6,11 +6,14 @@ $dark: #100e1b;
 
 @mixin bigheader {
   font-size: 4.68em;
-  @media screen and (max-width: 992px) {
-    font-size: 3.48em;
+  @media screen and (max-width: 992px), screen and (max-height: 580px) {
+    font-size: 3.18em;
   }
-  @media screen and (max-width: 480px) {
-    font-size: 2.78em;
+  @media screen and (max-width: 720px) {
+    font-size: 2.68em;
+  }
+  @media screen and (max-width: 580px) {
+    font-size: 1.92em;
   }
 }
 @mixin heading2 {
@@ -1640,7 +1643,7 @@ p {
    }
    .container {
       max-width: 1280px;
-      padding: 0 22px !important;
+      padding: 0 34px !important;
    }
   //  .fl-img {
   //    display: none !important
@@ -1798,6 +1801,7 @@ span.numeral {
     height: 100vh;
   }
   header {
+    min-height: 740px;
     .container.flx {
       height: 100%;
       // padding: 88px 22px 66px 22px !important;
@@ -1906,6 +1910,12 @@ span.numeral {
     }
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    background-size: 24px 24px !important;
+  }
 
   .swiper-container {
     min-height: auto;
