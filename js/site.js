@@ -149,8 +149,8 @@ inView('.el').on('enter', function(el){
     var headroom  = new Headroom(headroomMenu, {
       "offset": 120,
       "tolerance": {
-        up: 0,
-        down: 0
+        up: 20,
+        down: 20
       },
       "classes": {
         "initial": "topmenu--fixed",

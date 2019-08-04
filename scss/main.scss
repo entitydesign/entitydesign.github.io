@@ -13,16 +13,16 @@ $dark: #100e1b;
     font-size: 2.68em;
   }
   @media screen and (max-width: 580px) {
-    font-size: 1.92em;
+    font-size: 2.48em;
   }
 }
 @mixin heading2 {
   font-size: 3.88em;
   @media screen and (max-width: 992px) {
-    font-size: 2.68em;
+    font-size: 3.08em;
   }
   @media screen and (max-width: 480px) {
-    font-size: 1.88em;
+    font-size: 2.62em;
   }
 }
 @mixin navText {
@@ -47,10 +47,10 @@ $dark: #100e1b;
 @mixin paragraph {
   font-size: 1.12em;
   @media screen and (max-width: 992px) {
-    font-size: 0.98em;
+    font-size: 1.04em;
   }
   @media screen and (max-width: 480px) {
-    font-size: 0.8em;
+    font-size: 0.96em;
   }
 }
 
@@ -372,7 +372,7 @@ nav {
   // top: 100%;
   // top: calc(22px + 4vw);
   top: 98px;
-  padding-top: calc(1.8vw + 1.8vh);
+  padding-top: calc(48px + 2vw + 4vh);
   padding-bottom: 133px;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -393,7 +393,7 @@ nav {
       list-style-type: none;
       color: #FFFFFF;
       display: block;
-      margin: calc(12px + 1.3vh + 1.3vw) auto;
+      margin: calc(12px + 1.8vh + 1.3vw) auto;
       &:first-child {margin-top: 0;}
       &:last-child {margin-bottom: 0;}
       opacity: 0;
@@ -626,7 +626,7 @@ nav {
 }
 
 .menu-open {
-
+  overflow-y: hidden !important;
   .main-menu {
     position: fixed !important;
     top: 0 !important;
@@ -829,6 +829,14 @@ header {
 header.home-header {
   h1 {
     margin-top: calc(54px + 3vh);
+  }
+  @media screen and (max-width: 992px) {
+    h1 {
+      margin-top: calc(12px + 1.5vh);
+    }
+    p {
+      max-width: 22.8rem !important;
+    }
   }
 }
 
@@ -1805,7 +1813,7 @@ span.numeral {
   //   }
   // }
   .header__bg--home {
-    background-position: 64% top;
+    background-position: 66% top;
   }
 
   ul.footer-nav {
@@ -1828,8 +1836,12 @@ span.numeral {
       transition-delay: 220ms;
     }
   }
-
-
+  .attract-hover-easing, .attract-hover {
+    transform: translate(0) !important
+  }
+  span.numeral {
+    font-size: 1.442em;
+  }
 
   h2 {
     padding-top: 0px;

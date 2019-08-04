@@ -264,7 +264,7 @@ body .cursor__ball--big circle {
 nav {
   position: fixed;
   top: 98px;
-  padding-top: calc(1.8vw + 1.8vh);
+  padding-top: calc(48px + 2vw + 4vh);
   padding-bottom: 133px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
@@ -289,7 +289,7 @@ nav {
       list-style-type: none;
       color: #FFFFFF;
       display: block;
-      margin: calc(12px + 1.3vh + 1.3vw) auto;
+      margin: calc(12px + 1.8vh + 1.3vw) auto;
       opacity: 0;
       -webkit-transform: translateY(48px);
       -ms-transform: translateY(48px);
@@ -535,19 +535,20 @@ nav {
 .f-b {
   fill: #FFFFFF; }
 
-.menu-open .main-menu {
-  position: fixed !important;
-  top: 0 !important;
-  -webkit-transform: translateY(0%) !important;
-  -ms-transform: translateY(0%) !important;
-  transform: translateY(0%) !important;
-  background-color: #100e1b !important; }
-
-.menu-open .main-menu,
-.menu-open nav {
-  -webkit-transition: background 320ms ease-out, opacity 320ms ease-out !important;
-  -o-transition: background 320ms ease-out, opacity 320ms ease-out !important;
-  transition: background 320ms ease-out, opacity 320ms ease-out !important; }
+.menu-open {
+  overflow-y: hidden !important; }
+  .menu-open .main-menu {
+    position: fixed !important;
+    top: 0 !important;
+    -webkit-transform: translateY(0%) !important;
+    -ms-transform: translateY(0%) !important;
+    transform: translateY(0%) !important;
+    background-color: #100e1b !important; }
+  .menu-open .main-menu,
+  .menu-open nav {
+    -webkit-transition: background 320ms ease-out, opacity 320ms ease-out !important;
+    -o-transition: background 320ms ease-out, opacity 320ms ease-out !important;
+    transition: background 320ms ease-out, opacity 320ms ease-out !important; }
 
 .main-menu.has-open {
   -webkit-box-shadow: 0px -4px 24px rgba(0, 0, 0, 0) !important;
@@ -657,7 +658,7 @@ header {
         font-size: 2.68em; } }
     @media screen and (max-width: 580px) {
       header h1 {
-        font-size: 1.92em; } }
+        font-size: 2.48em; } }
     header h1 span {
       letter-spacing: 0.012em;
       font-size: 0.86em;
@@ -697,7 +698,7 @@ header {
         font-size: 2.68em; } }
     @media screen and (max-width: 580px) {
       .case-header h1 {
-        font-size: 1.92em; } }
+        font-size: 2.48em; } }
   .case-header.case-header--cyberox {
     background: #100e1b url("../img/cyberox-bg.jpg");
     background-size: cover;
@@ -726,6 +727,12 @@ header {
 
 header.home-header h1 {
   margin-top: calc(54px + 3vh); }
+
+@media screen and (max-width: 992px) {
+  header.home-header h1 {
+    margin-top: calc(12px + 1.5vh); }
+  header.home-header p {
+    max-width: 22.8rem !important; } }
 
 section {
   position: relative;
@@ -1082,10 +1089,10 @@ h2, h3 {
   line-height: 1.1; }
   @media screen and (max-width: 992px) {
     h2, h3 {
-      font-size: 2.68em; } }
+      font-size: 3.08em; } }
   @media screen and (max-width: 480px) {
     h2, h3 {
-      font-size: 1.88em; } }
+      font-size: 2.62em; } }
   h2 span, h3 span {
     font-size: 0.88em;
     font-weight: 600;
@@ -1104,10 +1111,10 @@ p {
   max-width: 640px; }
   @media screen and (max-width: 992px) {
     p {
-      font-size: 0.98em; } }
+      font-size: 1.04em; } }
   @media screen and (max-width: 480px) {
     p {
-      font-size: 0.8em; } }
+      font-size: 0.96em; } }
 
 .grid {
   clear: both;
@@ -1362,10 +1369,10 @@ p {
     color: #100e1b; }
     @media screen and (max-width: 992px) {
       .case-study h4 {
-        font-size: 2.68em; } }
+        font-size: 3.08em; } }
     @media screen and (max-width: 480px) {
       .case-study h4 {
-        font-size: 1.88em; } }
+        font-size: 2.62em; } }
   .case-study h2, .case-study h3 {
     color: #100e1b;
     font-size: 3.88em;
@@ -1378,10 +1385,10 @@ p {
     letter-spacing: 0.08em; }
     @media screen and (max-width: 992px) {
       .case-study h2, .case-study h3 {
-        font-size: 2.68em; } }
+        font-size: 3.08em; } }
     @media screen and (max-width: 480px) {
       .case-study h2, .case-study h3 {
-        font-size: 1.88em; } }
+        font-size: 2.62em; } }
     .case-study h2 span, .case-study h3 span {
       font-size: 89%;
       font-family: 'LuloCleanOutline-Bold', sans-serif;
@@ -1397,10 +1404,10 @@ p {
     padding-bottom: 22px; }
     @media screen and (max-width: 992px) {
       .case-study p {
-        font-size: 0.98em; } }
+        font-size: 1.04em; } }
     @media screen and (max-width: 480px) {
       .case-study p {
-        font-size: 0.8em; } }
+        font-size: 0.96em; } }
   .case-study .c-2 {
     overflow: visible; }
 
@@ -1686,10 +1693,10 @@ p {
     font-size: 3.88em; }
     @media screen and (max-width: 992px) {
       .swiper-slide h2 {
-        font-size: 2.68em; } }
+        font-size: 3.08em; } }
     @media screen and (max-width: 480px) {
       .swiper-slide h2 {
-        font-size: 1.88em; } }
+        font-size: 2.62em; } }
   .swiper-slide .container {
     max-width: 1280px;
     padding: 0 34px !important; }
@@ -1760,7 +1767,7 @@ span.numeral {
 
 @media screen and (max-width: 992px) {
   .header__bg--home {
-    background-position: 64% top; }
+    background-position: 66% top; }
   ul.footer-nav {
     display: none !important; }
   .container {
@@ -1777,6 +1784,12 @@ span.numeral {
     -webkit-transition-delay: 220ms;
     -o-transition-delay: 220ms;
     transition-delay: 220ms; }
+  .attract-hover-easing, .attract-hover {
+    -webkit-transform: translate(0) !important;
+    -ms-transform: translate(0) !important;
+    transform: translate(0) !important; }
+  span.numeral {
+    font-size: 1.442em; }
   h2 {
     padding-top: 0px; }
     h2 span {
@@ -1822,10 +1835,10 @@ span.numeral {
       margin: 26px 0 0 0; } }
     @media screen and (max-width: 992px) and (max-width: 992px) {
       header p {
-        font-size: 0.98em; } }
+        font-size: 1.04em; } }
     @media screen and (max-width: 992px) and (max-width: 480px) {
       header p {
-        font-size: 0.8em; } }
+        font-size: 0.96em; } }
 
 @media screen and (max-width: 992px) {
   section .container.flx {
