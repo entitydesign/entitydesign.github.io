@@ -380,13 +380,14 @@ nav {
   // top: 100%;
   // top: calc(22px + 4vw);
   top: 98px;
-  padding-top: calc(48px + 2vw + 4vh);
-  padding-bottom: 133px;
+  padding-top: calc(24px + 2vw + 4vh);
+  padding-bottom: 164px !important;
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 99999 !important;
   width: 100%;
   height: 100vh;
+  max-height: calc(100vh - 98px);
   overflow-y: hidden;
   pointer-events: none;
   opacity: 0;
@@ -426,7 +427,7 @@ nav {
         }
         &:active, &.active {
           span.style-nav {
-            opacity: 0.5 !important;
+            opacity: 0.33 !important;
           }
         }
         &.active {
@@ -1995,7 +1996,7 @@ span.numeral {
         min-height: auto;
         height: auto;
         text-align: center;
-        margin: 12% auto !important;
+        margin: 8% auto !important;
 
         .button-holder {
           margin-top: 12px;
