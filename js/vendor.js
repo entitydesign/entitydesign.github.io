@@ -6,3 +6,4 @@
 //@prepros-append TweenMax.min.js
 //@prepros-append CustomEase.min.js
 //@prepros-append sticky.min.js
+//@prepros-append attractHover.js
