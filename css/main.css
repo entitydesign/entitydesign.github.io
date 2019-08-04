@@ -1647,11 +1647,11 @@ p {
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: calc(50% - 12px);
+  top: calc(50% - 18px);
   width: 56px;
   height: 66px;
   background-repeat: no-repeat;
-  background-size: 34px 34px !important;
+  background-size: 30px 30px !important;
   pointer-events: all;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -1693,11 +1693,11 @@ p {
 .swiper-button-prev {
   background-position: left center;
   left: auto;
-  right: 54px; }
+  right: 76px; }
 
 .swiper-button-next {
   background-position: right center;
-  right: 0px; }
+  right: 22px; }
 
 .swiper-wrapper,
 .swiper-slide {
