@@ -1590,47 +1590,13 @@ p {
   align-items: center;
   position: relative; }
 
-.swiper-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 40;
-  height: 20%;
-  pointer-events: none;
-  opacity: 1; }
-  .swiper-overlay.top {
-    top: 0;
-    bottom: auto;
-    background: #100e1b;
-    background: -moz-linear-gradient(top, #100e1b 0%, rgba(16, 14, 27, 0) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #100e1b), color-stop(100%, rgba(16, 14, 27, 0)));
-    background: -webkit-linear-gradient(top, #100e1b 0%, rgba(16, 14, 27, 0) 100%);
-    background: -o-linear-gradient(top, #100e1b 0%, rgba(16, 14, 27, 0) 100%);
-    background: -ms-linear-gradient(top, #100e1b 0%, rgba(16, 14, 27, 0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(#100e1b), to(rgba(16, 14, 27, 0)));
-    background: linear-gradient(to bottom, #100e1b 0%, rgba(16, 14, 27, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100e1b', endColorstr='#100e1b', GradientType=0 ); }
-  .swiper-overlay.bottom {
-    top: auto;
-    bottom: 0;
-    background: rgba(16, 14, 27, 0);
-    background: -moz-linear-gradient(top, rgba(16, 14, 27, 0) 0%, #100e1b 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(16, 14, 27, 0)), color-stop(100%, #100e1b));
-    background: -webkit-linear-gradient(top, rgba(16, 14, 27, 0) 0%, #100e1b 100%);
-    background: -o-linear-gradient(top, rgba(16, 14, 27, 0) 0%, #100e1b 100%);
-    background: -ms-linear-gradient(top, rgba(16, 14, 27, 0) 0%, #100e1b 100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 14, 27, 0)), to(#100e1b));
-    background: linear-gradient(to bottom, rgba(16, 14, 27, 0) 0%, #100e1b 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100e1b', endColorstr='#100e1b', GradientType=0 ); }
-
 .swiper-slide {
   height: 100%;
   width: 100%;
   height: 100vh;
   max-height: 992px;
   min-height: 680px;
-  padding: 0 22px;
+  padding: 64px 22px;
   position: relative;
   overflow-x: hidden;
   display: inline-block !important; }
@@ -1651,7 +1617,7 @@ p {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 48px !important;
+  bottom: 88px !important;
   left: 50% !important;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
