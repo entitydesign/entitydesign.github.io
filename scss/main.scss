@@ -876,9 +876,9 @@ section.project-next-prev {
         text-transform: uppercase;
         color: $dark;
         @include navText;
-        line-height: 0.85;
         position: relative;
         display: block;
+        line-height: 1.1;
         padding-top: 22px;
         // padding-left: 11px;
         margin: 0 0;

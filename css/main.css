@@ -742,9 +742,9 @@ section.project-next-prev {
         text-transform: uppercase;
         color: #100e1b;
         font-size: 1.88em;
-        line-height: 0.85;
         position: relative;
         display: block;
+        line-height: 1.1;
         padding-top: 22px;
         margin: 0 0;
         font-weight: 800;
