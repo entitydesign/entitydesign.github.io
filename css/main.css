@@ -1465,17 +1465,22 @@ p {
   transform: translateY(0px);
   opacity: 1; }
 
-.el.anim h1, .el.anim h2 {
+.el.anim h1, .el.anim h2, .el.anim ul.work-items li:first-child {
   -webkit-transition-delay: 200ms;
   -o-transition-delay: 200ms;
   transition-delay: 200ms; }
 
-.el.anim p, .el.anim ul.work-items li:first-child {
+.el.anim section.project-next-prev h2 {
+  -webkit-transition-delay: 0ms !important;
+  -o-transition-delay: 0ms !important;
+  transition-delay: 0ms !important; }
+
+.el.anim p, .el.anim ul.work-items li:last-child {
   -webkit-transition-delay: 420ms;
   -o-transition-delay: 420ms;
   transition-delay: 420ms; }
 
-.el.anim .button-holder, .el.anim ul.work-items li:last-child {
+.el.anim .button-holder {
   -webkit-transition-delay: 640ms;
   -o-transition-delay: 640ms;
   transition-delay: 640ms; }
@@ -1888,6 +1893,8 @@ span.numeral {
       background-position: 75% center !important; }
       .case-header.case-header--arktos h1 {
         margin-top: -15vh; }
+    .case-header.case-header--studiosurf {
+      background-position: center bottom !important; }
   .work-logo--home img {
     max-width: 220px !important; }
   footer {
