@@ -1185,7 +1185,7 @@ h2, h3 {
   font-weight: 800;
   word-spacing: 0.14em;
   letter-spacing: 0.14em;
-  line-height: 1.1;
+  line-height: 1.2;
   span {
     font-size: 0.88em;
     font-weight: 600;
@@ -1375,7 +1375,7 @@ p {
 // 743
 .case-study {
   position: relative;
-  padding: 66px 0;
+  padding: 66px 0 0 0;
   min-height: auto;
   height: auto;
   display: block !important;
@@ -1413,7 +1413,7 @@ p {
   h2, h3 {
     color: $dark;
     @include heading2;
-    line-height: 0.85;
+    line-height: 0.95;
     position: relative;
     display: block;
     padding-top: 22px;

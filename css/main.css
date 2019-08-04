@@ -1086,7 +1086,7 @@ h2, h3 {
   font-weight: 800;
   word-spacing: 0.14em;
   letter-spacing: 0.14em;
-  line-height: 1.1; }
+  line-height: 1.2; }
   @media screen and (max-width: 992px) {
     h2, h3 {
       font-size: 3.08em; } }
@@ -1337,7 +1337,7 @@ p {
 
 .case-study {
   position: relative;
-  padding: 66px 0;
+  padding: 66px 0 0 0;
   min-height: auto;
   height: auto;
   display: block !important;
@@ -1376,7 +1376,7 @@ p {
   .case-study h2, .case-study h3 {
     color: #100e1b;
     font-size: 3.88em;
-    line-height: 0.85;
+    line-height: 0.95;
     position: relative;
     display: block;
     padding-top: 22px;
