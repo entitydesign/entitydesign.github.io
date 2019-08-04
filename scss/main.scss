@@ -92,10 +92,38 @@ a, a:visited, a:link, a:hover {
   display: inline-block;
   margin-top: -17.5px;
   padding: 35px 0;
+  &:hover {
+    .button {
+      &.white {
+        background-color: rgba(255,255,255,1);
+        span {
+          color: $dark;
+          &:after {
+            color: $dark !important;
+          }
+        }
+      }
+      transform: scale(1.05);
+      background-color: rgba(25,25,26,1);
+      span {
+        color: #FFFFFF;
+        &:after {
+          color: #FFFFFF !important
+        }
+      }
+    }
+  }
 }
 .attract-hover-easing {
-   transition: all 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+   transition: transform 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
+
+
+
+
+
+
+
 
 #main, #main * {cursor: none !important;}
 

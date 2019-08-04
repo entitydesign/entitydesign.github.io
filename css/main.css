@@ -39,11 +39,28 @@ a, a:visited, a:link, a:hover {
   display: inline-block;
   margin-top: -17.5px;
   padding: 35px 0; }
+  .attract-hover:hover .button {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    background-color: #19191a; }
+    .attract-hover:hover .button.white {
+      background-color: white; }
+      .attract-hover:hover .button.white span {
+        color: #100e1b; }
+        .attract-hover:hover .button.white span:after {
+          color: #100e1b !important; }
+    .attract-hover:hover .button span {
+      color: #FFFFFF; }
+      .attract-hover:hover .button span:after {
+        color: #FFFFFF !important; }
 
 .attract-hover-easing {
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  -o-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
 #main, #main * {
   cursor: none !important; }
