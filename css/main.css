@@ -1693,11 +1693,11 @@ p {
         font-size: 2.62em; } }
   .swiper-slide .container {
     max-width: 1280px;
-    padding: 0 34px !important; }
+    padding: 0 36px !important; }
 
 .swiper-pagination {
   position: absolute;
-  bottom: 88px !important;
+  bottom: 122px !important;
   left: 50% !important;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1927,19 +1927,40 @@ span.numeral {
             margin: 0 auto; }
   .swiper-button-prev,
   .swiper-button-next {
+    bottom: auto;
+    top: 4px;
     width: 44px;
     height: 44px;
-    background-size: 24px 24px !important; }
+    background-size: 24px 24px !important;
+    -webkit-transform: translate(0%, 0%) !important;
+    -ms-transform: translate(0%, 0%) !important;
+    transform: translate(0%, 0%) !important; }
+  .swiper-button-prev {
+    left: auto;
+    right: 52px; }
+  .swiper-button-next {
+    left: auto;
+    right: 22px; }
+  .swiper-container {
+    overflow: visible !important; }
   .swiper-container {
     min-height: auto; }
+    .swiper-container .container {
+      padding: 0 0px !important; }
   .swiper-slide {
     height: 100%;
     height: auto;
     max-height: auto;
     min-height: auto;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px; }
   .swiper-pagination {
-    display: none; }
+    bottom: 12px !important;
+    left: 32px !important;
+    -webkit-transform: translateX(0%) !important;
+    -ms-transform: translateX(0%) !important;
+    transform: translateX(0%) !important; }
   .case-header {
     padding: 88px 0; }
     .case-header .container.flx {

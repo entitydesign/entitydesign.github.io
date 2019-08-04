@@ -1713,7 +1713,7 @@ p {
    }
    .container {
       max-width: 1280px;
-      padding: 0 34px !important;
+      padding: 0 36px !important;
    }
   //  .fl-img {
   //    display: none !important
@@ -1751,7 +1751,7 @@ p {
 }
 .swiper-pagination {
 	position: absolute;
-	bottom: 88px !important;
+	bottom: 122px !important;
 	left: 50% !important;
   transform: translateX(-50%);
 	width: auto !important;
@@ -2004,13 +2004,29 @@ span.numeral {
 
   .swiper-button-prev,
   .swiper-button-next {
+    bottom: auto;
+    top: 4px;
     width: 44px;
     height: 44px;
     background-size: 24px 24px !important;
+    transform: translate(0%, 0%) !important;
   }
-
+  .swiper-button-prev {
+    left: auto;
+    right: 52px;
+  }
+  .swiper-button-next {
+    left: auto;
+    right: 22px;
+  }
+  .swiper-container {
+    overflow: visible !important;
+  }
   .swiper-container {
     min-height: auto;
+    .container {
+      padding: 0 0px !important
+    }
   }
    .swiper-slide {
      height: 100%;
@@ -2018,9 +2034,14 @@ span.numeral {
      max-height: auto;
      min-height: auto;
      overflow: hidden;
+     padding-left: 0px;
+     padding-right: 0px;
    }
    .swiper-pagination {
-     display: none;
+     // display: none;
+     bottom: 12px !important;
+     left: 32px !important;
+     transform: translateX(0%) !important;
    }
 
   .case-header {
