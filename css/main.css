@@ -104,12 +104,18 @@ a, a:visited, a:link, a:hover {
 body .cursor {
   pointer-events: none; }
 
-body .cursor__ball {
+body .cursor__ball, body .cursor__arrows {
   position: fixed;
   top: 0;
   left: 0;
   mix-blend-mode: difference;
   z-index: 999999; }
+
+body .cursor__arrows {
+  top: -16px;
+  left: -16px;
+  opacity: 0;
+  visibility: hidden; }
 
 body .cursor__ball circle {
   fill: #f7f8fa;
@@ -122,6 +128,11 @@ body .cursor__ball--big circle {
   -webkit-transform-origin: 38% 36%;
   -ms-transform-origin: 38% 36%;
   transform-origin: 38% 36%; }
+
+body .cursor__arrows path {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  stroke-miterlimit: 10; }
 
 .header {
   position: fixed;
@@ -751,8 +762,7 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     background: #100e1b;
-    padding: 64px 0;
-    min-height: 880px !important;
+    padding: 164px 0 64px 0;
     height: auto !important; }
   section.home-pd {
     background: url("../img/pd-home-bg.jpg");
@@ -1637,19 +1647,57 @@ p {
 
 .swiper-button-prev,
 .swiper-button-next {
+  top: calc(50% - 12px);
   width: 56px;
   height: 66px;
   background-repeat: no-repeat;
   background-size: 34px 34px !important;
-  pointer-events: all; }
+  pointer-events: all;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: opacity 360ms ease-out, -webkit-transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: opacity 360ms ease-out, -webkit-transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1);
+  -o-transition: opacity 360ms ease-out, transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: opacity 360ms ease-out, transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1);
+  transition: opacity 360ms ease-out, transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1), -webkit-transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition: opacity 360ms ease-out, -webkit-transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 360ms ease-out, -webkit-transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: opacity 360ms ease-out, transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 360ms ease-out, transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 360ms ease-out, transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 360ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4); }
+  .swiper-button-prev:active,
+  .swiper-button-next:active {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1);
+    transition: -webkit-transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1);
+    -o-transition: transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1);
+    transition: transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1);
+    transition: transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1), -webkit-transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1);
+    -webkit-transition: -webkit-transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: -webkit-transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 120ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 
 .swiper-button-prev {
   background-position: left center;
-  left: 16px; }
+  left: auto;
+  right: 54px; }
 
 .swiper-button-next {
   background-position: right center;
-  right: 16px; }
+  right: 0px; }
 
 .swiper-wrapper,
 .swiper-slide {
@@ -1658,7 +1706,7 @@ p {
   position: relative; }
 
 .swiper-container {
-  min-height: 100vh;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1671,9 +1719,8 @@ p {
   position: relative; }
 
 .swiper-slide {
-  height: 100%;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   max-height: 992px;
   min-height: 680px;
   padding: 64px 22px;
@@ -1697,7 +1744,7 @@ p {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 122px !important;
+  bottom: 164px !important;
   left: 50% !important;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1925,10 +1972,13 @@ span.numeral {
           margin-bottom: 24px; }
           section.project-next-prev ul.work-items li .work-item__wrap--img img {
             margin: 0 auto; }
+  .container.pre-swiper {
+    padding-bottom: 82px;
+    margin-bottom: 0 !important; }
   .swiper-button-prev,
   .swiper-button-next {
-    bottom: auto;
-    top: 4px;
+    bottom: 0;
+    top: auto;
     width: 44px;
     height: 44px;
     background-size: 24px 24px !important;
@@ -1953,9 +2003,9 @@ span.numeral {
     max-height: auto;
     min-height: auto;
     overflow: hidden;
-    padding-left: 0px;
-    padding-right: 0px; }
+    padding: 12px 0; }
   .swiper-pagination {
+    display: none;
     bottom: 12px !important;
     left: 32px !important;
     -webkit-transform: translateX(0%) !important;
@@ -1986,7 +2036,7 @@ span.numeral {
       background-position: center bottom !important; }
   .work-logo--home img {
     width: 100%;
-    max-width: 178px !important;
+    max-width: 152px !important;
     min-width: auto;
     min-height: auto; }
   footer {

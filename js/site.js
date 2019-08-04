@@ -57,6 +57,8 @@ $(function(){
         var $bigBall = document.querySelector('.cursor__ball--big');
         var $smallBall = document.querySelector('.cursor__ball--small');
         var $bigBallCircle = $('.bigBallCircle');
+        var $cursorArrows = document.querySelector('.cursor__arrows');
+        TweenMax.set($cursorArrows, {autoAlpha: 0, scale: 0.66, transformOrigin: '50% 50%'});
         TweenMax.set($bigBall, {transformOrigin:'38% 36%'});
         function onMouseMove( e ) {
            var follower = this.querySelector('.cursor__ball--small')
@@ -64,6 +66,10 @@ $(function(){
                 x: e.clientX - 3,
                 y: e.clientY - 2
             })
+            TweenMax.to($cursorArrows, 0.6, {
+              x: e.clientX - 12.5,
+              y: e.clientY - 12,
+              ease:Power3.easeOut })
               TweenMax.to($bigBall, 0.6, {
                 x: e.clientX - 12.5,
                 y: e.clientY - 12,
@@ -86,6 +92,13 @@ $(function(){
             fill: "rgba(255,255,255,0)", scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
             TweenMax.to($bigBallCircle, 0.4, {
             fill:"rgba(255,255,255,0)", ease:Power2.easeOut });
+        });
+        var swiperSlide = $(".swiper-slide");
+        swiperSlide.mouseenter(function(){
+          TweenMax.to($cursorArrows, 0.3, {autoAlpha: 1, scale: 1, ease:Power3.easeOut});
+        });
+        swiperSlide.mouseleave(function(){
+          TweenMax.to($cursorArrows, 0.3, {autoAlpha: 0, scale: 0.66, ease:Power3.easeOut});
         });
         $("#main").mousedown(function(){
           TweenMax.to($bigBall, 0.2, {
