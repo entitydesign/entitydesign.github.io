@@ -375,9 +375,16 @@ nav {
             }
           }
         }
-        &:active {
+        &:active, &.active {
           span.style-nav {
-            opacity: 0.5;
+            opacity: 0.5 !important;
+          }
+        }
+        &.active {
+          span.style-nav {
+            &:after {
+              display: none;
+            }
           }
         }
         span {

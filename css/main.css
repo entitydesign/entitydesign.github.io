@@ -292,8 +292,10 @@ nav {
           -webkit-transform: translate(-50%, 0%) scaleX(1);
           -ms-transform: translate(-50%, 0%) scaleX(1);
           transform: translate(-50%, 0%) scaleX(1); }
-        nav ul li a:active span.style-nav {
-          opacity: 0.5; }
+        nav ul li a:active span.style-nav, nav ul li a.active span.style-nav {
+          opacity: 0.5 !important; }
+        nav ul li a.active span.style-nav:after {
+          display: none; }
         nav ul li a span.style-nav {
           font-size: 1.88em;
           text-transform: uppercase;
