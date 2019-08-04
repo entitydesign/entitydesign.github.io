@@ -309,7 +309,7 @@ var button = $(".button"),
   $.attractHover(
      	'.js-attract-hover',
      	{
-     		proximity: 40,
+     		proximity: 20,
      		magnetism: 3,
      	}
      );
