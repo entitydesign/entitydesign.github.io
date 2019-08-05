@@ -746,6 +746,9 @@ header {
 header.home-header h1 {
   margin-top: 12px;
   font-size: 3.88em; }
+  @media screen and (max-width: 1340px) {
+    header.home-header h1 {
+      font-size: 3.48em; } }
   @media screen and (max-width: 992px), screen and (max-height: 580px) {
     header.home-header h1 {
       font-size: 3.08em; } }
@@ -1557,7 +1560,7 @@ p {
     box-shadow: 0px 14px 48px rgba(0, 0, 0, 0.12); }
 
 header.home-header {
-  min-height: 680px;
+  min-height: 840px;
   max-height: 1080px; }
   @media screen and (max-width: 992px) {
     header.home-header {
@@ -1588,8 +1591,8 @@ header.home-header {
   user-select: none;
   position: absolute;
   top: 0%;
-  right: -2vw;
-  width: calc(100% + 4vw);
+  right: -5vw;
+  width: calc(100% + 10vw);
   height: 83%; }
   .header__bg--home .header__head, .header__bg--home .header__stars {
     position: absolute;

@@ -6,6 +6,9 @@ $dark: #100e1b;
 
 @mixin heroHeader {
   font-size: 3.88em;
+  @media screen and (max-width: 1340px) {
+    font-size: 3.48em;
+  }
   @media screen and (max-width: 992px), screen and (max-height: 580px) {
     font-size: 3.08em;
   }
@@ -1645,7 +1648,7 @@ p {
 }
 
 header.home-header {
-  min-height: 680px;
+  min-height: 840px;
   max-height: 1080px;
   @media screen and (max-width: 992px) {
     .container {
@@ -1674,8 +1677,8 @@ header.home-header {
   position: absolute;
   // overflow: hidden;
   top: 0%;
-  right: -2vw;
-  width: calc(100% + 4vw);
+  right: -5vw;
+  width: calc(100% + 10vw);
   // height: 81.2%;
   height: 83%;
   .header__head, .header__stars {
@@ -1706,9 +1709,8 @@ header.home-header {
     background-position: right top;
     // opacity: 0.95;
   }
-  // @media screen and (max-width: 1320px) {
+  // @media screen and (max-width: 1340px) {
   //   right: -12vw;
-  //   width: calc(100% + 24vw);
   // }
   @media screen and (max-width: 992px) {
     top: -8%;
