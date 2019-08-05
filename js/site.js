@@ -170,9 +170,9 @@ $(function(){
 inView.threshold(0.4);
 inView('.el').on('enter', function(el){
   el.classList.add("anim");
-  if ($(el).hasClass("services-skills__list")) {
-    var $rect = $(".rect");
-    TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.6}, 0.44);
+  if ($(el).hasClass("service-skill__item")) {
+    var $rect = $(el).find(".rect");
+    TweenMax.to($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0});
   }
 });
 // inView('.el').on('exit', function(el){

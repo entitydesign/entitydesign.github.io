@@ -878,10 +878,10 @@ section.services {
       section.services ul.services-skills__list img, section.services ul.services-skills__list svg {
         display: block;
         width: 100%;
-        max-width: 223px;
+        max-width: 212px;
         margin: 0 0; }
       section.services ul.services-skills__list h3 {
-        font-size: 242%;
+        font-size: 233%;
         margin: -16px 0 0 0; }
         section.services ul.services-skills__list h3 span {
           display: block; }
@@ -1652,35 +1652,6 @@ p {
   transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
   transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1); }
 
-.el.services-skills__list li.service-skill__item {
-  -webkit-transform: translateY(45px);
-  -ms-transform: translateY(45px);
-  transform: translateY(45px);
-  opacity: 0;
-  -webkit-transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
-  transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
-  -o-transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
-  transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
-  transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1); }
-
-.el.services-skills__list.anim li.service-skill__item {
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
-  opacity: 1; }
-  .el.services-skills__list.anim li.service-skill__item:nth-child(1) {
-    -webkit-transition-delay: 0ms;
-    -o-transition-delay: 0ms;
-    transition-delay: 0ms; }
-  .el.services-skills__list.anim li.service-skill__item:nth-child(2) {
-    -webkit-transition-delay: 120ms;
-    -o-transition-delay: 120ms;
-    transition-delay: 120ms; }
-  .el.services-skills__list.anim li.service-skill__item:nth-child(3) {
-    -webkit-transition-delay: 240ms;
-    -o-transition-delay: 240ms;
-    transition-delay: 240ms; }
-
 .el.anim h1, .el.anim h2, .el.anim p, .el.anim .button-holder, .el.anim span.numeral, .el.anim ul.work-items li {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -1706,6 +1677,35 @@ p {
   -webkit-transition-delay: 640ms;
   -o-transition-delay: 640ms;
   transition-delay: 640ms; }
+
+.el.service-skill__item {
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  opacity: 0;
+  -webkit-transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
+  transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
+  -o-transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
+  transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
+  transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1); }
+
+.el.service-skill__item.anim {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1; }
+  .el.service-skill__item.anim:nth-child(1) {
+    -webkit-transition-delay: 0ms;
+    -o-transition-delay: 0ms;
+    transition-delay: 0ms; }
+  .el.service-skill__item.anim:nth-child(2) {
+    -webkit-transition-delay: 120ms;
+    -o-transition-delay: 120ms;
+    transition-delay: 120ms; }
+  .el.service-skill__item.anim:nth-child(3) {
+    -webkit-transition-delay: 240ms;
+    -o-transition-delay: 240ms;
+    transition-delay: 240ms; }
 
 .img-holder {
   position: relative;
