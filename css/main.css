@@ -848,12 +848,12 @@ section.services {
     max-width: 223px;
     margin: 0 0 24px 0; }
   section.services h3 {
-    margin: -12px 0 0 0;
+    margin: 0 0;
     font-size: 242%; }
     section.services h3 span {
       display: block; }
   section.services .button-holder {
-    margin-top: 6px; }
+    margin-top: 12px; }
   section.services h5 {
     display: inline-block;
     margin: 44px 0 4px 0;

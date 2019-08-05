@@ -128,8 +128,6 @@ $(function(){
     }
     iconWipe();
 
-
-
     cursorInit();
 
     $(function(){
@@ -164,9 +162,6 @@ $(function(){
         });
       }
     });
-
-
-
 
 
 inView.threshold(0.4);
