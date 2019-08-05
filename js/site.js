@@ -117,7 +117,7 @@ $(function(){
             scale: 1, ease: Power2.easeOut });
         });
         $.attractHover('.js-attract-hover',{proximity: 25,magnetism: 2,});
-        $.attractHover('.js-attract-hover--alt', {proximity: 100, magnetism: 2,});
+        $.attractHover('.js-attract-hover--alt', {proximity: 70, magnetism: 2,});
       }
     }
 
@@ -175,8 +175,6 @@ inView('.el').on('enter', function(el){
   if ($(el).hasClass("service-skill__item")) {
     var $rect = $(el).find(".rect");
     var $svg = $(el).find("svg");
-    TweenMax.set($svg, {x: -32});
-    TweenMax.staggerTo($svg, 2.6, {x: 0, ease:Power4.easeOut}, 0.48);
     TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.3}, 0.48);
   }
 });

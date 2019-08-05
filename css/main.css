@@ -818,7 +818,7 @@ section.services {
       -ms-flex: 1;
       flex: 1;
       margin: 48px 0;
-      padding: 24px 0; }
+      padding: 0 0; }
       section.services ul.services-skills__list li path {
         fill: none; }
       section.services ul.services-skills__list li#brand-identity svg rect {
@@ -834,7 +834,7 @@ section.services {
       section.services ul.services-skills__list li#product-design h5 {
         color: #D20047 !important; }
     section.services ul.services-skills__list ul.services__list {
-      margin: 24px 0; }
+      margin: 18px 0; }
       section.services ul.services-skills__list ul.services__list li {
         color: #FFFFFF;
         opacity: 0.75;
@@ -848,12 +848,15 @@ section.services {
     max-width: 223px;
     margin: 0 0 24px 0; }
   section.services h3 {
+    margin: -12px 0 0 0;
     font-size: 242%; }
     section.services h3 span {
       display: block; }
+  section.services .button-holder {
+    margin-top: 6px; }
   section.services h5 {
     display: inline-block;
-    margin: 66px 0 4px 0;
+    margin: 44px 0 4px 0;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 1.34em;
@@ -1689,6 +1692,15 @@ p {
   -o-transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
   transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1);
   transition: opacity 700ms cubic-bezier(0.25, 0.105, 0.01, 1), transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1), -webkit-transform 1000ms cubic-bezier(0.25, 0.105, 0.01, 1); }
+  .el.service-skill__item svg {
+    -webkit-transform: translateX(-38px);
+    -ms-transform: translateX(-38px);
+    transform: translateX(-38px);
+    -webkit-transition: -webkit-transform 2600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: -webkit-transform 2600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: transform 2600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 2600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 2600ms cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 2600ms cubic-bezier(0.075, 0.82, 0.165, 1); }
 
 .el.service-skill__item.anim {
   -webkit-transform: translateY(0px);
@@ -1707,6 +1719,10 @@ p {
     -webkit-transition-delay: 240ms;
     -o-transition-delay: 240ms;
     transition-delay: 240ms; }
+  .el.service-skill__item.anim svg {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px); }
 
 .img-holder {
   position: relative;
