@@ -1590,7 +1590,7 @@ header.home-header {
   top: 0%;
   right: -2vw;
   width: calc(100% + 4vw);
-  height: 84%; }
+  height: 83%; }
   .header__bg--home .header__head, .header__bg--home .header__stars {
     position: absolute;
     top: 0;
