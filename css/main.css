@@ -452,7 +452,7 @@ nav {
       transition-delay: 880ms; }
 
 .main-menu--gradient {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -467,6 +467,7 @@ nav {
   background: -webkit-gradient(linear, left top, left bottom, from(#100e1b), to(rgba(16, 14, 27, 0)));
   background: linear-gradient(to bottom, #100e1b 0%, rgba(16, 14, 27, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#100e1b', endColorstr='#100e1b', GradientType=0 );
+  opacity: 0.8;
   z-index: 18; }
 
 .c-w {

@@ -545,13 +545,14 @@ nav {
   background: rgba(16,14,27,1);
 }
 .main-menu--gradient {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 98px;
   height: 188px;
   @include bggradient;
+  opacity: 0.8;
   z-index: 18;
 }
 
