@@ -794,6 +794,7 @@ section.services {
   min-height: auto;
   max-height: auto;
   height: auto;
+  overflow-x: hidden;
   padding: 44px 0; }
   section.services ul.services-skills__list,
   section.services ul.services__list,

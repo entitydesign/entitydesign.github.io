@@ -116,6 +116,8 @@ $(function(){
           TweenMax.to($bigBall, 0.2, {
             scale: 1, ease: Power2.easeOut });
         });
+        $.attractHover('.js-attract-hover',{proximity: 25,magnetism: 2,});
+        $.attractHover('.js-attract-hover--alt', {proximity: 100, magnetism: 2,});
       }
     }
 
@@ -172,7 +174,10 @@ inView('.el').on('enter', function(el){
   el.classList.add("anim");
   if ($(el).hasClass("service-skill__item")) {
     var $rect = $(el).find(".rect");
-    TweenMax.to($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0});
+    var $svg = $(el).find("svg");
+    TweenMax.set($svg, {x: -32});
+    TweenMax.staggerTo($svg, 2.6, {x: 0, ease:Power4.easeOut}, 0.48);
+    TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.3}, 0.48);
   }
 });
 // inView('.el').on('exit', function(el){
@@ -340,20 +345,7 @@ var button = $(".button"),
   });
 
 
-  $.attractHover(
-     	'.js-attract-hover',
-     	{
-     		proximity: 25,
-     		magnetism: 2,
-     	}
-);
-$.attractHover(
-    '.js-attract-hover--alt',
-    {
-      proximity: 100,
-      magnetism: 2,
-    }
-);
+
 
   var loader = $(".loader");
   loader.removeClass("exit");
