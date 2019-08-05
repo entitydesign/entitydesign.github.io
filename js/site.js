@@ -164,6 +164,21 @@ $(function(){
     });
 
 
+
+var $svgStars = $(".svg-stars"),
+    $svgStarsPath = $(".svg-stars path").toArray(),
+    $svgStarsGroup = $(".svg-stars--group"),
+    $headerStarsAnim = new TimelineMax({paused: true, repeat: -1, repeatDelay: 0, yoyo: true}),
+    $headerStarsFlicker = new TimelineMax({paused: true, repeat: -1, repeatDelay: 0, yoyo: true});
+    $svgStarsPath.sort(function(){return 0.5-Math.random()});
+    $headerStarsFlicker
+    .fromTo($svgStarsGroup, 0.066, {opacity: 1}, {opacity: 0.92, ease:Power2.easeInOut});
+    $headerStarsAnim
+    .staggerTo($svgStarsPath, 1.2, {autoAlpha: 0, ease:Power4.easeOut}, 0.018)
+    .staggerTo($svgStarsPath, 1.2, {autoAlpha: 1, ease:Power4.easeIn}, -0.018, '-0.6');
+
+
+
 inView.threshold(0.4);
 inView('.el').on('enter', function(el){
   el.classList.add("anim");
@@ -172,10 +187,18 @@ inView('.el').on('enter', function(el){
     var $svg = $(el).find("svg");
     TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.3}, 0.48);
   }
+  if($(el).hasClass("header__bg--home")) {
+    $headerStarsAnim.play();
+    $headerStarsFlicker.play();
+  }
 });
-// inView('.el').on('exit', function(el){
-//   el.classList.remove("anim");
-// });
+inView('.el').on('exit', function(el){
+  // el.classList.remove("anim");
+  if($(el).hasClass("header__bg--home")) {
+    $headerStarsAnim.pause();
+    $headerStarsFlicker.pause();
+  }
+});
 
     var headroomMenu = document.querySelector(".main-menu");
     var headroom  = new Headroom(headroomMenu, {
