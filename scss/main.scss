@@ -5,18 +5,18 @@
 $dark: #100e1b;
 
 @mixin heroHeader {
-  font-size: 3.88em;
+  font-size: 3.16em;
   @media screen and (max-width: 1340px) {
-    font-size: 3.48em;
+    font-size: 3.02em;
   }
   @media screen and (max-width: 992px), screen and (max-height: 580px) {
-    font-size: 3.08em;
+    font-size: 2.48em;
   }
   @media screen and (max-width: 720px) {
-    font-size: 2.68em;
+    font-size: 2.22em;
   }
   @media screen and (max-width: 480px) {
-    font-size: 2.48em;
+    font-size: 1.88em;
   }
 }
 
@@ -33,12 +33,12 @@ $dark: #100e1b;
   }
 }
 @mixin heading2 {
-  font-size: 3.88em;
+  font-size: 3.16em;
   @media screen and (max-width: 992px) {
-    font-size: 3.08em;
+    font-size: 2.33em;
   }
   @media screen and (max-width: 480px) {
-    font-size: 2.62em;
+    font-size: 1.88em;
   }
 }
 @mixin navText {
@@ -867,7 +867,7 @@ header.home-header {
       margin-top: 403px;
     }
     p {
-      max-width: 22.8rem !important;
+      max-width: 36.8rem !important;
     }
   }
   @media screen and (max-width: 440px) {
@@ -1039,7 +1039,7 @@ section.services {
               margin: 12px 0 0 0;
               flex-direction: column;
               li {
-                margin: 24px 0;
+                margin: 33px 0;
                 padding: 0 0;
                 ul.services__list {
                   margin: 4px 0 0 0;
@@ -1052,7 +1052,7 @@ section.services {
                 display: block;
                 width: 100%;
                 max-width: 212px;
-                margin: 0 0;
+                margin: 0 0 16px 0;
               }
               h3 {
                 font-size: 233%;
@@ -1994,6 +1994,9 @@ header.home-header {
       max-width: 1280px;
       padding: 0 36px !important;
    }
+   p {
+     max-width: 28rem !important;
+   }
   //  .fl-img {
   //    display: none !important
   //  }
@@ -2004,7 +2007,7 @@ header.home-header {
   //   background-position: center center;
   // }
   // &.slide--studiosurf {
-  //   background: url('../img/studiosurf-bg.png');
+  //   background: url('../img/studiosurf-bg.jpg');
   //   background-size: cover;
   //   background-repeat: no-repeat;
   //   background-position: center center;
@@ -2082,6 +2085,80 @@ span.numeral {
   font-size: 1.92em;
   // font-weight: 800;
   color: rgba(16, 14, 27, 0.25) !important;
+}
+
+
+ul.contact-info {
+  display: block;
+  width: 100%;
+  padding: 0 0;
+  margin: 48px 0;
+  list-style: none;
+  list-style-type: none;
+  li {
+    list-style: none;
+    list-style-type: none;
+    display: block;
+    position: relative;
+    margin: 24px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      display: inline-block;
+      padding: 2px 0;
+      @include paragraph;
+      letter-spacing: 0.033em;
+      font-weight: 600;
+      color: #FFFFFF;
+      vertical-align: middle;
+      &:before {
+        font-family: "FontAwesome";
+        vertical-align: middle;
+        font-weight: normal;
+        font-size: 28px !important;
+        display: inline-block;
+        margin-right: 18px;
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 54px;
+      }
+      &.facebook-link {
+        &:before {
+          background-color: #3b5998;
+          content: '\f1d7';
+        }
+      }
+      &.insta-link {
+        &:before {
+          content: '\f24d';
+          background-color: #cd486b;
+        }
+      }
+      &.linkedin-link {
+        &:before {
+          content: '\f269';
+          background-color: #0077b5;
+        }
+      }
+      &.email-link {
+        &:before {
+          content: '\f1c7';
+          background-color: #d69600;
+        }
+      }
+    }
+  }
+}
+
+form {
+
 }
 
 
@@ -2248,7 +2325,7 @@ span.numeral {
         min-height: auto;
         height: auto;
         text-align: center;
-        margin: 8% auto !important;
+        margin: 66px auto !important;
 
         .button-holder {
           margin-top: 12px;

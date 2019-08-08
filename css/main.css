@@ -745,25 +745,25 @@ header {
 
 header.home-header h1 {
   margin-top: 12px;
-  font-size: 3.88em; }
+  font-size: 3.16em; }
   @media screen and (max-width: 1340px) {
     header.home-header h1 {
-      font-size: 3.48em; } }
+      font-size: 3.02em; } }
   @media screen and (max-width: 992px), screen and (max-height: 580px) {
     header.home-header h1 {
-      font-size: 3.08em; } }
+      font-size: 2.48em; } }
   @media screen and (max-width: 720px) {
     header.home-header h1 {
-      font-size: 2.68em; } }
+      font-size: 2.22em; } }
   @media screen and (max-width: 480px) {
     header.home-header h1 {
-      font-size: 2.48em; } }
+      font-size: 1.88em; } }
 
 @media screen and (max-width: 992px) {
   header.home-header h1 {
     margin-top: 403px; }
   header.home-header p {
-    max-width: 22.8rem !important; } }
+    max-width: 36.8rem !important; } }
 
 @media screen and (max-width: 440px) {
   header.home-header h1 {
@@ -893,7 +893,7 @@ section.services {
       -ms-flex-direction: column;
       flex-direction: column; }
       section.services ul.services-skills__list li {
-        margin: 24px 0;
+        margin: 33px 0;
         padding: 0 0; }
         section.services ul.services-skills__list li ul.services__list {
           margin: 4px 0 0 0; }
@@ -903,7 +903,7 @@ section.services {
         display: block;
         width: 100%;
         max-width: 212px;
-        margin: 0 0; }
+        margin: 0 0 16px 0; }
       section.services ul.services-skills__list h3 {
         font-size: 233%;
         margin: -16px 0 0 0; }
@@ -1212,7 +1212,7 @@ footer {
       animation-fill-mode: forwards; }
 
 h2, h3 {
-  font-size: 3.88em;
+  font-size: 3.16em;
   text-transform: uppercase;
   font-weight: 800;
   word-spacing: 0.14em;
@@ -1220,10 +1220,10 @@ h2, h3 {
   line-height: 1.2; }
   @media screen and (max-width: 992px) {
     h2, h3 {
-      font-size: 3.08em; } }
+      font-size: 2.33em; } }
   @media screen and (max-width: 480px) {
     h2, h3 {
-      font-size: 2.62em; } }
+      font-size: 1.88em; } }
   h2 span, h3 span {
     font-size: 0.88em;
     font-weight: 600;
@@ -1495,18 +1495,18 @@ p {
     line-height: 1;
     padding: 0 0;
     display: block;
-    font-size: 3.88em;
+    font-size: 3.16em;
     -webkit-font-smoothing: antialiased;
     color: #100e1b; }
     @media screen and (max-width: 992px) {
       .case-study h4 {
-        font-size: 3.08em; } }
+        font-size: 2.33em; } }
     @media screen and (max-width: 480px) {
       .case-study h4 {
-        font-size: 2.62em; } }
+        font-size: 1.88em; } }
   .case-study h2, .case-study h3 {
     color: #100e1b;
-    font-size: 3.88em;
+    font-size: 3.16em;
     line-height: 0.95;
     position: relative;
     display: block;
@@ -1516,10 +1516,10 @@ p {
     letter-spacing: 0.08em; }
     @media screen and (max-width: 992px) {
       .case-study h2, .case-study h3 {
-        font-size: 3.08em; } }
+        font-size: 2.33em; } }
     @media screen and (max-width: 480px) {
       .case-study h2, .case-study h3 {
-        font-size: 2.62em; } }
+        font-size: 1.88em; } }
     .case-study h2 span, .case-study h3 span {
       font-size: 89%;
       font-family: 'LuloCleanOutline-Bold', sans-serif;
@@ -1965,16 +1965,18 @@ header.home-header {
   .swiper-slide .fl-text {
     padding: 0 36px !important; }
   .swiper-slide h2 {
-    font-size: 3.88em; }
+    font-size: 3.16em; }
     @media screen and (max-width: 992px) {
       .swiper-slide h2 {
-        font-size: 3.08em; } }
+        font-size: 2.33em; } }
     @media screen and (max-width: 480px) {
       .swiper-slide h2 {
-        font-size: 2.62em; } }
+        font-size: 1.88em; } }
   .swiper-slide .container {
     max-width: 1280px;
     padding: 0 36px !important; }
+  .swiper-slide p {
+    max-width: 28rem !important; }
 
 .swiper-pagination {
   position: absolute;
@@ -2039,6 +2041,63 @@ span.numeral {
   color: rgba(16, 14, 27, 0.25) !important; }
   span.numeral.white {
     color: rgba(255, 255, 255, 0.25) !important; }
+
+ul.contact-info {
+  display: block;
+  width: 100%;
+  padding: 0 0;
+  margin: 48px 0;
+  list-style: none;
+  list-style-type: none; }
+  ul.contact-info li {
+    list-style: none;
+    list-style-type: none;
+    display: block;
+    position: relative;
+    margin: 24px 0; }
+    ul.contact-info li:first-child {
+      margin-top: 0; }
+    ul.contact-info li:last-child {
+      margin-bottom: 0; }
+    ul.contact-info li a {
+      display: inline-block;
+      padding: 2px 0;
+      font-size: 1.12em;
+      letter-spacing: 0.033em;
+      font-weight: 600;
+      color: #FFFFFF;
+      vertical-align: middle; }
+      @media screen and (max-width: 992px) {
+        ul.contact-info li a {
+          font-size: 1.04em; } }
+      @media screen and (max-width: 480px) {
+        ul.contact-info li a {
+          font-size: 0.96em; } }
+      ul.contact-info li a:before {
+        font-family: "FontAwesome";
+        vertical-align: middle;
+        font-weight: normal;
+        font-size: 28px !important;
+        display: inline-block;
+        margin-right: 18px;
+        width: 54px;
+        height: 54px;
+        border-radius: 27px;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 54px; }
+      ul.contact-info li a.facebook-link:before {
+        background-color: #3b5998;
+        content: '\f1d7'; }
+      ul.contact-info li a.insta-link:before {
+        content: '\f24d';
+        background-color: #cd486b; }
+      ul.contact-info li a.linkedin-link:before {
+        content: '\f269';
+        background-color: #0077b5; }
+      ul.contact-info li a.email-link:before {
+        content: '\f1c7';
+        background-color: #d69600; }
 
 @media screen and (max-width: 992px) {
   .header__bg--home {
@@ -2181,7 +2240,7 @@ span.numeral {
         min-height: auto;
         height: auto;
         text-align: center;
-        margin: 8% auto !important; }
+        margin: 66px auto !important; }
         section.project-next-prev ul.work-items li .button-holder {
           margin-top: 12px;
           margin-bottom: 0; }

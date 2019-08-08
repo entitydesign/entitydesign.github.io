@@ -2,7 +2,8 @@ $(function(){
   'use strict';
   var $page = $('#main-page'),
       options = {
-        blacklist: 'form',
+        // blacklist: 'form',
+        blacklist: '',
         scroll: true,
         debug: false,
         prefetch: true,
@@ -97,6 +98,7 @@ $(function(){
               fill:"rgba(255,255,255,1)", ease:Power2.easeOut });
           TweenMax.to($cursorArrows, 0.4, {scale: 0, ease:Power3.easeOut});
         });
+
         globalLink.mouseleave(function() {
           TweenMax.to($bigBall, 1.2, {
             fill: "rgba(255,255,255,0)", scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
