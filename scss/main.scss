@@ -5,18 +5,18 @@
 $dark: #100e1b;
 
 @mixin heroHeader {
-  font-size: 3.16em;
+  font-size: 3.12em;
   @media screen and (max-width: 1340px) {
-    font-size: 3.02em;
+    font-size: 2.92em;
   }
   @media screen and (max-width: 992px), screen and (max-height: 580px) {
-    font-size: 2.48em;
+    font-size: 2.42em;
   }
   @media screen and (max-width: 720px) {
-    font-size: 2.22em;
+    font-size: 2.16em;
   }
   @media screen and (max-width: 480px) {
-    font-size: 1.88em;
+    font-size: 1.78em;
   }
 }
 
@@ -33,12 +33,12 @@ $dark: #100e1b;
   }
 }
 @mixin heading2 {
-  font-size: 3.16em;
+  font-size: 2.88em;
   @media screen and (max-width: 992px) {
-    font-size: 2.33em;
+    font-size: 2.22em;
   }
   @media screen and (max-width: 480px) {
-    font-size: 1.88em;
+    font-size: 1.72em;
   }
 }
 @mixin navText {
@@ -81,6 +81,11 @@ html, body {
   overflow-x: hidden;
   *{cursor: none !important}
 }
+
+// body {
+//   height: 100% !important;
+//   overflow: hidden !important;
+// }
 
 body.no-cursor {
   cursor: auto !important;
@@ -841,7 +846,7 @@ header {
   &.case-header--studiosurf {
     background: $dark url('../img/studiosurf-bg.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: no-repeat;
   }
   &.case-header--arktos {
@@ -940,6 +945,11 @@ section.bg--dark {
   }
 }
 
+section.contact {
+  min-height: auto;
+  max-height: auto;
+  height: auto;
+}
 section.services {
   min-height: auto;
   max-height: auto;
@@ -1035,11 +1045,14 @@ section.services {
   }
           @media screen and (max-width: 992px) {
             ul.services-skills__list {
+              text-align: center;
               display: flex;
-              margin: 12px 0 0 0;
+              margin: 12px auto 0 auto;
               flex-direction: column;
+              justify-content: center;
+              align-items: center;
               li {
-                margin: 33px 0;
+                margin: 24px 0;
                 padding: 0 0;
                 ul.services__list {
                   margin: 4px 0 0 0;
@@ -1051,12 +1064,12 @@ section.services {
               img, svg {
                 display: block;
                 width: 100%;
-                max-width: 212px;
+                max-width: 192px;
                 margin: 0 0 16px 0;
               }
               h3 {
                 font-size: 233%;
-                margin: -16px 0 0 0;
+                margin: -32px 0 0 0;
                 span {
                   display: block;
                 }
@@ -1069,7 +1082,27 @@ section.services {
           }
 }
 
+blockquote {
+  display: block;
+  width: 100%;
+  max-width: 51rem;
+  @include navText;
+  margin: 88px auto 122px auto;
+  color: #FFFFFF;
+  text-align: right;
+  line-height: 1.6;
+  span {
+    display: block;
+    // color: #AAAAAA;
+    font-size: 80%;
+    margin-top: 24px;
 
+  }
+  background: -webkit-linear-gradient(#89cbe0, #58d9d5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
 section.project-next-prev {
   height: auto;
   min-height: auto;
@@ -1176,6 +1209,67 @@ section.project-next-prev {
     // opacity: 0;
   }
 }
+
+
+
+form {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 48px 0;
+  .form-group {
+    position: relative;
+    margin: 48px 0;
+    padding-top: 34px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .button-holder {
+    margin-top:-22px !important;
+  }
+  input, textarea {
+    border: 2px solid #FFFFFF;
+    background: none;
+    border-radius: 4px;
+    font-size: 1.22em;
+    letter-spacing: 0.088em;
+    padding: 20px 16px;
+    font-family: 'Arimo', sans-serif;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 24rem;
+    transition: border 280ms ease-out;
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.22em;
+    letter-spacing: 0.068em;
+    color: #FFFFFF;
+    opacity: 0.8;
+    transition: opacity 280ms ease-out, letter-spacing 320ms cubic-bezier(0.175, 0.885, 0.320, 1);
+    transition: opacity 280ms ease-out, letter-spacing 320ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  }
+  button {
+    display: inline-block;
+    margin: 0 0;
+  }
+  input:focus, textarea:focus {
+    border: 2px solid #63b4da
+  }
+  input:focus + label, textarea:focus + label {
+    letter-spacing: 0.136em;
+    opacity: 1;
+  }
+
+}
+
+
 
 .case-about {
   height: auto;
@@ -1745,7 +1839,7 @@ header.home-header {
   display: block;
   clear: both;
   margin: 36px 0 0 0;
-  .button {
+  .button, {
     display: inline-block;
     height: 68px;
     line-height: 68px;
@@ -1827,14 +1921,14 @@ header.home-header {
 .white {color: #FFFFFF !important;}
 
 .el {
-  h1, h2, p, .button-holder, span.numeral, ul.work-items li {
+  h1, h2, p, .button-holder, span.numeral, ul.work-items li, blockquote, form, ul.contact-info {
     transform: translateY(45px);
     opacity: 0;
     transition: opacity 700ms cubic-bezier(0.250, 0.105, 0.010, 1.000), transform 1000ms cubic-bezier(0.250, 0.105, 0.010, 1.000);
   }
 }
 .el.anim {
-  h1, h2, p, .button-holder, span.numeral, ul.work-items li {
+  h1, h2, p, .button-holder, span.numeral, ul.work-items li, blockquote, form, ul.contact-info {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -1844,7 +1938,7 @@ header.home-header {
   section.project-next-prev h2 {
     transition-delay: 0ms !important;
   }
-  p, ul.work-items li:last-child {
+  p, ul.work-items li:last-child, blockquote, form, ul.contact-info {
     transition-delay: 420ms;
   }
   .button-holder {
@@ -1928,7 +2022,9 @@ header.home-header {
 
 .swiper-button-prev,
 .swiper-button-next {
-  top: calc(50% - 18px);
+  top: calc(50% - 66px);
+  // top: auto;
+  // bottom: -88px !important;
   width: 56px;
   height: 66px;
   background-repeat: no-repeat;
@@ -1950,12 +2046,14 @@ header.home-header {
 }
 .swiper-button-prev {
   background-position: left center;
-  left: auto;
-  right: 76px;
+  right: auto;
+  // left: 76px;
+  left: 44px;
 }
 .swiper-button-next {
   background-position: right center;
-  right: 22px;
+  // right: 22px;
+  right: 44px;
 }
 .swiper-wrapper,
 .swiper-slide{
@@ -2157,9 +2255,7 @@ ul.contact-info {
   }
 }
 
-form {
 
-}
 
 
 @media screen and (max-width: 992px) {
@@ -2193,11 +2289,14 @@ form {
 	}
 
   .el.anim {
+    * {
+      transition-delay: 0ms !important;
+    }
     h1, h2 {
       transition-delay: 0ms;
     }
     p {
-      transition-delay: 220ms;
+      transition-delay: 220ms !important;
     }
   }
   .attract-hover-easing, .attract-hover {
@@ -2299,6 +2398,9 @@ form {
     }
   }
 
+  section.services {
+    text-align: center;
+  }
 
   section.project-next-prev {
     padding: 12px 0;
@@ -2369,20 +2471,23 @@ form {
 
   .swiper-button-prev,
   .swiper-button-next {
-    bottom: 0;
+    // bottom: 0;
     top: auto;
+    top: calc(50% - 44px);
     width: 38px;
     height: 44px;
-    background-size: 22px 22px !important;
+    background-size: 18px 18px !important;
     transform: translate(0%, 0%) !important;
   }
   .swiper-button-prev {
-    left: auto;
-    right: 60px;
+    // left: auto;
+    // right: 60px;
+    left: 4px;
   }
   .swiper-button-next {
-    left: auto;
-    right: 22px;
+    // left: auto;
+    // right: 22px;
+    right: 4px;
   }
   .swiper-container {
     overflow: visible !important;
@@ -2395,11 +2500,11 @@ form {
   }
    .swiper-slide {
      height: 100%;
-     height: auto;
-     max-height: auto;
-     min-height: auto;
-     overflow: hidden;
-     padding: 12px 0;
+     height: auto !important;
+     max-height: auto !important;
+     min-height: auto !important;
+     overflow: hidden !important;
+     padding: 12px 16px 48px 16px;
    }
    .swiper-pagination {
      display: none;
@@ -2434,12 +2539,16 @@ form {
     &.case-header--arktos {
       background-position: 75% center !important;
       h1 {
-        margin-top: -15vh;
+        margin-top: -16.5vh;
       }
     }
     &.case-header--studiosurf {
-      background-position: 56% center !important;
+      // background-position: 56% center !important;
+      background-position: 75% center !important;
     }
+      h1 {
+        margin-top: -16.5vh;
+      }
   }
   .work-logo--home {
     img {

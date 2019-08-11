@@ -35,6 +35,11 @@ $(function(){
 (function($) {
   $.fn.onPageLoad = function() {
 
+
+
+
+
+
     var mainLogo = $(".main-logo"),
         header = $("header");
     $(function(){
@@ -181,7 +186,7 @@ var $svgStars = $(".svg-stars"),
 
 
 
-inView.threshold(0.4);
+inView.threshold(0.3);
 inView('.el').on('enter', function(el){
   el.classList.add("anim");
   if ($(el).hasClass("service-skill__item")) {

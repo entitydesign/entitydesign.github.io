@@ -29,9 +29,7 @@
 </head>
 
   <body class="home">
-
       <main class="content" id="main">
-
         <div class="cursor">
           <div class="cursor__arrows">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 80 80">
@@ -50,6 +48,8 @@
             </svg>
           </div>
         </div>
+
+
 
         <div class="scene" id="main-page">
           <div class="loader">
@@ -127,7 +127,8 @@
               <div class="container flx flx--home">
                 <div class="fl-text n-p left">
                   <h1 class="white">Designed with the<br /><span>Soul in mind</span></h1>
-                  <p class="white"><strong>Charlie Abbas</strong>, a Graphic Designer &amp; Illustrator living in Bristol, UK. Through listening and <strong>understanding</strong> your story and ethos, I provide designs that can spark the flame and kick-start <strong>your journey</strong> in the business realm.</p>
+                  <!-- <p class="white"><strong>Charlie Abbas</strong>, a Graphic Designer &amp; Illustrator living in Bristol, UK. Through listening and <strong>understanding</strong> your story and ethos, I provide designs that can spark the flame and kick-start <strong>your journey</strong> in the business realm.</p> -->
+                  <p class="white"><strong>Entity</strong> helps people, businesses and brands reach their full potential providing them with creative design solutions that spark the flame kick starting their journey in the business realm.</p>
                   <div class="button-holder">
                     <a href="#my-work" class="js-attract-hover hoverable button w-arrow white">
                       <span>Discover</span>
@@ -141,12 +142,16 @@
             <section class="home-work" id="my-work">
               <div class="container el pre-swiper">
                 <h2>My <span>Work</span></h2>
-                <div class="swiper-button-prev hoverable swiper-button-white"></div>
-                <div class="swiper-button-next hoverable swiper-button-white"></div>
+                <p class="white">
+                  Take care of the brand and everything else will fall into place.<br />
+                  Bespoke branding assets that speak to your market.
+                </p>
               </div>
 
                 <div class="swiper-container">
 
+                  <div class="swiper-button-prev hoverable swiper-button-white"></div>
+                  <div class="swiper-button-next hoverable swiper-button-white"></div>
 
                   <div class="swiper-wrapper">
                     <div class="swiper-slide slide--cyberox">
@@ -334,43 +339,49 @@
 
             <section class="contact bg--dark" id="contact">
               <div class="container">
-                <h2>Let's<span> Chat</span></h2>
-                <p>Need to kick start your brand with a fresh design? Contact me</p>
+                <div class="el">
+                  <h2>Let's<span> Chat</span></h2>
+                  <p>Need to kick start your brand with a fresh design? Contact me</p>
+                </div>
                 <div class="grid row">
-                  <div class="col c-8">
-                    <!-- <form action="" meth="POST">
+                  <div class="col c-8 el">
+                    <form action="" meth="POST">
                       <div class="form-group">
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" class="hoverable" required>
                         <label for="name">Name</label>
                       </div>
                       <div class="form-group">
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" class="hoverable" required>
                         <label for="email">Email</label>
                       </div>
                       <div class="form-group">
-                        <textarea name="message" required></textarea>
+                        <textarea name="message" rows="8" class="hoverable" required></textarea>
                         <label for="message">Message</label>
                       </div>
-                    </form> -->
-                    <br /><br /><br /><br />
-                    <h3>Contact form <span>here</span></h3>
+                      <div class="button-holder">
+                        <button type="submit" class="js-attract-hover hoverable button w-arrow white"><span>Send</span></button>
+                      </div>
+                    </form>
                   </div>
-                  <div class="col c-4">
+                  <div class="col c-4 el">
                     <ul class="contact-info">
                       <li>
                         <a href="mailto:hello@soulinmind.design" title="Email hello@soulinmind.design" target="_blank" class="email-link">hello@soulinmind.design</a>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com/soulinmind.design/" title="Facebook" target="_blank" class="facebook-link">/soulinmind.design</a>
+                        <a href="https://www.facebook.com/soulinmind.design/" title="Facebook" target="_blank" class="facebook-link hoverable">/soulinmind.design</a>
                       </li>
                       <li>
-                        <a href="https://www.instagram.com/soulinmind.design/" title="Instagram" target="_blank" class="insta-link">/soulinmind.design</a>
+                        <a href="https://www.instagram.com/soulinmind.design/" title="Instagram" target="_blank" class="insta-link hoverable">/soulinmind.design</a>
                       </li>
                       <li>
-                        <a href="#" title="LinkedIn" target="_blank" class="linkedin-link">LinkedIn</a>
+                        <a href="#" title="LinkedIn" target="_blank" class="linkedin-link hoverable">LinkedIn</a>
                       </li>
                     </ul>
                   </div>
+                </div>
+                <div class="el">
+                  <blockquote>“It’s not all about creating something nice that people can look at, it’s about creating something beautiful that makes people see. That’s what makes them return.”<span>- Chabba</span></blockquote>
                 </div>
               </div>
             </section>
@@ -408,13 +419,15 @@
           </div>
 
         </div>
-      </main>
 
+
+      </main>
 
 
       <script src="js/vendor-dist.js"></script>
       <script src="js/lazysizes.min.js" async=""></script>
       <script src="js/site-dist.js"></script>
+
 
 </body>
 </html>
