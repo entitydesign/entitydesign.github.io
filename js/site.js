@@ -224,7 +224,10 @@ inView('.el').on('exit', function(el){
     });
     headroom.init();
 
-
+var $otherWorkbutton = $(".other-work--button");
+$otherWorkbutton.hover(function(){
+  $(this).parent().parent().parent().parent().parent().find(".other-work__link").toggleClass("other-work--hovered");
+});
 
 
     // $('a[href^="#"]').on('click', function (e) {
