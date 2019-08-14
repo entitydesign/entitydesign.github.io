@@ -1049,7 +1049,7 @@ ul.other-work__flex {
     padding-left: 8%;
     h3 {
       @include navText;
-      line-height: 1.06;
+      line-height: 1.12;
     }
     h3 > span {
       display: block;
@@ -1185,6 +1185,42 @@ section.services {
     letter-spacing: 0.33em;
     color: rgba(255,255,255,0.66) !important;
   }
+  .bi-stroke, .gd-stroke, .pd-stroke {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+  }
+  .bi-stroke {stroke: url(#bi-grad);}
+  .gd-stroke {stroke: url(#gd-grad);}
+  .pd-stroke {stroke: url(#pd-grad);}
+
+  .bi-stroke--path {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 1650;
+  }
+  .bi-stroke--circle {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+  }
+  .gd-stroke--path {
+    stroke-dasharray: 1250;
+    stroke-dashoffset: 1250;
+  }
+  .gd-stroke--circle {
+    stroke-dasharray: 138;
+    stroke-dashoffset: 138;
+  }
+  .pd-stroke--path {
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 1150;
+  }
+  .pd-stroke--circle {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120;
+  }
+
           @media screen and (max-width: 992px) {
             ul.services-skills__list {
               text-align: center;
@@ -1194,7 +1230,9 @@ section.services {
               justify-content: center;
               align-items: center;
               li {
-                margin: 24px 0;
+                margin: 48px 0;
+                &:first-child {margin-top: 24px;}
+                &:last-child {margin-bottom: 0px;}
                 padding: 0 0;
                 ul.services__list {
                   margin: 4px 0 0 0;
@@ -1207,7 +1245,7 @@ section.services {
                 display: block;
                 width: 100%;
                 max-width: 192px;
-                margin: 0 0 16px 0;
+                margin: 0 0 48px 0;
               }
               h3 {
                 // font-size: 233%;

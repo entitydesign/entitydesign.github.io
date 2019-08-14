@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{display:none;}
+	.st2{display:inline;opacity:0.96;}
+	.st3{fill:none;stroke:url(#SVGID_1_);stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:url(#SVGID_2_);stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:url(#SVGID_3_);stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:url(#SVGID_4_);stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{display:inline;}
+	.st8{display:inline;fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Layer_3">
+	<g id="Layer_3_1_">
+		<rect x="0" y="-0.9" class="st0" width="480" height="480"/>
+	</g>
+</g>
+<g id="Layer_1" class="st1">
+	<g class="st2">
+		<g>
+			
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="132.1996" y1="310.8196" x2="298.1432" y2="23.397" gradientTransform="matrix(1 0 0 -1 0 482)">
+				<stop  offset="0" style="stop-color:#45C2FA"/>
+				<stop  offset="1" style="stop-color:#3FB16B"/>
+			</linearGradient>
+			<path class="st3" d="M17.6,359.2l110.6-179.6c1-1.7,4.2-1.7,5.4,0L244,359.2h-97.6c-2.2,0-3.6-1.8-2.6-3.3l156.4-254.1
+				c1-1.7,4.2-1.7,5.4,0L462,355.9c0.9,1.5-0.5,3.3-2.6,3.3h-104"/>
+			
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="264.2" y1="108.3" x2="264.2" y2="108.3" gradientTransform="matrix(1 0 0 -1 0 482)">
+				<stop  offset="0" style="stop-color:#45C2FA"/>
+				<stop  offset="1" style="stop-color:#3FB16B"/>
+			</linearGradient>
+			<path class="st4" d="M264.2,373.7"/>
+			
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="340.2" y1="108.3" x2="340.2" y2="108.3" gradientTransform="matrix(1 0 0 -1 0 482)">
+				<stop  offset="0" style="stop-color:#45C2FA"/>
+				<stop  offset="1" style="stop-color:#3FB16B"/>
+			</linearGradient>
+			<path class="st5" d="M340.2,373.7"/>
+			
+				<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="287.0483" y1="144.3669" x2="311.9517" y2="101.2331" gradientTransform="matrix(1 0 0 -1 0 482)">
+				<stop  offset="0" style="stop-color:#45C2FA"/>
+				<stop  offset="1" style="stop-color:#3FB16B"/>
+			</linearGradient>
+			<circle class="st6" cx="299.5" cy="359.2" r="19.9"/>
+		</g>
+	</g>
+</g>
+<g id="Layer_2" class="st1">
+	<path class="st7" d="M437.7,237L242.9,38c-1.7-1.8-4.5-1.8-6.2,0L42.3,236.6c-1.7,1.8-1.7,4.6,0,6.4L237.1,442
+		c0.8,0.8,1.9,1.3,3.1,1.3c1.2,0,2.3-0.5,3.1-1.3l194.4-198.7C439.4,241.6,439.4,238.8,437.7,237z M240.2,432.5L51.6,239.8
+		L239.8,47.5l130.4,133.2L236.6,317.2l-60.7-62l46.4-47.4c1.7-1.8,1.7-4.6,0-6.4c-1.7-1.8-4.5-1.8-6.2,0L166.6,252
+		c-1.7,1.8-1.7,4.6,0,6.4l66.9,68.4c0.9,0.9,2,1.3,3.1,1.3c1.1,0,2.3-0.4,3.1-1.3l136.7-139.7l52,53.1L240.2,432.5z"/>
+</g>
+<g id="Layer_4" class="st1">
+	<path class="st8" d="M437.6,240L240,437.6L42.4,240L240,42.4L437.6,240z M227.2,199.7l-54,54c0,0,66,66,66,66l139-139"/>
+	<circle class="st8" cx="254.5" cy="172.3" r="16.5"/>
+</g>
+<g id="Layer_5" class="st1">
+	<path class="st7" d="M456.7,237.1c-0.3-0.3-28.9-32-69.2-62.4C332.9,133.6,284,114.2,242,117.2c-0.7,0-1.3,0.3-1.8,0.6
+		c-4.6-0.8-9.2-1.4-13.7-1.7c-39.4-2.9-85.6,16.6-137.4,58.2c-38.3,30.7-65.6,62.6-65.9,63c-1.5,1.7-1.4,4.3,0.1,5.9
+		c0.3,0.3,27.6,30.5,65.8,60.3c51.7,40.3,97.8,60.7,137,60.7c4.7,0,9.4-0.3,14-0.8c4.5,0.5,9.1,0.8,13.7,0.8
+		c36.2,0,81.4-20.4,134.3-60.7c39.1-29.8,68.2-60,68.5-60.3C458.3,241.6,458.3,238.9,456.7,237.1z M94.5,296.5
+		c-30.8-24-54.3-48.2-62.1-56.4c17-19,112.4-121.1,193.4-115.1c58.4,4.3,118.8,48.6,118.8,115.2c0,57.8-46.5,107.3-104.4,114.3
+		c-55-6.8-99.5-53.9-101.8-109.8h88.2c2.4,0,4.4-2,4.4-4.5c0-2.5-2-4.5-4.4-4.5h-92.6c-2.4,0-4.4,2-4.4,4.5
+		c0,49.2,30.5,92.8,73.3,112.7C163.4,344.8,123.2,318.9,94.5,296.5z M281.2,351.5c42.3-20.4,72.1-63.2,72.1-111.4
+		c0-52.9-35.1-92.7-78.5-111.8c77.8,15.1,156.7,94.9,172.6,111.7C431.1,256.3,351.1,333.5,281.2,351.5z"/>
+</g>
+<g id="Layer_6">
+	<g>
+		<path class="st9" d="M237.9,240H134.4c0,63.7,47.3,115.3,105.6,115.3S345.6,303.7,345.6,240S298.3,124.7,240,124.7
+			C97.1,124.7,22.2,240,22.2,240S97.1,355.3,240,355.3S457.8,240,457.8,240S382.9,124.7,240,124.7"/>
+		<ellipse class="st9" cx="279.7" cy="240" rx="18.2" ry="18.8"/>
+	</g>
+</g>
+</svg>

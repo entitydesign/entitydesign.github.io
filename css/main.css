@@ -933,7 +933,7 @@ ul.other-work__flex {
     padding-left: 8%; }
     ul.other-work__flex .other-work__content h3 {
       font-size: 2.68em;
-      line-height: 1.06; }
+      line-height: 1.12; }
       @media screen and (max-width: 992px) {
         ul.other-work__flex .other-work__content h3 {
           font-size: 1.98em; } }
@@ -1044,6 +1044,36 @@ section.services {
     font-size: 1.34em;
     letter-spacing: 0.33em;
     color: rgba(255, 255, 255, 0.66) !important; }
+  section.services .bi-stroke, section.services .gd-stroke, section.services .pd-stroke {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10; }
+  section.services .bi-stroke {
+    stroke: url(#bi-grad); }
+  section.services .gd-stroke {
+    stroke: url(#gd-grad); }
+  section.services .pd-stroke {
+    stroke: url(#pd-grad); }
+  section.services .bi-stroke--path {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 1650; }
+  section.services .bi-stroke--circle {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120; }
+  section.services .gd-stroke--path {
+    stroke-dasharray: 1250;
+    stroke-dashoffset: 1250; }
+  section.services .gd-stroke--circle {
+    stroke-dasharray: 138;
+    stroke-dashoffset: 138; }
+  section.services .pd-stroke--path {
+    stroke-dasharray: 1150;
+    stroke-dashoffset: 1150; }
+  section.services .pd-stroke--circle {
+    stroke-dasharray: 120;
+    stroke-dashoffset: 120; }
   @media screen and (max-width: 992px) {
     section.services ul.services-skills__list {
       text-align: center;
@@ -1062,8 +1092,12 @@ section.services {
       -ms-flex-align: center;
       align-items: center; }
       section.services ul.services-skills__list li {
-        margin: 24px 0;
+        margin: 48px 0;
         padding: 0 0; }
+        section.services ul.services-skills__list li:first-child {
+          margin-top: 24px; }
+        section.services ul.services-skills__list li:last-child {
+          margin-bottom: 0px; }
         section.services ul.services-skills__list li ul.services__list {
           margin: 4px 0 0 0; }
           section.services ul.services-skills__list li ul.services__list li {
@@ -1072,7 +1106,7 @@ section.services {
         display: block;
         width: 100%;
         max-width: 192px;
-        margin: 0 0 16px 0; }
+        margin: 0 0 48px 0; }
       section.services ul.services-skills__list h3 {
         margin: -32px 0 0 0; }
         section.services ul.services-skills__list h3 span {

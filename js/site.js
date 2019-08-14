@@ -129,11 +129,11 @@ $(function(){
     }
 
 
-    function iconWipe() {
-      var $rect = $(".rect");
-      TweenMax.set($rect, {transformOrigin: "0% 50%", scaleX: 0});
-    }
-    iconWipe();
+    // function iconWipe() {
+    //   var $rect = $(".rect");
+    //   TweenMax.set($rect, {transformOrigin: "0% 50%", scaleX: 0});
+    // }
+    // iconWipe();
 
     cursorInit();
 
@@ -186,14 +186,58 @@ var $svgStars = $(".svg-stars"),
 
 
 
+var $brandIdentityPath = $(".bi-stroke--path"),
+    $brandIdentityCircle = $(".bi-stroke--circle"),
+    brandIdentityStrokeAnim = new TimelineMax({paused: true, delay: 0.2, repeat: 0});
+    brandIdentityStrokeAnim
+    .to($brandIdentityPath, 2.8, {strokeDashoffset: 0, ease:Power3.easeInOut})
+    .to($brandIdentityCircle, 0.8, {strokeDashoffset: 0, ease:Power2.easeInOut}, '-=1.2');
+
+var $graphicDesignPath = $(".gd-stroke--path"),
+    $graphicDesignCircle = $(".gd-stroke--circle"),
+    graphicDesignStrokeAnim = new TimelineMax({paused: true, delay: 0.2, repeat: 0});
+    graphicDesignStrokeAnim
+    .to($graphicDesignPath, 2.8, {strokeDashoffset: 0, ease:Power3.easeInOut})
+    .to($graphicDesignCircle, 0.8, {strokeDashoffset: 0, ease:Power2.easeInOut}, '-=1.2');
+
+var $productDesignPath = $(".pd-stroke--path"),
+    $productDesignCircle = $(".pd-stroke--circle"),
+    productDesignStrokeAnim = new TimelineMax({paused: true, delay: 0.2, repeat: 0});
+    productDesignStrokeAnim
+    .to($productDesignPath, 2.8, {strokeDashoffset: 0, ease:Power3.easeInOut})
+    .to($productDesignCircle, 0.8, {strokeDashoffset: 0, ease:Power2.easeInOut}, '-=1.2');
+
+
+
+    // var $rect = $(el).find(".rect");
+    // var $svg = $(el).find("svg");
+    // TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.3}, 0.48);
+
 inView.threshold(0.3);
 inView('.el').on('enter', function(el){
   el.classList.add("anim");
-  if ($(el).hasClass("service-skill__item")) {
-    var $rect = $(el).find(".rect");
-    var $svg = $(el).find("svg");
-    TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.3}, 0.48);
+
+  if ( $(el).hasClass("svg__brand-identity") && $(window).width() > 992  ){
+    brandIdentityStrokeAnim.play();
   }
+  else if ( $(el).hasClass("svg__brand-identity") && $(window).width() < 992  ){
+    brandIdentityStrokeAnim.play();
+  }
+
+  if ( $(el).hasClass("svg__graphic-design") && $(window).width() > 992  ){
+    graphicDesignStrokeAnim.delay(0.5).play();
+  }
+  else if ( $(el).hasClass("svg__graphic-design") && $(window).width() < 992  ){
+    graphicDesignStrokeAnim.delay(0.2).play();
+  }
+
+  if ( $(el).hasClass("svg__product-design") && $(window).width() > 992  ){
+    productDesignStrokeAnim.delay(1).play();
+  }
+  else if ( $(el).hasClass("svg__product-design") && $(window).width() < 992  ){
+    productDesignStrokeAnim.delay(0.6).play();
+  }
+
   if($(el).hasClass("header__bg--home")) {
     $headerStarsAnim.play();
     $headerStarsFlicker.play();
