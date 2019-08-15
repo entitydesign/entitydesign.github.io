@@ -207,7 +207,10 @@ var $productDesignPath = $(".pd-stroke--path"),
     .to($productDesignPath, 2.8, {strokeDashoffset: 0, ease:Power3.easeInOut})
     .to($productDesignCircle, 0.8, {strokeDashoffset: 0, ease:Power2.easeInOut}, '-=1.2');
 
-
+    var vids = $("video");
+    $.each(vids, function(){
+           this.controls = false;
+    }); 
 
     // var $rect = $(el).find(".rect");
     // var $svg = $(el).find("svg");
@@ -216,6 +219,14 @@ var $productDesignPath = $(".pd-stroke--path"),
 inView.threshold(0.3);
 inView('.el').on('enter', function(el){
   el.classList.add("anim");
+
+  if ( $(el).hasClass("for--video__arktos") ) {
+    $(function(){var $arktosVideo = $("#video-arktos");$arktosVideo[0].play();});
+  }
+  if($(el).hasClass("header__bg--home")) {
+    $headerStarsAnim.play();
+    $headerStarsFlicker.play();
+  }
 
   if ( $(el).hasClass("svg__brand-identity") && $(window).width() > 992  ){
     brandIdentityStrokeAnim.play();
@@ -238,16 +249,16 @@ inView('.el').on('enter', function(el){
     productDesignStrokeAnim.delay(0.6).play();
   }
 
-  if($(el).hasClass("header__bg--home")) {
-    $headerStarsAnim.play();
-    $headerStarsFlicker.play();
-  }
+
 });
 inView('.el').on('exit', function(el){
   // el.classList.remove("anim");
   if($(el).hasClass("header__bg--home")) {
     $headerStarsAnim.pause();
     $headerStarsFlicker.pause();
+  }
+  if ( $(el).hasClass("for--video__arktos") ) {
+    $(function(){var $arktosVideo = $("#video-arktos");$arktosVideo[0].pause();});
   }
 });
 
