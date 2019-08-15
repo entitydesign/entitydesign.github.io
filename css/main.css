@@ -1139,7 +1139,8 @@ blockquote {
     background: -webkit-linear-gradient(#e38f00, #EB5C59);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-right: 24px; }
+    padding-right: 24px;
+    max-width: 53rem; }
   blockquote span {
     display: block;
     font-size: 80%;
