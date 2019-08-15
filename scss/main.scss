@@ -1272,14 +1272,14 @@ blockquote {
   text-align: right;
   line-height: 1.6;
   color: #89cbe0;
-  background: -webkit-linear-gradient(#89cbe0, #58d9d5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // background: -webkit-linear-gradient(#89cbe0, #58d9d5);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
   &.quote--arktos {
     color: #EB5C59;
-    background: -webkit-linear-gradient(#e38f00, #EB5C59);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: -webkit-linear-gradient(#e38f00, #EB5C59);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     padding-right: 24px;
     max-width: 53rem;
   }
