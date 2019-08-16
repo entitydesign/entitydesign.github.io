@@ -395,19 +395,28 @@ body .cursor__arrows path {
     }
   }
 }
+@mixin menuText {
+  font-size: 1.98em;
+  @media screen and (max-width: 992px) {
+    font-size: 1.58em;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1.12em;
+  }
+}
 nav {
   position: fixed;
   // top: 100%;
   // top: calc(22px + 4vw);
   top: 98px;
-  padding-top: calc(24px + 2vw + 4vh);
+  padding-top: calc(16px + 2vw + 4vh);
   padding-bottom: 164px !important;
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 99999 !important;
   width: 100%;
   height: 100vh;
-  max-height: calc(100vh - 98px);
+  // max-height: calc(100vh - 98px);
   overflow-y: hidden;
   pointer-events: none;
   opacity: 0;
@@ -422,7 +431,7 @@ nav {
       list-style-type: none;
       color: #FFFFFF;
       display: block;
-      margin: calc(12px + 1.8vh + 1.3vw) auto;
+      margin: calc(12px + 1.2vh + 0.8vw) auto;
       &:first-child {margin-top: 0;}
       &:last-child {margin-bottom: 0;}
       opacity: 0;
@@ -430,7 +439,10 @@ nav {
       transition: transform 0ms cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
       &.icon-item {
         display: inline-block;
-        margin: 0 2px;
+        margin: 32px 2px;
+        @media screen and (max-width: 992px) {
+          margin: 6px 2px;
+        }
       }
       a {
         display: inline-block;
@@ -459,7 +471,7 @@ nav {
         }
         span {
           &.style-nav {
-            @include navText;
+            @include menuText;
             text-transform: uppercase;
             font-weight: 800;
             word-spacing: 0.14em;
@@ -506,7 +518,6 @@ nav {
           &.em {background: #d69600;}
         }
         .nav-icon {
-          transition: background-color 260ms ease-out;
           transition: background-color 260ms ease-out;
         }
       }
@@ -857,6 +868,18 @@ header {
   }
   &.case-header--jansu {
     background: $dark url('../img/jansu-bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  &.header--product-branding {
+    background: $dark url('../img/product-branding-bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+  &.header--illustration-graphics {
+    background: $dark url('../img/illustration-graphics-bg.jpg');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -1478,7 +1501,7 @@ footer {
   background: $dark url("../img/footer-bg.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: auto 100%;
   background-origin: content-box;
   .container.flx {
     padding: 148px 38px 100px 38px;
@@ -1636,7 +1659,9 @@ footer {
   }
 }
 
-
+cite {
+  font-style: normal;
+}
 
 h2, h3 {
   @include heading2;
@@ -1928,6 +1953,13 @@ p {
     img {
       box-shadow: 0px 14px 48px rgba(0,0,0,0.12);
     }
+  }
+}
+
+.section__other-work {
+  background: $dark !important;
+  h2, h3, h4, p {
+    color: #FFFFFF !important;
   }
 
 }
