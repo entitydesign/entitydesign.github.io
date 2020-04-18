@@ -1496,7 +1496,7 @@ p {
   display: block;
   color: #100e1b;
   margin: 24px 0 0 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.008em;
   line-height: 1.58;
@@ -1770,7 +1770,7 @@ p {
       font-weight: 400;
       letter-spacing: 0em; }
   .case-study p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: block;
     width: 100%;
     margin: 33px 0 0 0;
@@ -2340,7 +2340,7 @@ ul.contact-info {
     ul.contact-info li a {
       display: inline-block;
       padding: 2px 0;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       letter-spacing: 0.033em;
       font-weight: 600;
       color: #FFFFFF;
@@ -2442,7 +2442,7 @@ ul.contact-info {
     header p {
       font-weight: 300;
       display: block;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin: 26px 0 0 0; }
   section .container.flx {
     padding-top: 66px;
