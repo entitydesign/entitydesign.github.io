@@ -2029,6 +2029,11 @@ p {
   h2, h3, h4, p {
     color: #FFFFFF !important;
   }
+  h2, h3 {
+    span {
+      @include text-stroke--white();
+    }
+  }
 
 }
 

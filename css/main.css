@@ -1829,6 +1829,10 @@ p {
   background: #100e1b !important; }
   .section__other-work h2, .section__other-work h3, .section__other-work h4, .section__other-work p {
     color: #FFFFFF !important; }
+  .section__other-work h2 span, .section__other-work h3 span {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1.2px white;
+    text-stroke: 1.2px white; }
 
 .for--video__arktos {
   clear: both;
