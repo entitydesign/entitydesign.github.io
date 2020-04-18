@@ -1289,22 +1289,27 @@ blockquote {
   display: block;
   width: 100%;
   max-width: 51rem;
-  @include navText;
+  @include projectText;
   margin: 88px auto 122px auto;
   color: #FFFFFF;
   text-align: right;
   line-height: 1.6;
   color: #89cbe0;
-  // background: -webkit-linear-gradient(#89cbe0, #58d9d5);
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
   &.quote--arktos {
     color: #EB5C59;
-    // background: -webkit-linear-gradient(#e38f00, #EB5C59);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
     padding-right: 24px;
-    max-width: 53rem;
+    max-width: 56rem;
+  }
+  &.quote--studiosurf {
+    color: #2898b9;
+    padding-right: 24px;
+    max-width: 56rem;
+  } 
+  &.quote--cyberox {
+    color: #e99147;
+    margin-top: 0px;
+    padding-right: 24px;
+    max-width: 56rem;
   }
   span {
     display: block;
@@ -1878,11 +1883,14 @@ p {
   }
   .container {
     width: 100%;
-    max-width: 2440px;
+    // max-width: 2440px;
     // max-width: 1440px;
+    // max-width: 1478px;
+    max-width: 1510px;
     margin: 0 auto;
     padding: 0 0;
-    padding-left: calc(3.8vw + 22px);
+    padding-left: 16px;
+    // padding-left: calc(3.8vw + 22px);
   }
   h4 {
     font-weight: 300;
@@ -1937,17 +1945,20 @@ p {
   position: relative;
   margin: 0 0;
   float: right;
+  // margin-right: calc(3.8vw + 22px);
+  margin-right: 16px;
   width: 100%;
-  max-width: 1480px;
-  min-height: 120px;
-  max-height: 920px;
-  overflow: visible;
+  max-width: 1920px;
+  // min-height: 120px;
+  // max-height: 920px;
+  // overflow: visible;
+  overflow: hidden;
   img {
     display: block;
-    width: 100%;
-    max-width: 1480px;
-    // opacity: 0;
-    // transition: opacity 440ms 300ms cubic-bezier(0.250, 0.105, 0.010, 1.000);
+    // width: 100%;
+    // max-width: 1480px;
+    object-fit: cover;
+    object-position: center center;
   }
   &.ws {
     img {
@@ -2069,7 +2080,7 @@ header.home-header {
   .header__head {
     right: -28%;
     width: 156%;
-    background: url('../img/header-head-2.svg');
+    background: url('../img/header-head-3.svg');
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right top;
@@ -2124,7 +2135,7 @@ header.home-header {
     padding: 0 36px;
     backface-visibility: hidden;
     transform-origin: 50% 50%;
-    transition: background-color 260ms ease-out, transform 440ms cubic-bezier(0.175, 0.885, 0.320, 1);
+    // transition: background-color 260ms ease-out, transform 440ms cubic-bezier(0.175, 0.885, 0.320, 1);
     transition: background-color 260ms ease-out, transform 440ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
     span {
       font-weight: 700;
