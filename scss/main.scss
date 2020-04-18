@@ -35,9 +35,10 @@ html {
   // @media screen and (max-width: 992px), screen and (max-height: 580px) {
   //   font-size: 2.72rem;
   // }
-  // @media screen and (max-width: 720px) {
-  //   font-size: 2.16rem;
-  // }
+  @media screen and (max-width: 720px) {
+    // font-size: 2.16rem;
+    max-width: 24rem;
+  }
   @media screen and (max-width: 480px) {
     font-size: 3.08rem;
   }
@@ -52,7 +53,7 @@ html {
   //   font-size: 2.68rem;
   // }
   @media screen and (max-width: 480px) {
-    font-size: 3.08rem;
+    font-size: 3.48rem;
   }
   @media screen and (max-width: 320px) {
     font-size: 2.48rem;
@@ -63,7 +64,13 @@ html {
 }
 @mixin heading2 {
   font-size: 3.48rem;
-  line-height: 3.6rem !important;
+  line-height: 1.128 !important;
+  @media screen and (max-width: 480px) {
+    font-size: 3.08rem;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 2.48rem;
+  }
   // @media screen and (max-width: 992px) {
   //   font-size: 2.22rem;
   // }
@@ -271,7 +278,6 @@ body .cursor__arrows path {
   width: 100%;
   background-color: #f1f1f1;
 }
-
 
 
 .scene {
@@ -2175,10 +2181,8 @@ header.home-header {
   margin: 36px 0 0 0;
   .button, {
     display: inline-block;
-    height: 74px;
-    line-height: 74px;
-    height: 4.8rem;
-    line-height: 4.8rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
     min-width: 194px;
     border-radius: 6px;
     text-align: center;
@@ -2193,7 +2197,7 @@ header.home-header {
     span {
       font-weight: 700;
       // font-size: 0.96em;
-      font-size: 1.18rem;
+      font-size: 1.08rem;
       text-transform: uppercase;
       letter-spacing: 0.24em;
       color: $dark;
@@ -3061,11 +3065,18 @@ ul.contact-info {
   }
 
 
-::selection {
+::selection { 
   background: #000000;
   color: #FFFFFF;
 }
 ::-moz-selection {
   background: #000000;
   color: #FFFFFF;
+}
+
+
+span.break--md {
+  @media screen and (max-width: 992px) {
+    display: block;
+  }
 }
