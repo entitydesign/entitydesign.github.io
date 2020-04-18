@@ -1168,8 +1168,7 @@ section.project-next-prev {
   padding: 24px 0 122px 0; }
   section.project-next-prev h2 {
     text-align: left;
-    margin: 0 auto 18px auto;
-    color: rgba(255, 255, 255, 0.33) !important; }
+    margin: 0 auto 18px auto; }
   section.project-next-prev ul.work-items {
     display: -webkit-box;
     display: -ms-flexbox;
