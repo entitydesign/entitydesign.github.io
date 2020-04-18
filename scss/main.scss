@@ -4,70 +4,82 @@
 // $dark: #0f0d1a;
 $dark: #100e1b;
 
-@mixin heroHeader {
-  font-size: 3.12em;
-  @media screen and (max-width: 1340px) {
-    font-size: 2.92em;
-  }
-  @media screen and (max-width: 992px), screen and (max-height: 580px) {
-    font-size: 2.42em;
-  }
-  @media screen and (max-width: 720px) {
-    font-size: 2.16em;
+html {
+  font-size: 16px;
+  @media screen and (max-width: 992px) {
+    font-size: 15px;
   }
   @media screen and (max-width: 480px) {
-    font-size: 1.78em;
+    font-size: 14px;
   }
+}
+
+
+@mixin heroHeader {
+  font-size: 3.42rem;
+  // @media screen and (max-width: 1340px) {
+  //   font-size: 2.92rem;
+  // }
+  // @media screen and (max-width: 992px), screen and (max-height: 580px) {
+  //   font-size: 2.72rem;
+  // }
+  // @media screen and (max-width: 720px) {
+  //   font-size: 2.16rem;
+  // }
+  // @media screen and (max-width: 480px) {
+  //   font-size: 1.78rem;
+  // }
 }
 
 @mixin bigheader {
-  font-size: 4.32em;
-  @media screen and (max-width: 992px), screen and (max-height: 580px) {
-    font-size: 3.18em;
-  }
-  @media screen and (max-width: 720px) {
-    font-size: 2.68em;
-  }
-  @media screen and (max-width: 580px) {
-    font-size: 2.48em;
-  }
+  font-size: 4.68rem;
+  // @media screen and (max-width: 992px), screen and (max-height: 580px) {
+  //   font-size: 3.18rem;
+  // }
+  // @media screen and (max-width: 720px) {
+  //   font-size: 2.68rem;
+  // }
+  // @media screen and (max-width: 580px) {
+  //   font-size: 2.48rem;
+  // }
 }
 @mixin heading2 {
-  font-size: 2.88em;
-  @media screen and (max-width: 992px) {
-    font-size: 2.22em;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1.72em;
-  }
+  font-size: 3.48rem;
+  line-height: 3.6rem !important;
+  // @media screen and (max-width: 992px) {
+  //   font-size: 2.22rem;
+  // }
+  // @media screen and (max-width: 480px) {
+  //   font-size: 1.72rem;
+  // }
 }
 @mixin navText {
-  font-size: 2.68em;
-  @media screen and (max-width: 992px) {
-    font-size: 1.98em;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1.42em;
-  }
+  font-size: 2.68rem;
+  // @media screen and (max-width: 992px) {
+  //   font-size: 1.98rem;
+  // }
+  // @media screen and (max-width: 480px) {
+  //   font-size: 1.42rem;
+  // }
 }
 @mixin projectText {
-  font-size: 2.08em;
-  @media screen and (max-width: 992px) {
-    font-size: 1.88em;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1.68em;
-  }
+  font-size: 2.08rem;
+  // @media screen and (max-width: 992px) {
+  //   font-size: 1.88rem;
+  // }
+  // @media screen and (max-width: 480px) {
+  //   font-size: 1.68rem;
+  // }
 }
 
 @mixin paragraph {
-  font-size: 1.12em;
-  @media screen and (max-width: 992px) {
-    font-size: 1.04em;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 0.96em;
-  }
+  font-size: 1.3rem;
+  // @media screen and (max-width: 992px) {
+  //   font-size: 1.22rem;
+  // }
+  // @media screen and (max-width: 480px) {
+  //   font-size: 0.96rem;
+  // }
 }
 
 html, body {
@@ -728,7 +740,8 @@ main {
     .fl-text {
       flex: 1;
       p {
-        max-width: calc(6vw + 26rem);
+        // max-width: calc(6vw + 20rem);
+        max-width: 30.8rem
       }
     }
   }
@@ -1187,7 +1200,7 @@ section.services {
         opacity: 0.75;
         margin: 12px 0;
         padding: 0 0;
-        font-size: 1.32em;
+        font-size: 1.32rem;
         letter-spacing: -0.012em;
       }
     }
@@ -1268,9 +1281,6 @@ section.services {
                 padding: 0 0;
                 ul.services__list {
                   margin: 4px 0 0 0;
-                  li {
-                    font-size: 1.18em;
-                  }
                 }
               }
               img, svg {
@@ -2139,8 +2149,10 @@ header.home-header {
   margin: 36px 0 0 0;
   .button, {
     display: inline-block;
-    height: 68px;
-    line-height: 68px;
+    height: 74px;
+    line-height: 74px;
+    height: 4.8rem;
+    line-height: 4.8rem;
     min-width: 194px;
     border-radius: 6px;
     text-align: center;
@@ -2154,7 +2166,8 @@ header.home-header {
     transition: background-color 260ms ease-out, transform 440ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
     span {
       font-weight: 700;
-      font-size: 0.96em;
+      // font-size: 0.96em;
+      font-size: 1.18rem;
       text-transform: uppercase;
       letter-spacing: 0.24em;
       color: $dark;
@@ -2167,7 +2180,8 @@ header.home-header {
           font-family: 'FontAwesome';
           display: inline-block;
           vertical-align: middle;
-          font-size: 0.96em;
+          // font-size: 0.96em;
+          font-size: 1.18rem;
           color: $dark;
           margin-left: 16px;
           margin-right: -8px;
@@ -2617,7 +2631,7 @@ ul.contact-info {
 
   p {
     margin: 24px 0 0 0;
-    font-size: 0.91em;
+    // font-size: 0.91em;
     font-weight: 400;
     letter-spacing: 0.008em;
     line-height: 1.4;
