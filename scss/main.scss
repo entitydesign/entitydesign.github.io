@@ -831,10 +831,10 @@ header {
   height: 100vh;
   min-height: 740px;
   max-height: 1080px;
-  .container {
-    padding-left: 22px;
-    padding-right: 22px;
-  }
+  // .container {
+  //   padding-left: 22px;
+  //   padding-right: 22px;
+  // }
   h1 {
     @include bigheader;
     line-height: 1;
@@ -1298,7 +1298,11 @@ blockquote {
   display: block;
   width: 100%;
   max-width: 51rem;
-  @include projectText;
+  // @include projectText;
+  font-size: 1.6rem;
+  @media screen and (max-width: 992px) {
+    font-size: 1.32rem;
+  }
   margin: 88px auto 122px auto;
   color: #FFFFFF;
   text-align: right;
@@ -1895,10 +1899,12 @@ p {
     // max-width: 2440px;
     // max-width: 1440px;
     // max-width: 1478px;
-    max-width: 1510px;
+    // max-width: 1510px;
     margin: 0 auto;
-    padding: 0 0;
-    padding-left: 16px;
+    // padding-right: 38px;
+    padding: 0 38px;
+    // padding: 0 0;
+    // padding-left: 16px;
     // padding-left: calc(3.8vw + 22px);
   }
   h4 {
@@ -1955,7 +1961,7 @@ p {
   margin: 0 0;
   float: right;
   // margin-right: calc(3.8vw + 22px);
-  margin-right: 16px;
+  // margin-right: 16px;
   width: 100%;
   max-width: 1920px;
   // min-height: 120px;
@@ -1977,11 +1983,6 @@ p {
 }
 
 .section__other-work {
-  & > .container {
-    @media screen and (min-width: 992px) {
-      padding-left: 72px;
-    }
-  }
   background: $dark !important;
   h2, h3, h4, p {
     color: #FFFFFF !important;

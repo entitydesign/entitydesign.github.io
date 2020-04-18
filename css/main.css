@@ -703,9 +703,6 @@ header {
   height: 100vh;
   min-height: 740px;
   max-height: 1080px; }
-  .case-header .container {
-    padding-left: 22px;
-    padding-right: 22px; }
   .case-header h1 {
     font-size: 4.32em;
     line-height: 1; }
@@ -1134,7 +1131,7 @@ blockquote {
   display: block;
   width: 100%;
   max-width: 51rem;
-  font-size: 2.08em;
+  font-size: 1.6rem;
   margin: 88px auto 122px auto;
   color: #FFFFFF;
   text-align: right;
@@ -1142,10 +1139,7 @@ blockquote {
   color: #89cbe0; }
   @media screen and (max-width: 992px) {
     blockquote {
-      font-size: 1.88em; } }
-  @media screen and (max-width: 480px) {
-    blockquote {
-      font-size: 1.68em; } }
+      font-size: 1.32rem; } }
   blockquote.quote--arktos {
     color: #EB5C59;
     padding-right: 24px;
@@ -1795,10 +1789,8 @@ p {
     display: none; }
   .case-study .container {
     width: 100%;
-    max-width: 1510px;
     margin: 0 auto;
-    padding: 0 0;
-    padding-left: 16px; }
+    padding: 0 38px; }
   .case-study h4 {
     font-weight: 300;
     margin: 0 0 -22px 0;
@@ -1856,7 +1848,6 @@ p {
   position: relative;
   margin: 0 0;
   float: right;
-  margin-right: 16px;
   width: 100%;
   max-width: 1920px;
   overflow: hidden; }
@@ -1872,9 +1863,6 @@ p {
 
 .section__other-work {
   background: #100e1b !important; }
-  @media screen and (min-width: 992px) {
-    .section__other-work > .container {
-      padding-left: 72px; } }
   .section__other-work h2, .section__other-work h3, .section__other-work h4, .section__other-work p {
     color: #FFFFFF !important; }
 
