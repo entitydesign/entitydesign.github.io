@@ -38,19 +38,25 @@ html {
   // @media screen and (max-width: 720px) {
   //   font-size: 2.16rem;
   // }
-  // @media screen and (max-width: 480px) {
-  //   font-size: 1.78rem;
-  // }
+  @media screen and (max-width: 480px) {
+    font-size: 3.08rem;
+  }
 }
 
 @mixin bigheader {
-  font-size: 4.68rem;
+  font-size: 4.32rem;
   // @media screen and (max-width: 992px), screen and (max-height: 580px) {
   //   font-size: 3.18rem;
   // }
   // @media screen and (max-width: 720px) {
   //   font-size: 2.68rem;
   // }
+  @media screen and (max-width: 480px) {
+    font-size: 3.08rem;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 2.48rem;
+  }
   // @media screen and (max-width: 580px) {
   //   font-size: 2.48rem;
   // }
@@ -1171,7 +1177,7 @@ section.services {
     margin: 12px 0 0 0;
     li {
       flex: 1;
-      margin: 48px 0;
+      margin: 48px 12px;
       padding: 0 0;
       path {
         fill: none;
@@ -1227,7 +1233,8 @@ section.services {
   }
   h3 {
     margin: 12px 0 0 0;
-    // font-size: 242%;
+    @include navText;
+    line-height: 1.12 !important;
     span {
       display: block;
     }
@@ -1301,7 +1308,7 @@ section.services {
                 display: block;
                 width: 100%;
                 max-width: 192px;
-                margin: 0 0 48px 0;
+                margin: 0 auto 48px auto;
               }
               h3 {
                 // font-size: 233%;
@@ -2671,7 +2678,9 @@ ul.contact-info {
       // padding: 88px 22px 66px 22px !important;
       align-items: center;
       justify-content: center;
-      .fl-text {padding-left: 0 !important;}
+      .fl-text {
+        padding-left: 0 !important;
+      }
     }
     h1 {
       width: auto;
@@ -2853,6 +2862,8 @@ ul.contact-info {
     .container.flx {
       align-items: flex-start !important;
       .fl-text {
+        width: 100%;
+        max-width: 100%;
         height: 300px;
         min-height: 300px;
         max-height: 300px;
