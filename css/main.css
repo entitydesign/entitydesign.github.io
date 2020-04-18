@@ -753,6 +753,10 @@ header {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat; }
+  @media screen and (min-width: 992px) {
+    .case-header.header--illustration-graphics > .container, .case-header.header--product-branding > .container {
+      padding-left: 38px;
+      padding-right: 38px; } }
 
 header.home-header h1 {
   margin-top: 12px;
@@ -1868,6 +1872,9 @@ p {
 
 .section__other-work {
   background: #100e1b !important; }
+  @media screen and (min-width: 992px) {
+    .section__other-work > .container {
+      padding-left: 72px; } }
   .section__other-work h2, .section__other-work h3, .section__other-work h4, .section__other-work p {
     color: #FFFFFF !important; }
 

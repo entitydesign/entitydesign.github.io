@@ -876,13 +876,22 @@ header {
     background: $dark url('../img/product-branding-bg.jpg');
     background-size: cover;
     background-position: center bottom;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
   }
   &.header--illustration-graphics {
     background: $dark url('../img/illustration-graphics-bg.jpg');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+  }
+  &.header--illustration-graphics,
+  &.header--product-branding {
+    & > .container {
+      @media screen and (min-width: 992px) {
+        padding-left: 38px;
+        padding-right: 38px;
+      }
+    }
   }
 }
 header.home-header {
@@ -1968,6 +1977,11 @@ p {
 }
 
 .section__other-work {
+  & > .container {
+    @media screen and (min-width: 992px) {
+      padding-left: 72px;
+    }
+  }
   background: $dark !important;
   h2, h3, h4, p {
     color: #FFFFFF !important;
