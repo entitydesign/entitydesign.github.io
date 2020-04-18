@@ -14,10 +14,17 @@ html {
   }
 }
 
-@mixin text-stroke {
+
+@mixin text-stroke--white {
   color: rgba(255,255,255,0);
-  -webkit-text-stroke: 1px white; 
-  text-stroke: 1px white;
+  -webkit-text-stroke: 1.2px white; 
+  text-stroke: 1.2px white;
+}
+
+@mixin text-stroke--black {
+  color: rgba($dark, 0);
+  -webkit-text-stroke: 1.2px $dark; 
+  text-stroke: 1.2px $dark;
 }
 
 @mixin heroHeader {
@@ -501,7 +508,7 @@ nav {
               // font-weight: 600;
               // letter-spacing: 0em;
               // font-family: 'LuloCleanOutline-Bold', sans-serif;
-              @include text-stroke;
+              @include text-stroke--white;
             }
             &:after{
               content: '';
@@ -770,7 +777,7 @@ main {
       padding-left: 0px;
     }
     p {
-      max-width: 36rem;
+      max-width: 33.3rem;
     }
     &.right {
       text-align: right;
@@ -818,7 +825,7 @@ header {
       // font-size: 0.86em;
       // font-weight: 600;
       // // font-family: 'LuloCleanOutline-Bold', sans-serif;
-      @include text-stroke;
+      @include text-stroke--white;
     }
   }
   .fl-img {
@@ -1415,7 +1422,7 @@ section.project-next-prev {
           // // font-family: 'LuloCleanOutline-Bold', sans-serif;          
           // font-weight: 400;
           // letter-spacing: 0em;
-          @include text-stroke;
+          @include text-stroke--white;
         }
       }
       .button-holder {
@@ -1711,7 +1718,7 @@ h2, h3 {
     // font-weight: 600;
     // letter-spacing: 0em;
     // font-family: 'LuloCleanOutline-Bold', sans-serif;
-    @include text-stroke;
+    @include text-stroke--white;
   }
 }
 p {
@@ -1851,7 +1858,7 @@ p {
         // font-family: 'LuloCleanOutline-Bold', sans-serif;        
         // font-size: 0.84em;
         // letter-spacing: -0.032em !important;
-        @include text-stroke;
+        @include text-stroke--white;
       }
     }
     p {
@@ -1953,7 +1960,7 @@ p {
       // // font-family: 'LuloCleanOutline-Bold', sans-serif;      
       // font-weight: 400;
       // letter-spacing: 0em;
-      @include text-stroke;
+      @include text-stroke--black;
     }
   }
   p {
@@ -1961,7 +1968,8 @@ p {
     display: block;
     width: 100%;
     margin: 33px 0 0 0;
-    max-width: calc(8vw + 640px);
+    // max-width: calc(8vw + 640px);
+    max-width: 46rem;
     line-height: 1.7;
     padding-bottom: 22px;
     // padding-left: 44px;
@@ -2676,7 +2684,7 @@ ul.contact-info {
         // font-size: 0.91em;
         // font-weight: 600;
         // font-family: 'LuloCleanOutline-Bold', sans-serif;
-        @include text-stroke;
+        @include text-stroke--white;
       }
     }
     p {

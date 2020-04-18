@@ -353,8 +353,8 @@ nav {
               font-size: 1.12em; } }
           nav ul li a span.style-nav span {
             color: rgba(255, 255, 255, 0);
-            -webkit-text-stroke: 1px white;
-            text-stroke: 1px white; }
+            -webkit-text-stroke: 1.2px white;
+            text-stroke: 1.2px white; }
           nav ul li a span.style-nav:after {
             content: '';
             position: absolute;
@@ -632,7 +632,7 @@ main {
     .container.flx .fl-text.n-p {
       padding-left: 0px; }
     .container.flx .fl-text p {
-      max-width: 36rem; }
+      max-width: 33.3rem; }
     .container.flx .fl-text.right {
       text-align: right; }
       .container.flx .fl-text.right h1, .container.flx .fl-text.right h2, .container.flx .fl-text.right p, .container.flx .fl-text.right .button-holder {
@@ -670,8 +670,8 @@ header {
     line-height: 1.12; }
     header h1 span {
       color: rgba(255, 255, 255, 0);
-      -webkit-text-stroke: 1px white;
-      text-stroke: 1px white; }
+      -webkit-text-stroke: 1.2px white;
+      text-stroke: 1.2px white; }
   header .fl-img {
     padding-top: 0.88vw; }
   header.white h1, header.white p {
@@ -1187,8 +1187,8 @@ section.project-next-prev {
         letter-spacing: 0.08em; }
         section.project-next-prev ul.work-items li h4 span {
           color: rgba(255, 255, 255, 0);
-          -webkit-text-stroke: 1px white;
-          text-stroke: 1px white; }
+          -webkit-text-stroke: 1.2px white;
+          text-stroke: 1.2px white; }
       section.project-next-prev ul.work-items li .button-holder {
         margin-top: 12px; }
       section.project-next-prev ul.work-items li:first-child {
@@ -1480,8 +1480,8 @@ h2, h3 {
   line-height: 1.2; }
   h2 span, h3 span {
     color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke: 1px white;
-    text-stroke: 1px white; }
+    -webkit-text-stroke: 1.2px white;
+    text-stroke: 1.2px white; }
 
 p {
   display: block;
@@ -1662,8 +1662,8 @@ p {
       letter-spacing: 0.188em; }
       .anchor-list .bubble h4 span {
         color: rgba(255, 255, 255, 0);
-        -webkit-text-stroke: 1px white;
-        text-stroke: 1px white; }
+        -webkit-text-stroke: 1.2px white;
+        text-stroke: 1.2px white; }
     .anchor-list .bubble p {
       display: block;
       margin: 48px 0 0 0;
@@ -1756,15 +1756,15 @@ p {
     font-weight: 800;
     letter-spacing: 0.08em; }
     .case-study h2 span, .case-study h3 span {
-      color: rgba(255, 255, 255, 0);
-      -webkit-text-stroke: 1px white;
-      text-stroke: 1px white; }
+      color: rgba(16, 14, 27, 0);
+      -webkit-text-stroke: 1.2px #100e1b;
+      text-stroke: 1.2px #100e1b; }
   .case-study p {
     font-size: 1.2rem;
     display: block;
     width: 100%;
     margin: 33px 0 0 0;
-    max-width: calc(8vw + 640px);
+    max-width: 46rem;
     line-height: 1.7;
     padding-bottom: 22px; }
   .case-study .c-2 {
@@ -2426,8 +2426,8 @@ ul.contact-info {
       line-height: 1.2; }
       header h1 span {
         color: rgba(255, 255, 255, 0);
-        -webkit-text-stroke: 1px white;
-        text-stroke: 1px white; }
+        -webkit-text-stroke: 1.2px white;
+        text-stroke: 1.2px white; }
     header p {
       font-weight: 300;
       display: block;
