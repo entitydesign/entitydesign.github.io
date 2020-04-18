@@ -625,8 +625,7 @@ main {
   .container.flx .fl-text {
     -webkit-box-flex: 1.4;
     -ms-flex: 1.4;
-    flex: 1.4;
-    padding-left: 12px; }
+    flex: 1.4; }
     .container.flx .fl-text.n-p {
       padding-left: 0px; }
     .container.flx .fl-text p {
