@@ -86,6 +86,9 @@ html {
   // @media screen and (max-width: 480px) {
   //   font-size: 1.42rem;
   // }
+  @media screen and (max-width: 992px) {
+    font-size: 2.28rem;
+  }
 }
 @mixin projectText {
   font-size: 2.08rem;
@@ -1119,7 +1122,7 @@ ul.other-work__flex {
     // padding-left: calc(8% + 36px);
     padding-left: 8%;
     h3 {
-      @include navText;
+      @include navText();
       line-height: 1.12;
     }
     h3 > span {
@@ -2213,7 +2216,7 @@ header.home-header {
     span {
       font-weight: 700;
       // font-size: 0.96em;
-      font-size: 1.08rem;
+      font-size: 0.98rem;
       text-transform: uppercase;
       letter-spacing: 0.24em;
       color: $dark;
@@ -2444,7 +2447,7 @@ header.home-header {
      padding: 0 36px !important;
    }
    h2 {
-     @include heading2;
+     @include navText();
    }
    .container {
       max-width: 1280px;
