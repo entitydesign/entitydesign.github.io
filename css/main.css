@@ -661,12 +661,15 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.108em;
     line-height: 1.08; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 992px) {
       header h1 {
         font-size: 3.48rem; } }
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 2.72rem; } }
     @media screen and (max-width: 320px) {
       header h1 {
-        font-size: 2.48rem; } }
+        font-size: 2.42rem; } }
     header h1 span {
       color: rgba(255, 255, 255, 0);
       -webkit-text-stroke: 1.2px white;
@@ -696,13 +699,23 @@ header {
   max-height: 1080px; }
   .case-header h1 {
     font-size: 4.32rem;
-    line-height: 1; }
-    @media screen and (max-width: 480px) {
+    line-height: 1;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; }
+    @media screen and (max-width: 992px) {
       .case-header h1 {
         font-size: 3.48rem; } }
+    @media screen and (max-width: 480px) {
+      .case-header h1 {
+        font-size: 2.72rem; } }
     @media screen and (max-width: 320px) {
       .case-header h1 {
-        font-size: 2.48rem; } }
+        font-size: 2.42rem; } }
   .case-header.case-header--cyberox {
     background: #100e1b url("../img/cyberox-bg.jpg");
     background-size: cover;
@@ -1501,10 +1514,10 @@ h2, h3 {
   line-height: 1.2; }
   @media screen and (max-width: 480px) {
     h2, h3 {
-      font-size: 2.86rem; } }
+      font-size: 2.72rem; } }
   @media screen and (max-width: 320px) {
     h2, h3 {
-      font-size: 2.48rem; } }
+      font-size: 2.42rem; } }
   h2 span, h3 span {
     color: rgba(255, 255, 255, 0);
     -webkit-text-stroke: 1.2px white;
@@ -1773,10 +1786,10 @@ p {
     color: #100e1b; }
     @media screen and (max-width: 480px) {
       .case-study h4 {
-        font-size: 2.86rem; } }
+        font-size: 2.72rem; } }
     @media screen and (max-width: 320px) {
       .case-study h4 {
-        font-size: 2.48rem; } }
+        font-size: 2.42rem; } }
   .case-study h2, .case-study h3 {
     color: #100e1b;
     font-size: 3.28rem;
@@ -1790,10 +1803,10 @@ p {
     letter-spacing: 0.08em; }
     @media screen and (max-width: 480px) {
       .case-study h2, .case-study h3 {
-        font-size: 2.86rem; } }
+        font-size: 2.72rem; } }
     @media screen and (max-width: 320px) {
       .case-study h2, .case-study h3 {
-        font-size: 2.48rem; } }
+        font-size: 2.42rem; } }
     .case-study h2 span, .case-study h3 span {
       color: rgba(16, 14, 27, 0);
       -webkit-text-stroke: 1.2px #100e1b;

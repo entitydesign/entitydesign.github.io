@@ -52,11 +52,14 @@ html {
   // @media screen and (max-width: 720px) {
   //   font-size: 2.68rem;
   // }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 992px) {
     font-size: 3.48rem;
+  }  
+  @media screen and (max-width: 480px) {
+    font-size: 2.72rem;
   }
   @media screen and (max-width: 320px) {
-    font-size: 2.48rem;
+    font-size: 2.42rem;
   }
   // @media screen and (max-width: 580px) {
   //   font-size: 2.48rem;
@@ -66,10 +69,10 @@ html {
   font-size: 3.28rem;
   line-height: 1.128 !important;
   @media screen and (max-width: 480px) {
-    font-size: 2.86rem;
+    font-size: 2.72rem;
   }
   @media screen and (max-width: 320px) {
-    font-size: 2.48rem;
+    font-size: 2.42rem;
   }
   // @media screen and (max-width: 992px) {
   //   font-size: 2.22rem;
@@ -884,6 +887,13 @@ header {
     // span {
     //   display: block;
     // }
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
   }
   &.case-header--cyberox {
     background: $dark url('../img/cyberox-bg.jpg');
