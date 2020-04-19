@@ -766,8 +766,8 @@ header {
       .case-header.header--illustration-graphics h1, .case-header.header--product-branding h1 {
         margin-top: 0; }
       .case-header.header--illustration-graphics .container, .case-header.header--product-branding .container {
-        padding-top: 96px;
-        padding-bottom: 96px; }
+        padding-top: 103.2px;
+        padding-bottom: 103.2px; }
         .case-header.header--illustration-graphics .container .fl-text, .case-header.header--product-branding .container .fl-text {
           height: auto !important;
           min-height: auto !important;
