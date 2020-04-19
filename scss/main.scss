@@ -63,10 +63,10 @@ html {
   // }
 }
 @mixin heading2 {
-  font-size: 3.48rem;
+  font-size: 3.28rem;
   line-height: 1.128 !important;
   @media screen and (max-width: 480px) {
-    font-size: 3.08rem;
+    font-size: 2.86rem;
   }
   @media screen and (max-width: 320px) {
     font-size: 2.48rem;
@@ -2435,7 +2435,7 @@ header.home-header {
    max-height: 992px;
    min-height: 680px;
    // z-index: 20;
-   padding: 64px 22px;
+   padding: 64px 20px;
    position: relative;
    overflow-x: hidden;
    display: inline-block !important;
@@ -2791,7 +2791,7 @@ ul.contact-info {
         margin: 66px auto !important;
 
         .button-holder {
-          margin-top: 12px;
+          margin-top: 24px;
           margin-bottom: 0;
         }
         .attract-hover-easing {

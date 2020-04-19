@@ -1500,7 +1500,7 @@ cite {
   font-style: normal; }
 
 h2, h3 {
-  font-size: 3.48rem;
+  font-size: 3.28rem;
   line-height: 1.128 !important;
   text-transform: uppercase;
   font-weight: 800;
@@ -1509,7 +1509,7 @@ h2, h3 {
   line-height: 1.2; }
   @media screen and (max-width: 480px) {
     h2, h3 {
-      font-size: 3.08rem; } }
+      font-size: 2.86rem; } }
   @media screen and (max-width: 320px) {
     h2, h3 {
       font-size: 2.48rem; } }
@@ -1775,19 +1775,19 @@ p {
     line-height: 1;
     padding: 0 0;
     display: block;
-    font-size: 3.48rem;
+    font-size: 3.28rem;
     line-height: 1.128 !important;
     -webkit-font-smoothing: antialiased;
     color: #100e1b; }
     @media screen and (max-width: 480px) {
       .case-study h4 {
-        font-size: 3.08rem; } }
+        font-size: 2.86rem; } }
     @media screen and (max-width: 320px) {
       .case-study h4 {
         font-size: 2.48rem; } }
   .case-study h2, .case-study h3 {
     color: #100e1b;
-    font-size: 3.48rem;
+    font-size: 3.28rem;
     line-height: 1.128 !important;
     line-height: 0.95;
     position: relative;
@@ -1798,7 +1798,7 @@ p {
     letter-spacing: 0.08em; }
     @media screen and (max-width: 480px) {
       .case-study h2, .case-study h3 {
-        font-size: 3.08rem; } }
+        font-size: 2.86rem; } }
     @media screen and (max-width: 320px) {
       .case-study h2, .case-study h3 {
         font-size: 2.48rem; } }
@@ -2279,7 +2279,7 @@ header.home-header {
   height: 100%;
   max-height: 992px;
   min-height: 680px;
-  padding: 64px 22px;
+  padding: 64px 20px;
   position: relative;
   overflow-x: hidden;
   display: inline-block !important; }
@@ -2287,11 +2287,11 @@ header.home-header {
   .swiper-slide .fl-text {
     padding: 0 36px !important; }
   .swiper-slide h2 {
-    font-size: 3.48rem;
+    font-size: 3.28rem;
     line-height: 1.128 !important; }
     @media screen and (max-width: 480px) {
       .swiper-slide h2 {
-        font-size: 3.08rem; } }
+        font-size: 2.86rem; } }
     @media screen and (max-width: 320px) {
       .swiper-slide h2 {
         font-size: 2.48rem; } }
@@ -2555,7 +2555,7 @@ ul.contact-info {
         text-align: center;
         margin: 66px auto !important; }
         section.project-next-prev ul.work-items li .button-holder {
-          margin-top: 12px;
+          margin-top: 24px;
           margin-bottom: 0; }
         section.project-next-prev ul.work-items li .attract-hover-easing {
           padding: 0 0; }
