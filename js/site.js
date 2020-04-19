@@ -2,8 +2,7 @@ $(function(){
   'use strict';
   var $page = $('#main-page'),
       options = {
-        // blacklist: 'form',
-        blacklist: '',
+        blacklist: 'form, #contact-form__submit',
         scroll: true,
         debug: false,
         prefetch: true,
@@ -170,6 +169,56 @@ $(function(){
       }
     });
 
+
+    
+    
+
+
+    var $contactForm = $("#contact-form"),
+        $contactFormSuccess = $('#contact-form-success'),
+        contactFormUrl = "https://formspree.io/maydgjbn";
+
+    TweenMax.set($contactFormSuccess, {autoAlpha: 0, y: 38});
+
+
+    var $contactFormWrapper = $(".contact-form-wrapper");
+    $(function(){
+      if ($contactFormWrapper) {
+        setFormHeight();
+        $(window).resize(function(){      
+          setFormHeight();
+        });
+        $(window).trigger('resize');
+      }
+    });
+    function setFormHeight() {
+      var height = $contactForm.outerHeight();
+      $contactFormWrapper.height(height);
+    }
+
+
+
+
+    $contactForm.on('submit', function(e) {
+      e.preventDefault();
+      var name = $("#contact-form__name").val();
+      var email = $("#contact-form__email").val();
+      var message = $("#contact-form__message").val();
+      $.ajax({
+        url: contactFormUrl,
+        method: "POST",
+        data:{
+          name: name,
+          email: email,
+          message: message,
+        },
+        dataType: "json",
+        success:function() {
+          $('#contact-form').hide();
+          TweenMax.to($contactFormSuccess, 1.2, {autoAlpha: 1, y: 0, ease:Power4.easeOut, delay: 0.2});
+        }
+      });      
+    });
 
 
 var $svgStars = $(".svg-stars"),

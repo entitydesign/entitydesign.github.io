@@ -1501,7 +1501,7 @@ form {
   .button-holder {
     margin-top:-22px !important;
   }
-  input, textarea {
+  input:not([type="submit"]), textarea {
     border: 2px solid #FFFFFF;
     background: none;
     border-radius: 4px;
@@ -1536,10 +1536,21 @@ form {
     letter-spacing: 0.136em;
     opacity: 1;
   }
-
+  button[type="submit"] {
+    @include paragraph();
+  }
 }
 
-
+#contact-form-success {  
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  margin: 48px 0;
+  // color: #FFFFFF;
+  & > p {
+    @include projectText();
+  }
+}
 
 .case-about {
   height: auto;

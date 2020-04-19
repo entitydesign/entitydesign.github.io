@@ -365,7 +365,31 @@
                   <p>Need to kick start your brand with a fresh design? Contact me</p>
                 </div>
                 <div class="grid row">
-                  <div class="col c-12 el">
+                  <div class="col c-7 el">
+                    <div class="contact-form-wrapper">
+                      <form action="" method="POST" id="contact-form">
+                        <div class="form-group">                        
+                          <input type="text" name="name" id="contact-form__name" required>                        
+                          <label for="name">Name:</label>
+                        </div>
+                        <div class="form-group">                        
+                          <input type="email" name="email" id="contact-form__email" required>                        
+                          <label for="name">Email:</label>
+                        </div>
+                        <div class="form-group">                        
+                          <textarea rows="8" id="contact-form__message"></textarea>
+                          <label for="name">Message:</label>
+                        </div>
+                        <div class="button-holder">
+                          <button type="submit" value="Submit" class="button white js-attract-hover hoverable" id="contact-form__submit"><span>Submit</span></button>
+                        </div>
+                      </form>
+                      <div id="contact-form-success">
+                        <p>Thank you for the message 🚀</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col c-5 el">
                     <ul class="contact-info">
                       <li>
                         <a href="mailto:hello@soulinmind.design" title="Email hello@soulinmind.design" target="_blank" class="email-link">hello@soulinmind.design</a>
