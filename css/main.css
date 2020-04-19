@@ -695,8 +695,15 @@ header {
 
 .case-header {
   height: 100vh;
-  min-height: 740px;
+  min-height: 680px;
   max-height: 1080px; }
+  @media screen and (max-width: 992px) {
+    .case-header {
+      height: auto;
+      max-height: auto;
+      min-height: 540px; }
+      .case-header h1 {
+        margin-top: 48px; } }
   .case-header h1 {
     font-size: 4.32rem;
     line-height: 1;
@@ -751,6 +758,19 @@ header {
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat; }
+  @media screen and (max-width: 992px) {
+    .case-header.header--illustration-graphics, .case-header.header--product-branding {
+      height: auto;
+      min-height: auto;
+      max-height: auto; }
+      .case-header.header--illustration-graphics h1, .case-header.header--product-branding h1 {
+        margin-top: 0; }
+      .case-header.header--illustration-graphics .container, .case-header.header--product-branding .container {
+        padding-top: 48px; }
+        .case-header.header--illustration-graphics .container .fl-text, .case-header.header--product-branding .container .fl-text {
+          height: auto !important;
+          min-height: auto !important;
+          max-height: auto !important; } }
   @media screen and (min-width: 992px) {
     .case-header.header--illustration-graphics > .container, .case-header.header--product-branding > .container {
       padding-left: 38px;
@@ -2641,8 +2661,6 @@ ul.contact-info {
         margin-top: -16.5vh; }
     .case-header.case-header--studiosurf {
       background-position: 75% center !important; }
-    .case-header h1 {
-      margin-top: -10.33vh; }
   .work-logo--home img {
     width: 100%;
     max-width: 152px !important;
