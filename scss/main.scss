@@ -547,15 +547,16 @@ nav {
           line-height: 60px;
           text-align: center;
           margin: 0 2px;
+          background-color: #FFFFFF;
           box-shadow: 0px 2px 6px rgba(0,0,0,0.16);
           i {
-            font-size: 1.68em;
-            color: #FFFFFF;
+            font-size: 1.82em;
+            color: $dark;
           }
-          &.fb {background: #3b5998;}
-          &.ig {background: #cd486b;}
-          &.li {background: #0077b5;}
-          &.em {background: #d69600;}
+          // &.fb {background: #3b5998;}
+          // &.ig {background: #cd486b;}
+          // &.li {background: #0077b5;}
+          // &.em {background: #d69600;}
         }
         .nav-icon {
           transition: background-color 260ms ease-out;
@@ -1602,23 +1603,24 @@ footer {
               width: 48px;
               height: 48px;
               border-radius: 48px;
-              line-height: 56px;
+              line-height: 60px;
               text-align: center;
               margin: 0 2px;
               opacity: 0;
+              background-color: #ffffff;
               transform: translateY(50px);
               transform-origin: center center;
               transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.320, 1);
               transition: opacity 860ms ease-out, transform 1240ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
               box-shadow: 0px 2px 6px rgba(0,0,0,0.16);
               i {
-                font-size: 1.48em;
-                color: #FFFFFF;
+                font-size: 1.82em;
+                color: $dark;
               }
-              &.fb {background: #3b5998;}
-              &.ig {background: #cd486b;}
-              &.li {background: #0077b5;}
-              &.em {background: #d69600;}
+              // &.fb {background: #3b5998;}
+              // &.ig {background: #cd486b;}
+              // &.li {background: #0077b5;}
+              // &.em {background: #d69600;}
             }
             &:hover {
               .nav-icon {
@@ -2573,45 +2575,45 @@ ul.contact-info {
       padding: 2px 0;
       @include paragraph;
       letter-spacing: 0.033em;
-      font-weight: 600;
       color: #FFFFFF;
       vertical-align: middle;
       &:before {
         font-family: "FontAwesome";
         vertical-align: middle;
         font-weight: normal;
-        font-size: 28px !important;
+        font-size: 32px !important;
         display: inline-block;
-        margin-right: 18px;
+        margin-right: 28px;
         width: 54px;
         height: 54px;
         border-radius: 27px;
-        color: #FFFFFF;
+        color: $dark;
+        background-color: #ffffff;
         text-align: center;
         line-height: 54px;
       }
       &.facebook-link {
         &:before {
-          background-color: #3b5998;
+          // background-color: #3b5998;
           content: '\f1d7';
         }
       }
       &.insta-link {
         &:before {
           content: '\f24d';
-          background-color: #cd486b;
+          // background-color: #cd486b;
         }
       }
       &.linkedin-link {
         &:before {
           content: '\f269';
-          background-color: #0077b5;
+          // background-color: #0077b5;
         }
       }
       &.email-link {
         &:before {
           content: '\f1c7';
-          background-color: #d69600;
+          // background-color: #d69600;
         }
       }
     }
