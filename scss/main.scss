@@ -952,7 +952,8 @@ header {
         margin-top: 0;
       }
       .container {
-          padding-top: 48px;
+          padding-top: 48px * 2;
+          padding-bottom: 48px * 2;
           .fl-text {
             height: auto !important;
             min-height: auto !important;
