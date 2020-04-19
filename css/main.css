@@ -937,7 +937,7 @@ ul.other-work__flex {
       line-height: 1.12; }
       @media screen and (max-width: 992px) {
         ul.other-work__flex .other-work__content h3 {
-          font-size: 2.28rem; } }
+          font-size: 2.2rem; } }
     ul.other-work__flex .other-work__content h3 > span {
       display: block; }
   @media screen and (max-width: 992px) {
@@ -1034,7 +1034,7 @@ section.services {
     line-height: 1.12 !important; }
     @media screen and (max-width: 992px) {
       section.services h3 {
-        font-size: 2.28rem; } }
+        font-size: 2.2rem; } }
     section.services h3 span {
       display: block; }
   section.services .button-holder {
@@ -2296,7 +2296,7 @@ header.home-header {
     font-size: 2.68rem; }
     @media screen and (max-width: 992px) {
       .swiper-slide h2 {
-        font-size: 2.28rem; } }
+        font-size: 2.2rem; } }
   .swiper-slide .container {
     max-width: 1280px;
     padding: 0 36px !important; }
