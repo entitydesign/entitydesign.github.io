@@ -2778,3 +2778,12 @@ ul.contact-info {
 @media screen and (max-width: 992px) {
   span.break--md {
     display: block; } }
+
+h4.jansu-translation {
+  margin: 32px 0 12px 0;
+  font-size: 2.62rem; }
+  @media screen and (max-width: 992px) {
+    h4.jansu-translation {
+      font-size: 2.18rem; } }
+  h4.jansu-translation:last-child {
+    margin-bottom: 0; }
