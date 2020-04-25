@@ -265,6 +265,17 @@ var $productDesignPath = $(".pd-stroke--path"),
     // var $svg = $(el).find("svg");
     // TweenMax.staggerTo($rect, 2.6, {scaleX: 1, ease:Power4.easeOut, delay: 0.3}, 0.48);
 
+
+
+    function checkSwipeCircle(){
+      var $swipeIndicatorCircle = $(".swipe-indicator__circle");
+      if ($swipeIndicatorCircle) {
+        TweenMax.set($swipeIndicatorCircle, {x: 28, scale: 1, transformOrigin: '50% 50%'});
+      }
+    }  
+    
+    checkSwipeCircle();
+
 inView.threshold(0.3);
 inView('.el').on('enter', function(el){
   el.classList.add("anim");
@@ -275,6 +286,33 @@ inView('.el').on('enter', function(el){
   if($(el).hasClass("header__bg--home")) {
     $headerStarsAnim.play();
     $headerStarsFlicker.play();
+  }
+
+  if ( $(el).hasClass("home-work__indicator") ) {    
+    var $swipeIndicatorCircle = $(".swipe-indicator__circle"),
+        $swipeIndicatorLine = $(".swipe-indicator"),
+        $homeWorkIndicator = $(".home-work__indicator__inner"),
+        $swipeAnim = new TimelineMax({paused: true, repeat: 1, yoyo: false, delay: 0.2}),
+        $fadeSwipeIndicator = new TimelineMax({ paused: true, repeat: 0, yoyo: false, delay: 3.2});
+    $swipeAnim
+    .to($swipeIndicatorCircle, 1.8, {scale: 0.7, ease:Elastic.easeOut.config(1, 0.4)})
+    .to($swipeIndicatorCircle, 0.8, {x: 2, ease:Power2.easeInOut}, '-=1.8')
+    .to($swipeIndicatorLine, 0.55, {backgroundPosition: '100% 50%', ease:Power2.easeInOut}, '-=1.7')
+    .to($swipeIndicatorCircle, 1, {scale: 1.2, opacity: 0, ease:Power3.easeOut}, '-=0.9')
+    .to($swipeIndicatorLine, 0.25, {backgroundPosition: '0% 50%', ease:Power1.easeIn}, '-=0.7')
+    .to($swipeIndicatorCircle, 0, {x: 28, ease:Elastic.easeOut.config(1, 0.4)})
+    .to($swipeIndicatorCircle, 0.8, {scale: 0.7, opacity: 1, ease:Power4.easeInOut})
+    .to($swipeIndicatorCircle, 1.8, {scale: 0.7, ease:Elastic.easeOut.config(1, 0.4)})
+    .to($swipeIndicatorCircle, 0.8, {x: 2, ease:Power2.easeInOut}, '-=1.8')
+    .to($swipeIndicatorLine, 0.55, {backgroundPosition: '100% 50%', ease:Power2.easeInOut}, '-=1.7')
+    .to($swipeIndicatorCircle, 1, {scale: 1.2, opacity: 0, ease:Power3.easeOut}, '-=0.9')
+    .to($swipeIndicatorLine, 0.25, {backgroundPosition: '0% 50%', ease:Power1.easeIn}, '-=0.7')
+    .to($swipeIndicatorCircle, 0, {x: 28, ease:Elastic.easeOut.config(1, 0.4)})
+    .to($swipeIndicatorCircle, 0.8, {scale: 0.7, opacity: 1, ease:Power4.easeInOut})       
+    ;
+    $swipeAnim.timeScale(1.2).play();
+    $fadeSwipeIndicator.play();
+    $fadeSwipeIndicator.to($homeWorkIndicator, 2, {autoAlpha: 0, ease:Power4.easeOut});
   }
 
   if ( $(el).hasClass("svg__brand-identity") && $(window).width() > 992  ){
@@ -381,8 +419,7 @@ $otherWorkbutton.hover(function(){
     // });
 
 
-    $(document).on("scroll", onScroll);
-
+    // $(document).on("scroll", onScroll);
 
 
 
@@ -390,60 +427,60 @@ $otherWorkbutton.hover(function(){
     //smoothscroll
 
 
-    function onScroll(event){
+    // function onScroll(event){
 
-      var anchorList = $(".anchor-list");
-      if($(window).scrollTop() > 360) {
-        TweenMax.to(anchorList, 0.24, {autoAlpha: 1, ease:Power2.easeOut});
-      }
-      else {
-        TweenMax.to(anchorList, 0.24, {autoAlpha: 0, ease:Power2.easeOut});
-      }
+    //   var anchorList = $(".anchor-list");
+    //   if($(window).scrollTop() > 360) {
+    //     TweenMax.to(anchorList, 0.24, {autoAlpha: 1, ease:Power2.easeOut});
+    //   }
+    //   else {
+    //     TweenMax.to(anchorList, 0.24, {autoAlpha: 0, ease:Power2.easeOut});
+    //   }
 
-      if ($(window).scrollTop() >= $(document).height() - $(window).height() - 1080) {
-        TweenMax.to(anchorList, 0.24, {autoAlpha: 0, ease:Power2.easeOut});
-      }
+    //   if ($(window).scrollTop() >= $(document).height() - $(window).height() - 1080) {
+    //     TweenMax.to(anchorList, 0.24, {autoAlpha: 0, ease:Power2.easeOut});
+    //   }
 
-        var scrollPos = $(document).scrollTop();
-        $('.anchor-menu li a').each(function () {
-            var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $('.anchor-menu li a').removeClass("active");
-                currLink.addClass("active");
-            }
-            else{
-                currLink.removeClass("active");
-            }
-        });
-    }
+    //     var scrollPos = $(document).scrollTop();
+    //     $('.anchor-menu li a').each(function () {
+    //         var currLink = $(this);
+    //         var refElement = $(currLink.attr("href"));
+    //         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+    //             $('.anchor-menu li a').removeClass("active");
+    //             currLink.addClass("active");
+    //         }
+    //         else{
+    //             currLink.removeClass("active");
+    //         }
+    //     });
+    // }
 
   var content = $(".content");
   var sceneElement = $(".scene_element");
 
 
-$(".sticky").stick_in_parent({
-  parent: '.grid',
-  offset_top: 128,
-});
+// $(".sticky").stick_in_parent({
+//   parent: '.grid',
+//   offset_top: 128,
+// });
 
-$(".sticky-al").stick_in_parent({
-  parent: '.push-right',
-  offset_top: 0,
-});
+// $(".sticky-al").stick_in_parent({
+//   parent: '.push-right',
+//   offset_top: 0,
+// });
 
 
 
-var button = $(".button"),
-    gloopPath = $(".gloop-path"),
-    menuItem = $(".menu-item"),
-    logoPaths = $(".main-logo polygon, .main-logo rect"),
-    mainMenu = $(".main-menu"),
+// var button = $(".button"),
+//     gloopPath = $(".gloop-path"),
+//     menuItem = $(".menu-item"),
+//     logoPaths = $(".main-logo polygon, .main-logo rect"),
+//     mainMenu = $(".main-menu"),
     // transition = new TimelineMax({
     //   paused: true, repeat: 0, delay: 0, yoyo: false
     // }),
 
-    ease = CustomEase.create("custom", "M0,0 C0,0 0.204,0.75 0.3,1.1 0.358,1.288 0.484,1.022 0.53,0.997 0.62,0.828 0.667,1.002 0.725,1.004 0.829,1.008 1,1 1,1");
+    // ease = CustomEase.create("custom", "M0,0 C0,0 0.204,0.75 0.3,1.1 0.358,1.288 0.484,1.022 0.53,0.997 0.62,0.828 0.667,1.002 0.725,1.004 0.829,1.008 1,1 1,1");
 
     // TweenMax.set(gloopPath, {visibility: 'visible', scaleY: 0, transformOrigin: '50%, 0%', attr: {d: 'M1920,198.6V0H0v168.8c0,0,25.4-85.6,188.6-85.6s99.5,179.2,236.9,179.2c157.3,0,108-113.5,264.8-113.5c173.2,0,123.4,223,294.6,223c137.4,0,141.4-318.9,244.9-318.9c137.4,0,141.3,275.3,254.8,275.3c151.3,0,131.4-227.2,262.8-227.2C1841,101.1,1920,198.6,1920,198.6z'}})
     // TweenMax.set(menuItem, {autoAlpha: 1});
