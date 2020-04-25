@@ -14,10 +14,7 @@ html, body {
   padding: 0;
   font-family: 'Arimo', sans-serif;
   background-color: #100e1b;
-  cursor: none;
   overflow-x: hidden; }
-  html *, body * {
-    cursor: none !important; }
 
 body.no-cursor {
   cursor: auto !important; }
@@ -65,9 +62,6 @@ a, a:visited, a:link, a:hover {
   -o-transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-
-#main, #main * {
-  cursor: none !important; }
 
 .loader {
   position: fixed;
@@ -791,6 +785,10 @@ header.home-header h1 {
   @media screen and (max-width: 480px) {
     header.home-header h1 {
       font-size: 3.08rem; } }
+
+header.home-header p {
+  max-width: 34rem !important;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22); }
 
 @media screen and (max-width: 992px) {
   header.home-header h1 {

@@ -120,9 +120,9 @@ html, body {
   padding: 0;
   font-family: 'Arimo', sans-serif;
   background-color: $dark;  
-  cursor: none;
+  // cursor: none;
   overflow-x: hidden;
-  *{cursor: none !important}
+  // *{cursor: none !important}
 }
 
 // body {
@@ -188,7 +188,7 @@ a, a:visited, a:link, a:hover {
 
 
 
-#main, #main * {cursor: none !important;}
+// #main, #main * {cursor: none !important;}
 
 // canvas{
 //   position: relative;
@@ -984,6 +984,10 @@ header.home-header {
   h1 {
     margin-top: 12px;
     @include heroHeader
+  }
+  p {
+    max-width: 34rem !important;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.22);
   }
   @media screen and (max-width: 992px) {
     h1 {

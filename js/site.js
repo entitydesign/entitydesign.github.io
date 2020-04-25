@@ -60,13 +60,13 @@ $(function(){
         var body = $("body");
         body.removeClass("no-cursor");
         var $bigBall = document.querySelector('.cursor__ball--big');
-        var $smallBall = document.querySelector('.cursor__ball--small');
+        // var $smallBall = document.querySelector('.cursor__ball--small');
         var $bigBallCircle = $('.bigBallCircle');
         var $cursorArrows = document.querySelector('.cursor__arrows');
         TweenMax.set($cursorArrows, {autoAlpha: 0, scale: 0.66, transformOrigin: '50% 50%'});
         TweenMax.set($bigBall, {transformOrigin:'38% 36%'});
         function onMouseMove( e ) {
-           var follower = this.querySelector('.cursor__ball--small')
+           var follower = this.querySelector('.cursor__ball--big')
             TweenMax.to(follower, 0.1, {
                 x: e.clientX - 3,
                 y: e.clientY - 2
