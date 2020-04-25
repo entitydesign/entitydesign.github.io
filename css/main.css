@@ -186,7 +186,7 @@ body .cursor__arrows path {
 .menu-toggle {
   position: absolute;
   top: 22px;
-  right: 22px;
+  right: 28px;
   width: 60px;
   height: 60px;
   z-index: 9994 !important; }
@@ -257,7 +257,7 @@ body .cursor__arrows path {
   .main-menu .container .logo {
     position: absolute;
     top: 31px;
-    left: 38px;
+    left: 28px;
     width: 156px;
     display: inline-block; }
     .main-menu .container .logo a {
@@ -1771,7 +1771,7 @@ p {
     position: absolute;
     left: 338px;
     top: 28px;
-    padding: 52px 22px;
+    padding: 52px 28px;
     text-align: left;
     -webkit-transform: translate(-52%, -50%) scale(0.95);
     -ms-transform: translate(-52%, -50%) scale(0.95);
@@ -2058,7 +2058,7 @@ header.home-header {
       .header__bg--home .header__stars {
         right: auto;
         left: -50%;
-        margin-left: -22px;
+        margin-left: -28px;
         -webkit-transform: translateX(40%);
         -ms-transform: translateX(40%);
         transform: translateX(40%); }
@@ -2737,7 +2737,7 @@ ul.contact-info {
   footer {
     height: 540px; }
     footer .container.flx {
-      padding: 112px 22px 100px 22px; }
+      padding: 112px 28px 100px 282px; }
       footer .container.flx .fl-logo {
         margin-bottom: 66px;
         text-align: center; }
@@ -2769,7 +2769,7 @@ ul.contact-info {
     top: 74px; }
   .menu-toggle {
     top: 7px;
-    right: 12px; }
+    right: 6px; }
   .push-right {
     padding-left: 0; }
   .anchor-list, .anchor-list.is_stuck, .anchor-list.sticky-al, .anchor-list.stick_in_parent {

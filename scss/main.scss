@@ -357,7 +357,7 @@ body .cursor__arrows path {
 .menu-toggle {
   position: absolute;
   top: 22px;
-  right: 22px;
+  right: 28px;
   width: 60px;
   height: 60px;
   z-index: 9994 !important;
@@ -421,7 +421,7 @@ body .cursor__arrows path {
     .logo {
       position: absolute;
       top: 31px;
-      left: 38px;
+      left: 28px;
       width: 156px;
       display: inline-block;
       a {
@@ -1972,7 +1972,7 @@ p {
     position: absolute;
     left: 338px;
     top: 28px;
-    padding: 52px 22px;
+    padding: 52px 28px;
     text-align: left;
     transform: translate(-52%, -50%) scale(0.95);
     transform-origin: left center;
@@ -2289,7 +2289,7 @@ header.home-header {
     .header__stars {
       right: auto;
       left: -50%;
-      margin-left: -22px;
+      margin-left: -28px;
       transform: translateX(40%);
       svg {
         right: auto;
@@ -3043,7 +3043,7 @@ ul.contact-info {
   footer {
     height: 540px;
     .container.flx {
-      padding: 112px 22px 100px 22px;
+      padding: 112px 28px 100px 282px;
       .fl-logo { margin-bottom: 66px; text-align: center;}
       .fl-contact {
         ul {
@@ -3091,7 +3091,7 @@ ul.contact-info {
 
   .menu-toggle {
     top: 7px;
-    right: 12px;
+    right: 6px;
   }
 
 
