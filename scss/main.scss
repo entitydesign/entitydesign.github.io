@@ -2279,7 +2279,8 @@ header.home-header {
           content: '\f121';
           font-family: 'FontAwesome';
           display: inline-block;
-          vertical-align: middle;
+          // vertical-align: middle;
+          vertical-align: -0.05rem;
           // font-size: 0.96em;
           font-size: 1.18rem;
           color: $dark;
