@@ -2607,7 +2607,7 @@ header.home-header {
 }
 .swiper-pagination {
 	position: absolute;
-	bottom: 56px !important;
+	bottom: 56px + 14px !important;
 	left: 50% !important;
   transform: translateX(-50%);
 	width: auto !important;

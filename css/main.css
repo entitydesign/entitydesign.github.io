@@ -2401,7 +2401,7 @@ header.home-header {
 
 .swiper-pagination {
   position: absolute;
-  bottom: 56px !important;
+  bottom: 70px !important;
   left: 50% !important;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
