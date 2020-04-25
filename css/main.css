@@ -798,8 +798,7 @@ header.home-header p {
 
 @media screen and (max-width: 720px) {
   header.home-header p {
-    max-width: 21rem !important;
-    text-align: center; } }
+    max-width: 21rem !important; } }
 
 @media screen and (max-width: 440px) {
   header.home-header h1 {
@@ -2054,7 +2053,7 @@ header.home-header {
       .header__bg--home .header__head {
         top: 0%;
         right: auto;
-        left: 22px;
+        left: 20px;
         background-position: left top; }
       .header__bg--home .header__stars {
         right: auto;
@@ -2753,8 +2752,8 @@ ul.contact-info {
     z-index: 999; }
     .main-menu .container .logo {
       position: absolute;
-      top: 26px;
-      left: 22px;
+      top: 22px;
+      left: 28px;
       width: 111px;
       z-index: 9999; }
       .main-menu .container .logo a {
@@ -2769,8 +2768,8 @@ ul.contact-info {
   nav {
     top: 74px; }
   .menu-toggle {
-    top: 8px;
-    right: 6px; }
+    top: 7px;
+    right: 12px; }
   .push-right {
     padding-left: 0; }
   .anchor-list, .anchor-list.is_stuck, .anchor-list.sticky-al, .anchor-list.stick_in_parent {

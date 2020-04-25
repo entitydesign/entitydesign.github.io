@@ -1000,8 +1000,7 @@ header.home-header {
   }
   @media screen and (max-width: 720px) {
     p {
-      max-width: 21rem !important;
-      text-align: center;
+      max-width: 21rem !important;      
     }
   }
   @media screen and (max-width: 440px) {
@@ -2284,7 +2283,7 @@ header.home-header {
     .header__head {
       top: 0%;
       right: auto;
-      left: 22px;
+      left: 20px;
       background-position: left top;
     }
     .header__stars {
@@ -3067,8 +3066,8 @@ ul.contact-info {
     .container {
       .logo {
         position: absolute;
-        top: 26px;
-        left: 22px;
+        top: 22px;
+        left: 28px;
         width: 111px;
         z-index: 9999;
         a {
@@ -3091,8 +3090,8 @@ ul.contact-info {
 
 
   .menu-toggle {
-    top: 8px;
-    right: 6px;
+    top: 7px;
+    right: 12px;
   }
 
 
