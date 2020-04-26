@@ -35,10 +35,6 @@ $(function(){
   $.fn.onPageLoad = function() {
 
 
-
-
-
-
     var mainLogo = $(".main-logo"),
         header = $("header");
     $(function(){
@@ -293,7 +289,7 @@ inView('.el').on('enter', function(el){
         $swipeIndicatorLine = $(".swipe-indicator"),
         $homeWorkIndicator = $(".home-work__indicator__inner"),
         $swipeAnim = new TimelineMax({paused: true, repeat: 1, yoyo: false, delay: 0.2}),
-        $fadeSwipeIndicator = new TimelineMax({ paused: true, repeat: 0, yoyo: false, delay: 3.2});
+        $fadeSwipeIndicator = new TimelineMax({ paused: true, repeat: 0, yoyo: false, delay: 4.2});
     $swipeAnim
     .to($swipeIndicatorCircle, 1.8, {scale: 0.7, ease:Elastic.easeOut.config(1, 0.4)})
     .to($swipeIndicatorCircle, 0.8, {x: 2, ease:Power2.easeInOut}, '-=1.8')
@@ -310,9 +306,9 @@ inView('.el').on('enter', function(el){
     .to($swipeIndicatorCircle, 0, {x: 28, ease:Elastic.easeOut.config(1, 0.4)})
     .to($swipeIndicatorCircle, 0.8, {scale: 0.7, opacity: 1, ease:Power4.easeInOut})       
     ;
-    $swipeAnim.timeScale(1.2).play();
+    $swipeAnim.timeScale(1.33).play();
     $fadeSwipeIndicator.play();
-    $fadeSwipeIndicator.to($homeWorkIndicator, 2, {autoAlpha: 0, ease:Power4.easeOut});
+    $fadeSwipeIndicator.to($homeWorkIndicator, 2.8, {autoAlpha: 0, ease:Power4.easeOut});
   }
 
   if ( $(el).hasClass("svg__brand-identity") && $(window).width() > 992  ){
