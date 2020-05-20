@@ -770,6 +770,9 @@ main {
     justify-content: flex-start;
     z-index: 20;
     // background: #000;
+    h1 > span {
+      display: block;
+    }
     .fl-text {
       flex: 1;
       p {

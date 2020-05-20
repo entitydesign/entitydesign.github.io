@@ -596,6 +596,8 @@ main {
     -ms-flex-pack: start;
     justify-content: flex-start;
     z-index: 20; }
+    .container.flx.flx--home h1 > span {
+      display: block; }
     .container.flx.flx--home .fl-text {
       -webkit-box-flex: 1;
       -ms-flex: 1;
